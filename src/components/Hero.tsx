@@ -29,7 +29,7 @@ const Hero: React.FC = () => {
           <div className="flex justify-center items-center animate-fade-in order-first md:order-last">
             <div className="relative w-full md:w-[135%] transform hover:scale-105 transition-transform duration-500">
               <img 
-                src="https://file.notion.so/f/f/164031f6-d68d-4127-88fa-7c852ed197d3/eaab4fed-dc1d-4665-ae1e-2057d8d75fd6/image.png?table=block&id=1ed79816-5e3e-8066-9bb1-e2c3e4ebf36f&spaceId=164031f6-d68d-4127-88fa-7c852ed197d3&expirationTimestamp=1746813600000&signature=b3ApBJu4SmxlsH-tuarKbXPeJLz0mi25GrJyFQMKhxY&downloadName=image.png"
+                src="https://egftuzzffkkyebeatghv.supabase.co/storage/v1/object/sign/images/ChatGPT%20Interface.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InN0b3JhZ2UtdXJsLXNpZ25pbmcta2V5X2QwZWQyZjQyLWU3OGEtNDk0MS05ZjEwLWMwODMwYjU1ODQ0MCJ9.eyJ1cmwiOiJpbWFnZXMvQ2hhdEdQVCBJbnRlcmZhY2UucG5nIiwiaWF0IjoxNzQ2ODAxMDYzLCJleHAiOjE3NzgzMzcwNjN9.cTXZGZMkQ-vj3o_qrj-A3NOkeEJaSnUCuipv7a8aOkY"
                 alt="AI Assistant Interface"
                 className="w-full"
               />
