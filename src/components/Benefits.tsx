@@ -5,15 +5,15 @@ import SectionTitle from './SectionTitle';
 const Benefits: React.FC = () => {
   const benefits = [
     {
-      icon: <Sparkles className="h-8 w-8 text-[#E76832]" />,
+      icon: <Sparkles className="h-6 w-6 text-[#E76832]" />,
       text: 'Системный навык работы с ChatGPT — точные результаты вместо случайных экспериментов'
     },
     {
-      icon: <Timer className="h-8 w-8 text-[#E76832]" />,
+      icon: <Timer className="h-6 w-6 text-[#E76832]" />,
       text: 'Экономию 2-3 часов в день на типовых задачах — от написания писем до принятия решений'
     },
     {
-      icon: <Briefcase className="h-8 w-8 text-[#E76832]" />,
+      icon: <Briefcase className="h-6 w-6 text-[#E76832]" />,
       text: 'Готовые шаблоны и сценарии для решения десятков конкретных задач в работе и повседневной жизни'
     }
   ];
@@ -32,7 +32,7 @@ const Benefits: React.FC = () => {
         
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
           {/* Image column */}
-          <div className="lg:col-span-1 flex items-center justify-center">
+          <div className="lg:col-span-1 flex items-start">
             <img 
               src="https://images.pexels.com/photos/8438918/pexels-photo-8438918.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
               alt="AI Assistant Interface"
@@ -40,23 +40,23 @@ const Benefits: React.FC = () => {
             />
           </div>
 
-          {/* Benefits columns */}
-          <div className="lg:col-span-3 grid grid-cols-1 md:grid-cols-3 gap-8">
+          {/* Benefits column */}
+          <div className="lg:col-span-3 flex flex-col gap-4">
             {benefits.map((benefit, index) => (
               <div 
                 key={index} 
-                className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 hover:shadow-xl transition-all duration-500 transform hover:scale-[1.02] shadow-lg group"
+                className="bg-white/80 backdrop-blur-sm rounded-xl p-4 hover:shadow-lg transition-all duration-300 transform hover:scale-[1.02] shadow-md group"
               >
-                <div className="flex flex-col items-center text-center gap-6">
+                <div className="flex items-center gap-4">
                   <div 
-                    className="w-20 h-20 rounded-2xl flex items-center justify-center transform group-hover:rotate-12 transition-all duration-500 bg-gradient-to-r from-[#E76832] to-[#FFC24B] p-[2px]"
+                    className="w-12 h-12 rounded-xl flex items-center justify-center transform group-hover:rotate-12 transition-all duration-500 bg-gradient-to-r from-[#E76832] to-[#FFC24B] p-[2px] flex-shrink-0"
                   >
-                    <div className="w-full h-full rounded-2xl bg-white flex items-center justify-center">
+                    <div className="w-full h-full rounded-xl bg-white flex items-center justify-center">
                       {benefit.icon}
                     </div>
                   </div>
                   
-                  <p className="text-gray-700 text-xl leading-relaxed">
+                  <p className="text-gray-700 text-base leading-relaxed">
                     {benefit.text}
                   </p>
                 </div>
