@@ -30,9 +30,9 @@ const Benefits: React.FC = () => {
       <div className="container mx-auto max-w-6xl relative z-10">
         <SectionTitle title="Что получишь на выходе" />
         
-        <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
-          {/* Image column */}
-          <div className="lg:col-span-1 flex items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-5 gap-8">
+          {/* Image column - увеличена до 2 колонок */}
+          <div className="lg:col-span-2 flex items-start justify-center">
             <img 
               src="https://images.pexels.com/photos/8438918/pexels-photo-8438918.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
               alt="AI Assistant Interface"
