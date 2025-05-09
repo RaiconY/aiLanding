@@ -30,27 +30,39 @@ const Benefits: React.FC = () => {
       <div className="container mx-auto max-w-6xl relative z-10">
         <SectionTitle title="Что получишь на выходе" />
         
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {benefits.map((benefit, index) => (
-            <div 
-              key={index} 
-              className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 hover:shadow-xl transition-all duration-500 transform hover:scale-[1.02] shadow-lg group"
-            >
-              <div className="flex flex-col items-center text-center gap-6">
-                <div 
-                  className="w-20 h-20 rounded-2xl flex items-center justify-center transform group-hover:rotate-12 transition-all duration-500 bg-gradient-to-r from-[#E76832] to-[#FFC24B] p-[2px]"
-                >
-                  <div className="w-full h-full rounded-2xl bg-white flex items-center justify-center">
-                    {benefit.icon}
+        <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
+          {/* Image column */}
+          <div className="lg:col-span-1 flex items-center justify-center">
+            <img 
+              src="https://images.pexels.com/photos/8438918/pexels-photo-8438918.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              alt="AI Assistant Interface"
+              className="rounded-2xl w-full h-auto object-cover shadow-lg transform hover:scale-105 transition-duration-300"
+            />
+          </div>
+
+          {/* Benefits columns */}
+          <div className="lg:col-span-3 grid grid-cols-1 md:grid-cols-3 gap-8">
+            {benefits.map((benefit, index) => (
+              <div 
+                key={index} 
+                className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 hover:shadow-xl transition-all duration-500 transform hover:scale-[1.02] shadow-lg group"
+              >
+                <div className="flex flex-col items-center text-center gap-6">
+                  <div 
+                    className="w-20 h-20 rounded-2xl flex items-center justify-center transform group-hover:rotate-12 transition-all duration-500 bg-gradient-to-r from-[#E76832] to-[#FFC24B] p-[2px]"
+                  >
+                    <div className="w-full h-full rounded-2xl bg-white flex items-center justify-center">
+                      {benefit.icon}
+                    </div>
                   </div>
+                  
+                  <p className="text-gray-700 text-xl leading-relaxed">
+                    {benefit.text}
+                  </p>
                 </div>
-                
-                <p className="text-gray-700 text-xl leading-relaxed">
-                  {benefit.text}
-                </p>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </section>
