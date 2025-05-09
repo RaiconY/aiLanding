@@ -22,7 +22,7 @@ const WhyChatGPT: React.FC = () => {
           {/* Left side - Image */}
           <div className="md:col-span-7 flex items-center justify-center">
             <img 
-              src="https://file.notion.so/f/f/164031f6-d68d-4127-88fa-7c852ed197d3/a35675b2-77b1-48e7-a10b-b62f1e5dd89a/image.png?table=block&id=1ed79816-5e3e-80b5-9d08-cb30aaf93e47&spaceId=164031f6-d68d-4127-88fa-7c852ed197d3&expirationTimestamp=1746748800000&signature=tT--AH5IJLhv-CKBcHfle4pSG-47_Qc3m5BcTGTc94Q&downloadName=image.png"
+              src="https://egftuzzffkkyebeatghv.supabase.co/storage/v1/object/sign/images/ChatGPT%20Interface.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InN0b3JhZ2UtdXJsLXNpZ25pbmcta2V5X2QwZWQyZjQyLWU3OGEtNDk0MS05ZjEwLWMwODMwYjU1ODQ0MCJ9.eyJ1cmwiOiJpbWFnZXMvQ2hhdEdQVCBJbnRlcmZhY2UucG5nIiwiaWF0IjoxNzQ2ODAxNzE2LCJleHAiOjE3NzgzMzc3MTZ9.Z8txhmHG9lf_-9-V2-3Z-VU0s0Z7CRYA99uqmPJVRiE"
               alt="AI Technology Visualization"
               className="rounded-2xl w-full h-auto object-cover shadow-lg"
             />
