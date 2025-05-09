@@ -27,7 +27,6 @@ function App() {
       <WhyChatGPT />
       <AIDisclosure />
       <WhyGuide />
-      <AboutAuthor />
       <Testimonials />
       <Pricing />
       <WhyAuthorCreated />
