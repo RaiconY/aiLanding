@@ -30,15 +30,15 @@ const Benefits: React.FC = () => {
       <div className="container mx-auto max-w-6xl relative z-10">
         <SectionTitle title="Что получишь на выходе" />
         
-        <div className="grid grid-cols-1 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {benefits.map((benefit, index) => (
             <div 
               key={index} 
               className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 hover:shadow-xl transition-all duration-500 transform hover:scale-[1.02] shadow-lg group"
             >
-              <div className="flex items-center gap-6">
+              <div className="flex flex-col items-center text-center gap-6">
                 <div 
-                  className="flex-shrink-0 w-16 h-16 rounded-2xl flex items-center justify-center transform group-hover:rotate-12 transition-all duration-500 bg-gradient-to-r from-[#E76832] to-[#FFC24B] p-[2px]"
+                  className="w-20 h-20 rounded-2xl flex items-center justify-center transform group-hover:rotate-12 transition-all duration-500 bg-gradient-to-r from-[#E76832] to-[#FFC24B] p-[2px]"
                 >
                   <div className="w-full h-full rounded-2xl bg-white flex items-center justify-center">
                     {benefit.icon}
