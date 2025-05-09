@@ -26,9 +26,9 @@ function App() {
       <TimeComparison />
       <WhyChatGPT />
       <AIDisclosure />
-      <WhyGuide />
       <Testimonials />
       <Pricing />
+      <WhyGuide />
       <WhyAuthorCreated />
       <AboutAuthor />
       <FAQ />
