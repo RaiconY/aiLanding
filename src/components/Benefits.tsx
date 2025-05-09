@@ -30,18 +30,18 @@ const Benefits: React.FC = () => {
       <div className="container mx-auto max-w-6xl relative z-10">
         <SectionTitle title="Что получишь на выходе" />
         
-        <div className="grid grid-cols-1 lg:grid-cols-7 gap-8">
-          {/* Image column - увеличена до 2 колонок */}
-          <div className="lg:col-span-3 flex items-start justify-center">
+        <div className="grid grid-cols-1 lg:grid-cols-7 gap-8 items-center">
+          {/* Image column - убрана тень и добавлено выравнивание */}
+          <div className="lg:col-span-3 flex items-center justify-center">
             <img 
               src="https://egftuzzffkkyebeatghv.supabase.co/storage/v1/object/sign/images/WithAIComparing.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InN0b3JhZ2UtdXJsLXNpZ25pbmcta2V5X2QwZWQyZjQyLWU3OGEtNDk0MS05ZjEwLWMwODMwYjU1ODQ0MCJ9.eyJ1cmwiOiJpbWFnZXMvV2l0aEFJQ29tcGFyaW5nLnBuZyIsImlhdCI6MTc0NjgxMDA4MCwiZXhwIjoxNzc4MzQ2MDgwfQ.D1FCRPjxLkUNI_u2P6M7z7O1ManWh8fgdwSe9d5Gpno"
               alt="AI Assistant Interface"
-              className="rounded-2xl w-full h-auto object-cover shadow-lg transform hover:scale-105 transition-duration-300"
+              className="rounded-2xl w-full h-auto object-contain transform hover:scale-105 transition-duration-300"
             />
           </div>
 
-          {/* Benefits column */}
-          <div className="lg:col-span-4 flex flex-col gap-4">
+          {/* Benefits column - центрирован вертикально */}
+          <div className="lg:col-span-4 flex flex-col justify-center gap-4">
             {benefits.map((benefit, index) => (
               <div 
                 key={index} 
