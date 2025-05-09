@@ -31,6 +31,7 @@ function App() {
       <Testimonials />
       <Pricing />
       <WhyAuthorCreated />
+      <AboutAuthor />
       <FAQ />
       <Footer />
     </div>
