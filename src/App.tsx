@@ -28,9 +28,11 @@ function App() {
       <AIDisclosure />
       <Testimonials />
       <Pricing />
+      {/* 
       <WhyGuide />
       <WhyAuthorCreated />
       <AboutAuthor />
+      */}
       <FAQ />
       <Footer />
     </div>
