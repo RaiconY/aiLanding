@@ -5,7 +5,7 @@ import SectionTitle from './SectionTitle';
 const ForWho: React.FC = () => {
   const categories = [
     {
-      title: 'Только знакомишься с ИИ',
+      title: 'Знакомишься с ИИ',
       description: 'Если уже слышал про ChatGPT, но не знаешь, как эффективно использовать его в работе и жизни',
       result: 'За неделю научитесь решать с помощью ChatGPT 80% повседневных задач',
       cta: 'Начать с основ →'
