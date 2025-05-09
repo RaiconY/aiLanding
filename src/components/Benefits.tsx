@@ -34,7 +34,7 @@ const Benefits: React.FC = () => {
           {/* Image column - увеличена до 2 колонок */}
           <div className="lg:col-span-3 flex items-start justify-center">
             <img 
-              src="https://images.pexels.com/photos/8438918/pexels-photo-8438918.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              src="https://egftuzzffkkyebeatghv.supabase.co/storage/v1/object/sign/images/WithAIComparing.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InN0b3JhZ2UtdXJsLXNpZ25pbmcta2V5X2QwZWQyZjQyLWU3OGEtNDk0MS05ZjEwLWMwODMwYjU1ODQ0MCJ9.eyJ1cmwiOiJpbWFnZXMvV2l0aEFJQ29tcGFyaW5nLnBuZyIsImlhdCI6MTc0NjgxMDA4MCwiZXhwIjoxNzc4MzQ2MDgwfQ.D1FCRPjxLkUNI_u2P6M7z7O1ManWh8fgdwSe9d5Gpno"
               alt="AI Assistant Interface"
               className="rounded-2xl w-full h-auto object-cover shadow-lg transform hover:scale-105 transition-duration-300"
             />
