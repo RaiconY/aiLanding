@@ -1,10 +1,7 @@
-import React, { useState } from 'react';
-import { ChevronDown } from 'lucide-react';
+import React from 'react';
 import SectionTitle from './SectionTitle';
 
 const GuideContent: React.FC = () => {
-  const [expandedChapter, setExpandedChapter] = useState<number | null>(null);
-
   const chapters = [
     {
       number: '01',
@@ -80,78 +77,52 @@ const GuideContent: React.FC = () => {
     }
   ];
 
-  const toggleChapter = (index: number) => {
-    setExpandedChapter(expandedChapter === index ? null : index);
-  };
-
   return (
-    <section className="py-12 md:py-20 px-4 sm:px-6 lg:px-8">
-      <div className="container mx-auto max-w-4xl">
+    <section className="py-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+      {/* Background decorative elements */}
+      <div className="absolute inset-0 bg-gradient-to-b from-orange-50/50 to-transparent" />
+      <div className="absolute top-1/4 left-0 w-96 h-96 bg-gradient-to-r from-[#E76832] to-[#FFC24B] rounded-full filter blur-[128px] opacity-10 -translate-x-1/2" />
+      <div className="absolute bottom-1/4 right-0 w-96 h-96 bg-gradient-to-l from-[#E76832] to-[#FFC24B] rounded-full filter blur-[128px] opacity-10 translate-x-1/2" />
+
+      <div className="container mx-auto max-w-4xl relative z-10">
         <SectionTitle title="Что внутри" />
         
-        <div className="space-y-4">
+        <div className="space-y-6">
           {chapters.map((chapter, index) => (
             <div 
               key={index} 
-              className="bg-white rounded-xl overflow-hidden shadow-lg"
+              className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 group"
             >
-              <button
-                className="w-full text-left p-4 md:p-6 flex items-center justify-between hover:bg-gray-50 transition-colors duration-300"
-                onClick={() => toggleChapter(index)}
-              >
-                <div className="flex items-center gap-3 md:gap-6">
-                  <div 
-                    className="w-10 h-10 md:w-12 md:h-12 rounded-xl flex items-center justify-center"
-                    style={{
-                      background: 'white',
-                      border: '2px solid transparent',
-                      backgroundImage: 'linear-gradient(white, white), linear-gradient(135deg, #E76832, #FFC24B)',
-                      backgroundOrigin: 'border-box',
-                      backgroundClip: 'content-box, border-box'
-                    }}
-                  >
-                    <span style={{ 
-                      background: 'linear-gradient(135deg, #E76832, #FFC24B)',
-                      WebkitBackgroundClip: 'text',
-                      WebkitTextFillColor: 'transparent',
-                      fontWeight: 'bold'
-                    }}>
+              <div className="flex items-center gap-6 mb-6">
+                <div 
+                  className="w-16 h-16 rounded-2xl flex items-center justify-center bg-gradient-to-r from-[#E76832] to-[#FFC24B] p-[2px] transform group-hover:rotate-12 transition-all duration-500"
+                >
+                  <div className="w-full h-full rounded-2xl bg-white flex items-center justify-center">
+                    <span className="text-2xl font-bold bg-gradient-to-r from-[#E76832] to-[#FFC24B] bg-clip-text text-transparent">
                       {chapter.number}
                     </span>
                   </div>
-                  <h3 className="text-base md:text-xl font-semibold text-gray-900">
-                    {chapter.title}
-                  </h3>
                 </div>
-                <ChevronDown 
-                  className={`h-5 w-5 md:h-6 md:w-6 transition-transform duration-300 flex-shrink-0 ${
-                    expandedChapter === index ? 'rotate-180' : ''
-                  }`}
-                  style={{ color: '#E76832' }}
-                />
-              </button>
+                <h3 className="text-2xl font-semibold text-gray-900">
+                  {chapter.title}
+                </h3>
+              </div>
               
-              <div 
-                className={`overflow-hidden transition-all duration-300 ${
-                  expandedChapter === index ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'
-                }`}
-              >
-                <div className="p-4 md:p-6 pt-0">
-                  {chapter.topics.length > 0 ? (
-                    <ul className="space-y-2 md:space-y-3 text-sm md:text-base text-gray-700">
-                      {chapter.topics.map((topic, i) => (
-                        <li key={i} className="flex items-start">
-                          <span className="mr-2 md:mr-3" style={{ color: '#E76832' }}>•</span>
-                          <span>{topic}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  ) : (
-                    <p className="text-gray-600 italic text-sm md:text-base">
-                      Специальный раздел с готовыми промптами для разных задач.
-                    </p>
-                  )}
-                </div>
+              <div className="pl-24">
+                {chapter.topics.length > 0 ? (
+                  <ul className="space-y-4">
+                    {chapter.topics.map((topic, i) => (
+                      <li key={i} className="flex items-start group">
+                        <span className="mr-3 mt-2 w-2 h-2 rounded-full bg-gradient-to-r from-[#E76832] to-[#FFC24B] flex-shrink-0 group-hover:scale-150 transition-transform duration-300" />
+                        <span className="text-lg text-gray-700">{topic}</span>
+                      </li>
+                    ))}
+                  </ul>
+                ) : (
+                  <p className="text-lg text-gray-600 italic">
+                    Специальный раздел с готовыми промптами для разных задач
+                  </p>
+                )}
               </div>
             </div>
           ))}
