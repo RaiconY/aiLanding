@@ -15,24 +15,14 @@ const TimeComparison: React.FC = () => {
       moneySaved: '1 100 ₽'
     },
     {
-      task: 'Небольшой пост',
-      timeSaved: '30 минут быстрее',
-      moneySaved: '2 400 ₽'
-    },
-    {
-      task: 'Исследование',
-      timeSaved: '2 часа быстрее',
-      moneySaved: '9 300 ₽'
-    },
-    {
       task: 'ТЗ на сложную задачу',
       timeSaved: '30 минут быстрее',
       moneySaved: '2 200 ₽'
     },
     {
-      task: 'Контент-план',
-      timeSaved: '1.5 часа быстрее',
-      moneySaved: '6 000 ₽'
+      task: 'Небольшой пост',
+      timeSaved: '30 минут быстрее',
+      moneySaved: '2 400 ₽'
     },
     {
       task: 'Генерация идей',
@@ -40,19 +30,29 @@ const TimeComparison: React.FC = () => {
       moneySaved: '3 700 ₽'
     },
     {
-      task: 'Презентации',
-      timeSaved: '10 часов быстрее',
-      moneySaved: '27 600 ₽'
-    },
-    {
       task: 'Анализ отзывов',
       timeSaved: '2 часа быстрее',
       moneySaved: '4 700 ₽'
     },
     {
+      task: 'Контент-план',
+      timeSaved: '1.5 часа быстрее',
+      moneySaved: '6 000 ₽'
+    },
+    {
+      task: 'Исследование',
+      timeSaved: '2 часа быстрее',
+      moneySaved: '9 300 ₽'
+    },
+    {
       task: 'Большая статья',
       timeSaved: '7 часов быстрее',
       moneySaved: '17 900 ₽'
+    },
+    {
+      task: 'Презентации',
+      timeSaved: '10 часов быстрее',
+      moneySaved: '27 600 ₽'
     },
     {
       task: 'Создание сайта',
