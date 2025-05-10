@@ -72,6 +72,7 @@ const GuideContent: React.FC = () => {
       title: '50+ промптов на все случаи жизни',
       topics: []
     }
+    ];
 
     
 
