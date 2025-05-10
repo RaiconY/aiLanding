@@ -32,7 +32,7 @@ const Benefits: React.FC = () => {
         <SectionTitle title="Что получишь на выходе" />
         
         <div className="grid grid-cols-1 lg:grid-cols-7 gap-8 items-center">
-          {/* Image column - убрана тень и добавлено выравнивание */}
+          {/* Image column */}
           <div className="lg:col-span-3 flex items-center justify-center">
             <img 
               src="https://egftuzzffkkyebeatghv.supabase.co/storage/v1/object/sign/images/WithAIComparing.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InN0b3JhZ2UtdXJsLXNpZ25pbmcta2V5X2QwZWQyZjQyLWU3OGEtNDk0MS05ZjEwLWMwODMwYjU1ODQ0MCJ9.eyJ1cmwiOiJpbWFnZXMvV2l0aEFJQ29tcGFyaW5nLnBuZyIsImlhdCI6MTc0NjgxMDQxMSwiZXhwIjoxNzc4MzQ2NDExfQ.pYk6AVXapF3ncAtqjgrR0Qdbb4ztvn8D6NE5SH-658k"
@@ -41,7 +41,7 @@ const Benefits: React.FC = () => {
             />
           </div>
 
-          {/* Benefits column - центрирован вертикально */}
+          {/* Benefits column */}
           <div className="lg:col-span-4 flex flex-col justify-center gap-4">
             {benefits.map((benefit, index) => (
               <div 
@@ -63,12 +63,12 @@ const Benefits: React.FC = () => {
                 </div>
               </div>
             ))}
-            
-            {/* CTA Button */}
-            <div className="flex justify-center mt-8">
-              <CTAButton />
-            </div>
           </div>
+        </div>
+        
+        {/* CTA Button - под обоими блоками */}
+        <div className="flex justify-center mt-12">
+          <CTAButton />
         </div>
       </div>
     </section>
