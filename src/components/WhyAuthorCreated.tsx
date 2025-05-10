@@ -48,7 +48,7 @@ const WhyAuthorCreated: React.FC = () => {
                 </div>
                 
                 <div className="flex-1 flex flex-col">
-                  <h3 className="text-2xl font-semibold mb-4 text-gray-900">
+                  <h3 className="text-xl font-semibold mb-4 text-gray-900">
                     {reason.title}
                   </h3>
                   <p className="text-gray-700 text-lg leading-relaxed">
