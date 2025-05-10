@@ -67,7 +67,7 @@ const TimeComparison: React.FC = () => {
                 <tr className="border-b-2 border-gray-100">
                   <th className="py-4 px-6 text-left text-gray-900 font-semibold">Задача</th>
                   <th className="py-4 px-6 text-left text-gray-900 font-semibold">Экономия времени</th>
-                  <th className="py-4 px-6 text-left text-gray-900 font-semibold">Экономия в ₽</th>
+                  <th className="py-4 px-6 text-left text-gray-900 font-semibold">Экономия в ₽*</th>
                 </tr>
               </thead>
               <tbody>
