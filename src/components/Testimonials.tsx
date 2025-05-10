@@ -53,11 +53,11 @@ const Testimonials: React.FC = () => {
                 </div>
                 
                 <div className="space-y-4">
-                  <div className="text-gray-700 text-lg leading-relaxed whitespace-pre-line">
+                  <div className="text-gray-700 text-sm sm:text-base leading-relaxed whitespace-pre-line">
                     {testimonial.text}
                   </div>
                   {testimonial.author && (
-                    <p className="text-gray-600 font-medium mt-4">{testimonial.author}</p>
+                    <p className="text-gray-600 font-medium mt-4 text-sm">{testimonial.author}</p>
                   )}
                 </div>
               </div>
