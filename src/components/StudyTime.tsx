@@ -31,7 +31,7 @@ const StudyTime: React.FC = () => {
               <h3
                 className="text-lg sm:text-xl font-semibold mb-2 bg-gradient-to-r from-[#E76832] to-[#FFC24B] bg-clip-text text-transparent transform group-hover:scale-[1.02] transition-transform duration-300"
               >
-               Неделя практики по&nbsp;гайду заменит месяцы проб и&nbsp;ошибок самостоятельного изучения
+               Этот гайд сэкономит тебе месяцы самостоятельного изучения
               </h3>
               <p 
                 className="text-gray-700 text-base transform group-hover:translate-y-[-2px] transition-transform duration-300"
