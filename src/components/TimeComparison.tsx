@@ -63,17 +63,17 @@ const TimeComparison: React.FC = () => {
 
   return (
     <section className="py-12 md:py-20 px-4 sm:px-6 lg:px-8">
-      <div className="container mx-auto max-w-6xl">
+      <div className="container mx-auto max-w-5xl"> {/* Уменьшили с max-w-6xl до max-w-5xl */}
         <SectionTitle title="Сколько времени мне экономит ChatGPT" />
         
         <div className="bg-white rounded-2xl p-4 md:p-8 shadow-lg overflow-x-auto">
-          <div className="min-w-[768px]">
+          <div className="max-w-3xl mx-auto"> {/* Добавили ограничение ширины таблицы */}
             <table className="w-full">
               <thead>
                 <tr className="bg-gray-50">
-                  <th className="py-4 px-4 text-left text-gray-900 font-semibold">Задача</th>
-                  <th className="py-4 px-4 text-left text-gray-900 font-semibold">Экономия времени</th>
-                  <th className="py-4 px-4 text-left text-gray-900 font-semibold">Экономия в ₽</th>
+                  <th className="py-4 px-4 text-left text-gray-900 font-semibold w-2/5">Задача</th> {/* Определили ширину */}
+                  <th className="py-4 px-4 text-left text-gray-900 font-semibold w-3/10">Экономия времени</th>
+                  <th className="py-4 px-4 text-left text-gray-900 font-semibold w-3/10">Экономия в ₽</th>
                 </tr>
               </thead>
               <tbody>
@@ -109,7 +109,7 @@ const TimeComparison: React.FC = () => {
             </table>
           </div>
           
-          <div className="mt-4 text-gray-500 text-sm">
+          <div className="mt-4 text-gray-500 text-sm text-center">
             <p>* При средней стоимости часа 5000₽</p>
           </div>
         </div>
