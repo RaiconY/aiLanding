@@ -2,20 +2,39 @@ import React from 'react';
 
 const FullWidthImage: React.FC = () => {
   return (
-    <section className="relative w-full h-screen">
-      <img
-        src="https://egftuzzffkkyebeatghv.supabase.co/storage/v1/object/sign/images/ChatGPT%20Interface.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InN0b3JhZ2UtdXJsLXNpZ25pbmcta2V5X2QwZWQyZjQyLWU3OGEtNDk0MS05ZjEwLWMwODMwYjU1ODQ0MCJ9.eyJ1cmwiOiJpbWFnZXMvQ2hhdEdQVCBJbnRlcmZhY2UucG5nIiwiaWF0IjoxNzQ2ODAxNzE2LCJleHAiOjE3NzgzMzc3MTZ9.Z8txhmHG9lf_-9-V2-3Z-VU0s0Z7CRYA99uqmPJVRiE"
-        alt="ChatGPT Interface"
-        className="w-full h-full object-cover"
-      />
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/50" />
-      <div className="absolute bottom-0 left-0 right-0 p-8 text-white text-center">
-        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">
-          Интерфейс нового поколения
-        </h2>
-        <p className="text-lg sm:text-xl md:text-2xl max-w-3xl mx-auto">
-          Познакомься с будущим технологий уже сегодня
-        </p>
+    <section className="py-20 px-4 sm:px-6 lg:px-8">
+      <div className="container mx-auto max-w-6xl">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+          <div className="relative">
+            <img
+              src="https://egftuzzffkkyebeatghv.supabase.co/storage/v1/object/sign/images/ChatGPT%20Interface.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InN0b3JhZ2UtdXJsLXNpZ25pbmcta2V5X2QwZWQyZjQyLWU3OGEtNDk0MS05ZjEwLWMwODMwYjU1ODQ0MCJ9.eyJ1cmwiOiJpbWFnZXMvQ2hhdEdQVCBJbnRlcmZhY2UucG5nIiwiaWF0IjoxNzQ2ODAxNzE2LCJleHAiOjE3NzgzMzc3MTZ9.Z8txhmHG9lf_-9-V2-3Z-VU0s0Z7CRYA99uqmPJVRiE"
+              alt="ChatGPT Interface"
+              className="w-full h-auto rounded-2xl shadow-lg transform hover:scale-105 transition-all duration-500"
+            />
+            <div className="absolute inset-0 rounded-2xl bg-gradient-to-b from-transparent via-transparent to-black/30" />
+          </div>
+          
+          <div className="space-y-6">
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">
+              Интерфейс нового поколения
+            </h2>
+            <p className="text-lg text-gray-700 leading-relaxed">
+              Познакомься с будущим технологий уже сегодня. ChatGPT предоставляет интуитивно понятный интерфейс, который делает взаимодействие с ИИ простым и эффективным.
+            </p>
+            <ul className="space-y-4">
+              {[
+                'Умные подсказки для более точных результатов',
+                'Контекстное обучение для персонализированных ответов',
+                'Мгновенная обратная связь и корректировки'
+              ].map((feature, index) => (
+                <li key={index} className="flex items-center gap-3">
+                  <span className="w-2 h-2 rounded-full bg-gradient-to-r from-[#E76832] to-[#FFC24B]" />
+                  <span className="text-gray-700">{feature}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
   );
