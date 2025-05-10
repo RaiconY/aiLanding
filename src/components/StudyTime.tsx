@@ -15,21 +15,16 @@ const StudyTime: React.FC = () => {
               className="absolute inset-0 bg-gradient-to-r from-[#E76832]/5 to-[#FFC24B]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
             />
             
-            {/* Иллюстрация единорога (плейсхолдер) */}
-            <div className="flex-shrink-0 w-24 h-24 md:w-32 md:h-32 md:mr-8 mb-4 md:mb-0 relative z-10">
-              {/* Здесь будет изображение единорога */}
-              <div className="w-full h-full rounded-lg overflow-hidden">
-                <img 
-                  src="https://egftuzzffkkyebeatghv.supabase.co/storage/v1/object/sign/images/Unicorn.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InN0b3JhZ2UtdXJsLXNpZ25pbmcta2V5X2QwZWQyZjQyLWU3OGEtNDk0MS05ZjEwLWMwODMwYjU1ODQ0MCJ9.eyJ1cmwiOiJpbWFnZXMvVW5pY29ybi5wbmciLCJpYXQiOjE3NDY4ODkzNjYsImV4cCI6MTc3ODQyNTM2Nn0.PURxxwVERrE2fVynAd5fOG-F2KPwWJh7FOqIw654Y7U" 
-                  alt="Единорог" 
-                  className="w-full h-full object-contain transform group-hover:scale-110 transition-transform duration-500"
-                />
-                {/* Если изображение недоступно, можно использовать этот плейсхолдер */}
-                {/* <div className="w-full h-full bg-gradient-to-r from-[#E76832]/20 to-[#FFC24B]/20 flex items-center justify-center">
-                  <span className="text-xs text-gray-500">Изображение единорога</span>
-                </div> */}
-              </div>
-            </div>
+            {/* Иллюстрация единорога (плейсхолдер) - уменьшенный размер */}
+<div className="flex-shrink-0 w-20 h-20 md:w-24 md:h-24 md:mr-8 mb-4 md:mb-0 relative z-10">
+  <div className="w-full h-full rounded-lg overflow-hidden">
+    <img 
+      src="https://egftuzzffkkyebeatghv.supabase.co/storage/v1/object/sign/images/Unicorn.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InN0b3JhZ2UtdXJsLXNpZ25pbmcta2V5X2QwZWQyZjQyLWU3OGEtNDk0MS05ZjEwLWMwODMwYjU1ODQ0MCJ9.eyJ1cmwiOiJpbWFnZXMvVW5pY29ybi5wbmciLCJpYXQiOjE3NDY4ODk1MDMsImV4cCI6MTc3ODQyNTUwM30.4poHwr_voRmjtWqVXY9Nk85eqABPudR8U2PVNl1zQEg" 
+      alt="Единорог" 
+      className="w-full h-full object-contain transform group-hover:scale-110 transition-transform duration-500"
+    />
+  </div>
+</div>
             
             {/* Content */}
             <div className="relative flex-1 text-center md:text-left">
