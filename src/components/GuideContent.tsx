@@ -105,22 +105,22 @@ const GuideContent: React.FC = () => {
                 </h3>
               </div>
               
-              <div className="pl-14 sm:pl-24">
-                {chapter.topics.length > 0 ? (
-                  <ul className="space-y-2.5 sm:space-y-4">
-                    {chapter.topics.map((topic, i) => (
-                      <li key={i} className="flex items-start group">
-                        <span className="mr-2.5 mt-1.5 w-1.5 h-1.5 rounded-full bg-gradient-to-r from-[#E76832] to-[#FFC24B] flex-shrink-0 group-hover:scale-150 transition-transform duration-300" />
-                        <span className="text-sm sm:text-base text-gray-700 leading-tight sm:leading-relaxed">{topic}</span>
-                      </li>
-                    ))}
-                  </ul>
-                ) : (
-                  <p className="text-sm sm:text-lg text-gray-600 italic">
-                    Специальный раздел с готовыми промптами для разных задач
-                  </p>
-                )}
-              </div>
+              <div className="pl-4 sm:pl-12 md:pl-24">
+  {chapter.topics.length > 0 ? (
+    <ul className="space-y-2.5 sm:space-y-4">
+      {chapter.topics.map((topic, i) => (
+        <li key={i} className="flex items-start group">
+          <span className="mr-2 mt-1.5 w-1.5 h-1.5 rounded-full bg-gradient-to-r from-[#E76832] to-[#FFC24B] flex-shrink-0 group-hover:scale-150 transition-transform duration-300" />
+          <span className="text-sm sm:text-base text-gray-700 leading-tight sm:leading-relaxed">{topic}</span>
+        </li>
+      ))}
+    </ul>
+  ) : (
+    <p className="text-sm sm:text-lg text-gray-600 italic">
+      Специальный раздел с готовыми промптами для разных задач
+    </p>
+  )}
+</div>
             </div>
           ))}
         </div>
