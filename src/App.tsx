@@ -30,12 +30,12 @@ function App() {
       <AIDisclosure />
       <Testimonials />
       <Pricing />
-      
+      <FAQ />
       <WhyGuide />
       <WhyAuthorCreated />
       <AboutAuthor />
     
-      <FAQ />
+      
       <Footer />
     </div>
   );
