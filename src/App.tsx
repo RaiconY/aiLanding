@@ -1,5 +1,6 @@
 import React from 'react';
 import Hero from './components/Hero';
+import StudyTime from './components/StudyTime';
 import Stats from './components/Stats';
 import ForWho from './components/ForWho';
 import Benefits from './components/Benefits';
@@ -19,6 +20,7 @@ function App() {
   return (
     <div className="min-h-screen">
       <Hero />
+      <StudyTime />
       <Stats />
       <ForWho />
       <Benefits />
