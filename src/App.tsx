@@ -34,8 +34,6 @@ function App() {
       <WhyGuide />
       <WhyAuthorCreated />
       <AboutAuthor />
-    
-      
       <Footer />
     </div>
   );
