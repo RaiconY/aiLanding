@@ -27,10 +27,10 @@ function App() {
       <ForWho />
       <Benefits />
       <GuideContent />
-      <FullWidthImage imageUrl="https://egftuzzffkkyebeatghv.supabase.co/storage/v1/object/sign/images/Screens%20with%20rabbit%20Robot.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InN0b3JhZ2UtdXJsLXNpZ25pbmcta2V5X2QwZWQyZjQyLWU3OGEtNDk0MS05ZjEwLWMwODMwYjU1ODQ0MCJ9.eyJ1cmwiOiJpbWFnZXMvU2NyZWVucyB3aXRoIHJhYmJpdCBSb2JvdC5wbmciLCJpYXQiOjE3NDY5MDQ4MzUsImV4cCI6MTc3ODQ0MDgzNX0.Nyq4MDwTW3kQkVDQViFHCmIoHWa8RIAlQuADCY5mqvg" />
+      <FullWidthImage imageUrl="https://egftuzzffkkyebeatghv.supabase.co/storage/v1/object/sign/images/Screens%20with%20rabbit%20Robot.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InN0b3JhZ2UtdXJsLXNpZ25pbmcta2V5X2QwZWQyZjQyLWU3OGEtNDk0MS05ZjEwLWMwODMwYjU1ODQ0MCJ9.eyJ1cmwiOiJpbWFnZXMvU2NyZWVucyB3aXRoIHJhYmJpdCBSb2JvdC5wbmciLCJpYXQiOjE3NDY5MDQ5ODYsImV4cCI6MTc3ODQ0MDk4Nn0.bPrkb9PEv1FjXfxWpYOQuj0f4ss6NPCFAU7OsGcVNLw" />
       <TimeComparison />
       <WhyChatGPT />
-      <FullWidthImage imageUrl="https://egftuzzffkkyebeatghv.supabase.co/storage/v1/object/sign/images/Screens%20with%20chapters.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InN0b3JhZ2UtdXJsLXNpZ25pbmcta2V5X2QwZWQyZjQyLWU3OGEtNDk0MS05ZjEwLWMwODMwYjU1ODQ0MCJ9.eyJ1cmwiOiJpbWFnZXMvU2NyZWVucyB3aXRoIGNoYXB0ZXJzLnBuZyIsImlhdCI6MTc0NjkwNDc5NywiZXhwIjoxNzc4NDQwNzk3fQ.jb81RZj9D-7VCtgxuJPBRjMqPceeRZvlLzkwBZuNxQY" />
+      <FullWidthImage imageUrl="https://egftuzzffkkyebeatghv.supabase.co/storage/v1/object/sign/images/Spiral%20Chapters.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InN0b3JhZ2UtdXJsLXNpZ25pbmcta2V5X2QwZWQyZjQyLWU3OGEtNDk0MS05ZjEwLWMwODMwYjU1ODQ0MCJ9.eyJ1cmwiOiJpbWFnZXMvU3BpcmFsIENoYXB0ZXJzLnBuZyIsImlhdCI6MTc0NjkwNTAwNiwiZXhwIjoxNzc4NDQxMDA2fQ.xWuNxffUcNXwjW_CxPmftOQwxUTNUB8mCRAWzZ2p1hY" />
       <AIDisclosure />
       {/*<Testimonials /> */}
       <Pricing />
