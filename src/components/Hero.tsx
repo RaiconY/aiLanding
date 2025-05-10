@@ -14,38 +14,37 @@ const Hero: React.FC = () => {
             </div>
             
             <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold leading-tight text-gray-900">
-  Увеличь свою продуктивность в&nbsp;3&nbsp;раза&nbsp;с&nbsp;ChatGPT
-</h1>
+              Увеличь свою продуктивность в&nbsp;3&nbsp;раза&nbsp;с&nbsp;ChatGPT
+            </h1>
             
             <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-700 leading-relaxed">
               Практическое руководство для тех, кто хочет внедрить ИИ в повседневную работу и получать реальные результаты
             </p>
             
-            {/* Статистические блоки */}
             <div className="grid grid-cols-3 gap-2 sm:gap-4 pt-2">
-  {[
-    { number: "+50", text: "шаблонов для экономии 2+ часов в день" },
-    { number: "+20", text: "промптов заменяющих работу дизайнера" },
-    { number: "+10", text: "готовых AI-ассистентов для автоматизации" }
-  ].map((stat, index) => (
-    <div 
-      key={index} 
-      className="bg-white/90 rounded-lg p-2 sm:p-3 shadow-sm"
-    >
-      <span 
-        className="text-lg sm:text-xl font-semibold"
-        style={{ 
-          background: 'linear-gradient(135deg, #E76832, #FFC24B)', 
-          WebkitBackgroundClip: 'text', 
-          WebkitTextFillColor: 'transparent'
-        }}
-      >
-        {stat.number}
-      </span>
-      <div className="text-xs sm:text-sm text-gray-600">{stat.text}</div>
-    </div>
-  ))}
-</div>
+              {[
+                { number: "+50", text: "шаблонов для экономии 2+ часов в день" },
+                { number: "+20", text: "промптов заменяющих работу дизайнера" },
+                { number: "+10", text: "готовых AI-ассистентов для автоматизации" }
+              ].map((stat, index) => (
+                <div 
+                  key={index} 
+                  className="bg-white/90 rounded-lg p-2 sm:p-3 shadow-sm"
+                >
+                  <span 
+                    className="text-lg sm:text-xl font-semibold"
+                    style={{ 
+                      background: 'linear-gradient(135deg, #E76832, #FFC24B)', 
+                      WebkitBackgroundClip: 'text', 
+                      WebkitTextFillColor: 'transparent'
+                    }}
+                  >
+                    {stat.number}
+                  </span>
+                  <div className="text-xs sm:text-sm text-gray-600">{stat.text}</div>
+                </div>
+              ))}
+            </div>
             
             <div className="pt-4">
               <CTAButton />
@@ -57,6 +56,7 @@ const Hero: React.FC = () => {
               <img 
                 src="https://egftuzzffkkyebeatghv.supabase.co/storage/v1/object/sign/images/Spiral%20Chapters.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InN0b3JhZ2UtdXJsLXNpZ25pbmcta2V5X2QwZWQyZjQyLWU3OGEtNDk0MS05ZjEwLWMwODMwYjU1ODQ0MCJ9.eyJ1cmwiOiJpbWFnZXMvU3BpcmFsIENoYXB0ZXJzLnBuZyIsImlhdCI6MTc0NjgwMTA5NCwiZXhwIjoxNzc4MzM3MDk0fQ.1u992xTmfzKWeyuOxWjvLsKaBBtb39r03uEIT7Y50Do"
                 alt="AI Assistant Interface"
+                loading="eager" // Keep eager loading for hero image
                 className="w-full h-auto object-contain px-4 sm:px-0"
               />
             </div>

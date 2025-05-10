@@ -10,28 +10,26 @@ const StudyTime: React.FC = () => {
           <div 
             className="bg-white rounded-xl px-6 py-5 flex flex-col md:flex-row items-center relative overflow-hidden"
           >
-            {/* Gradient overlay on hover */}
             <div 
               className="absolute inset-0 bg-gradient-to-r from-[#E76832]/5 to-[#FFC24B]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
             />
             
-            {/* Иллюстрация единорога (плейсхолдер) - уменьшенный размер */}
-<div className="flex-shrink-0 w-20 h-20 md:w-24 md:h-24 md:mr-8 mb-4 md:mb-0 relative z-10">
-  <div className="w-full h-full rounded-lg overflow-hidden">
-    <img 
-      src="https://egftuzzffkkyebeatghv.supabase.co/storage/v1/object/sign/images/Unicorn.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InN0b3JhZ2UtdXJsLXNpZ25pbmcta2V5X2QwZWQyZjQyLWU3OGEtNDk0MS05ZjEwLWMwODMwYjU1ODQ0MCJ9.eyJ1cmwiOiJpbWFnZXMvVW5pY29ybi5wbmciLCJpYXQiOjE3NDY4ODk1MDMsImV4cCI6MTc3ODQyNTUwM30.4poHwr_voRmjtWqVXY9Nk85eqABPudR8U2PVNl1zQEg" 
-      alt="Единорог" 
-      className="w-full h-full object-contain transform group-hover:scale-110 transition-transform duration-500"
-    />
-  </div>
-</div>
+            <div className="flex-shrink-0 w-20 h-20 md:w-24 md:h-24 md:mr-8 mb-4 md:mb-0 relative z-10">
+              <div className="w-full h-full rounded-lg overflow-hidden">
+                <img 
+                  src="https://egftuzzffkkyebeatghv.supabase.co/storage/v1/object/sign/images/Unicorn.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InN0b3JhZ2UtdXJsLXNpZ25pbmcta2V5X2QwZWQyZjQyLWU3OGEtNDk0MS05ZjEwLWMwODMwYjU1ODQ0MCJ9.eyJ1cmwiOiJpbWFnZXMvVW5pY29ybi5wbmciLCJpYXQiOjE3NDY4ODk1MDMsImV4cCI6MTc3ODQyNTUwM30.4poHwr_voRmjtWqVXY9Nk85eqABPudR8U2PVNl1zQEg" 
+                  alt="Единорог" 
+                  loading="lazy"
+                  className="w-full h-full object-contain transform group-hover:scale-110 transition-transform duration-500"
+                />
+              </div>
+            </div>
             
-            {/* Content */}
             <div className="relative flex-1 text-center md:text-left">
               <h3
                 className="text-lg sm:text-xl font-semibold mb-2 bg-gradient-to-r from-[#E76832] to-[#FFC24B] bg-clip-text text-transparent transform group-hover:scale-[1.02] transition-transform duration-300"
               >
-               Этот гайд сэкономит тебе месяцы самостоятельного изучения
+                Этот гайд сэкономит тебе месяцы самостоятельного изучения
               </h3>
               <p 
                 className="text-gray-700 text-base transform group-hover:translate-y-[-2px] transition-transform duration-300"
