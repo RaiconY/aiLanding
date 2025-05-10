@@ -66,43 +66,48 @@ const TimeComparison: React.FC = () => {
       <div className="container mx-auto max-w-6xl">
         <SectionTitle title="Сколько времени мне экономит ChatGPT" />
         
-        <div className="bg-white rounded-2xl p-4 md:p-8 shadow-lg">
-          {/* Заголовок */}
-          <div className="flex items-center font-semibold text-gray-900 mb-4 px-4 py-3 bg-gray-50 rounded">
-            <div className="w-4/12 sm:w-5/12 text-left">Задача</div>
-            <div className="w-4/12 sm:w-4/12 text-center">Экономия времени</div>
-            <div className="w-4/12 sm:w-3/12 text-right">Экономия в ₽</div>
+        <div className="bg-white rounded-2xl p-4 md:p-8 shadow-lg overflow-x-auto">
+          <div className="min-w-[768px]">
+            <table className="w-full">
+              <thead>
+                <tr className="bg-gray-50">
+                  <th className="py-4 px-4 text-left text-gray-900 font-semibold">Задача</th>
+                  <th className="py-4 px-4 text-left text-gray-900 font-semibold">Экономия времени</th>
+                  <th className="py-4 px-4 text-left text-gray-900 font-semibold">Экономия в ₽</th>
+                </tr>
+              </thead>
+              <tbody>
+                {comparisons.map((row, index) => (
+                  <tr 
+                    key={index}
+                    className={index % 2 === 0 ? 'bg-gray-50' : ''}
+                  >
+                    <td className="py-4 px-4 text-gray-700">{row.task}</td>
+                    <td 
+                      className="py-4 px-4 font-medium"
+                      style={{ 
+                        background: 'linear-gradient(135deg, #E76832 0%, #FFC24B 100%)',
+                        WebkitBackgroundClip: 'text',
+                        WebkitTextFillColor: 'transparent'
+                      }}
+                    >
+                      {row.timeSaved}
+                    </td>
+                    <td 
+                      className="py-4 px-4 font-medium"
+                      style={{ 
+                        background: 'linear-gradient(135deg, #E76832 0%, #FFC24B 100%)',
+                        WebkitBackgroundClip: 'text',
+                        WebkitTextFillColor: 'transparent'
+                      }}
+                    >
+                      {row.moneySaved}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
           </div>
-          
-          {/* Строки таблицы */}
-          {comparisons.map((row, index) => (
-            <div 
-              key={index}
-              className={`flex items-center ${index % 2 === 0 ? 'bg-gray-50' : ''} mb-2 rounded px-4 py-3`}
-            >
-              <div className="w-4/12 sm:w-5/12 text-left text-gray-700">{row.task}</div>
-              <div
-                className="w-4/12 sm:w-4/12 text-center font-medium"
-                style={{ 
-                  background: 'linear-gradient(135deg, #E76832 0%, #FFC24B 100%)',
-                  WebkitBackgroundClip: 'text',
-                  WebkitTextFillColor: 'transparent'
-                }}
-              >
-                {row.timeSaved}
-              </div>
-              <div
-                className="w-4/12 sm:w-3/12 text-right font-medium"
-                style={{ 
-                  background: 'linear-gradient(135deg, #E76832 0%, #FFC24B 100%)',
-                  WebkitBackgroundClip: 'text',
-                  WebkitTextFillColor: 'transparent'
-                }}
-              >
-                {row.moneySaved}
-              </div>
-            </div>
-          ))}
           
           <div className="mt-4 text-gray-500 text-sm">
             <p>* При средней стоимости часа 5000₽</p>
