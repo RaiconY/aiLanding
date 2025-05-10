@@ -103,7 +103,7 @@ const TimeComparison: React.FC = () => {
             </table>
           </div>
           
-          <div className="mt-6 text-left text-gray-500 text-sm">
+          <div className="mt-6 text-center text-gray-500 text-sm">
             * При средней стоимости часа 5000₽
           </div>
         </div>
