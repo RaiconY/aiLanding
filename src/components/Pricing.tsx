@@ -11,7 +11,7 @@ const Pricing: React.FC = () => {
           <div className="max-w-2xl mx-auto space-y-8">
             <div className="text-center space-y-6">
               <p className="text-xl text-gray-900">
-                Стартовая цена гайда — <span className="font-semibold">3990₽</span>
+                Стартовая цена гайда — <span className="font-semibold">2990₽</span>
               </p>
               <p className="text-lg text-gray-700">
                 После добавления нового контента цена вырастет до 6990₽
