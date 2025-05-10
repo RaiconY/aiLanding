@@ -40,8 +40,8 @@ const Pricing: React.FC = () => {
                 Получить гайд сейчас
               </a>
               
-              {/* Мелкий текст под кнопкой */}
-              <p className="mt-4 text-sm text-gray-500 max-w-md text-center">
+              {/* Мелкий текст под кнопкой с увеличенной шириной */}
+              <p className="mt-4 text-sm text-gray-500 max-w-xl w-full px-4 sm:px-8 text-center">
                 Кнопка ведёт в Telegram. Напишите мне сообщение о покупке гайда, я вышлю ссылку на оплату и доступ после подтверждения.
               </p>
             </div>
