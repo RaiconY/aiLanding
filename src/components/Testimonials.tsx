@@ -3,7 +3,7 @@ import { MessageSquare, Star } from 'lucide-react';
 import SectionTitle from './SectionTitle';
 
 const Testimonials: React.FC = () => {
-  const testimonials = {
+  const Testimonials = {
   source: "voiceMessage",
   author: "Не указано",
   highlights: [
