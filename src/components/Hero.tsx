@@ -13,8 +13,8 @@ const Hero: React.FC = () => {
               <span className="font-semibold text-sm sm:text-base" style={{ color: '#E76832' }}>Гайд по ChatGPT</span>
             </div>
             
-            <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold leading-tight text-gray-900">
-              Увеличь свою продуктивность в&nbsp;3&nbsp;раза&nbsp;с&nbsp;ChatGPT
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-gray-900">
+              Увеличь свою продуктивность в&nbsp;3&nbsp;раза с&nbsp;ChatGPT
             </h1>
             
             <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-700 leading-relaxed">
@@ -29,10 +29,10 @@ const Hero: React.FC = () => {
               ].map((stat, index) => (
                 <div 
                   key={index} 
-                  className="bg-white/90 rounded-lg p-2 sm:p-3 shadow-sm"
+                  className="bg-white/90 rounded-lg p-2 sm:p-3 shadow-sm hover:shadow-md transition-all duration-300"
                 >
                   <span 
-                    className="text-lg sm:text-xl font-semibold"
+                    className="text-lg sm:text-xl font-semibold block mb-1"
                     style={{ 
                       background: 'linear-gradient(135deg, #E76832, #FFC24B)', 
                       WebkitBackgroundClip: 'text', 
