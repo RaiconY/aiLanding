@@ -24,10 +24,10 @@ const Pricing: React.FC = () => {
             <div className="flex flex-col items-center pt-8 border-t border-gray-100">
               <div className="flex items-center gap-6 mb-8">
                 <span className="text-3xl font-bold text-gray-400 line-through">
-                  6 990 ₽
+                  5 990 ₽
                 </span>
                 <span className="text-4xl font-bold bg-gradient-to-r from-[#E76832] to-[#FFC24B] bg-clip-text text-transparent">
-                  3 990 ₽
+                  2 990 ₽
                 </span>
               </div>
 
