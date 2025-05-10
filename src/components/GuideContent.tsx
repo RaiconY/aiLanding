@@ -89,7 +89,7 @@ const GuideContent: React.FC = () => {
               key={index} 
               className="bg-white/80 backdrop-blur-sm rounded-lg sm:rounded-2xl p-4 sm:p-6 shadow-md hover:shadow-lg transition-all duration-300 group"
             >
-              <div className="flex items-start gap-3 sm:gap-4 mb-3 sm:mb-4">
+              <div className="flex items-start gap-3 sm:gap-4">
                 <div 
                   className="w-8 h-8 sm:w-10 sm:h-10 rounded-lg flex items-center justify-center bg-gradient-to-r from-[#E76832] to-[#FFC24B] p-[2px] transform group-hover:rotate-12 transition-all duration-500 flex-shrink-0"
                 >
@@ -99,26 +99,26 @@ const GuideContent: React.FC = () => {
                     </span>
                   </div>
                 </div>
-                <h3 className="text-base sm:text-lg font-semibold text-gray-900 pt-1">
-                  {chapter.title}
-                </h3>
-              </div>
-              
-              <div className="pl-11 sm:pl-14">
-                {chapter.topics.length > 0 ? (
-                  <ul className="space-y-2.5 sm:space-y-3">
-                    {chapter.topics.map((topic, i) => (
-                      <li key={i} className="flex items-start group">
-                        <span className="mr-2 mt-1.5 w-1.5 h-1.5 rounded-full bg-gradient-to-r from-[#E76832] to-[#FFC24B] flex-shrink-0 group-hover:scale-150 transition-transform duration-300" />
-                        <span className="text-sm sm:text-base text-gray-700 leading-snug sm:leading-relaxed">{topic}</span>
-                      </li>
-                    ))}
-                  </ul>
-                ) : (
-                  <p className="text-sm sm:text-base text-gray-600 italic">
-                    Специальный раздел с готовыми промптами для разных задач
-                  </p>
-                )}
+                <div className="flex-1">
+                  <h3 className="text-base sm:text-lg font-semibold text-gray-900 mb-3">
+                    {chapter.title}
+                  </h3>
+                  
+                  {chapter.topics.length > 0 ? (
+                    <ul className="space-y-2.5 sm:space-y-3">
+                      {chapter.topics.map((topic, i) => (
+                        <li key={i} className="flex items-start group">
+                          <span className="mr-2 mt-1.5 w-1.5 h-1.5 rounded-full bg-gradient-to-r from-[#E76832] to-[#FFC24B] flex-shrink-0 group-hover:scale-150 transition-transform duration-300" />
+                          <span className="text-sm sm:text-base text-gray-700 leading-snug sm:leading-relaxed">{topic}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  ) : (
+                    <p className="text-sm sm:text-base text-gray-600 italic">
+                      Специальный раздел с готовыми промптами для разных задач
+                    </p>
+                  )}
+                </div>
               </div>
             </div>
           ))}
