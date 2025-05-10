@@ -1,5 +1,4 @@
 import React from 'react';
-import { BookOpen, Clock } from 'lucide-react'; // импортируем подходящие иконки
 
 const StudyTime: React.FC = () => {
   return (
@@ -16,19 +15,19 @@ const StudyTime: React.FC = () => {
               className="absolute inset-0 bg-gradient-to-r from-[#E76832]/5 to-[#FFC24B]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
             />
             
-            {/* Illustration on left */}
-            <div className="flex-shrink-0 w-24 h-24 md:mr-8 mb-4 md:mb-0 relative z-10">
-              <div className="w-full h-full bg-gradient-to-r from-[#E76832]/10 to-[#FFC24B]/10 rounded-full flex items-center justify-center">
-                <div className="w-16 h-16 rounded-full bg-gradient-to-r from-[#E76832]/20 to-[#FFC24B]/20 flex items-center justify-center">
-                  <Clock 
-                    className="w-10 h-10 transform group-hover:rotate-12 transition-transform duration-500" 
-                    style={{ 
-                      background: 'linear-gradient(135deg, #E76832 0%, #FFC24B 100%)',
-                      WebkitBackgroundClip: 'text',
-                      WebkitTextFillColor: 'transparent'
-                    }} 
-                  />
-                </div>
+            {/* Иллюстрация единорога (плейсхолдер) */}
+            <div className="flex-shrink-0 w-24 h-24 md:w-32 md:h-32 md:mr-8 mb-4 md:mb-0 relative z-10">
+              {/* Здесь будет изображение единорога */}
+              <div className="w-full h-full rounded-lg overflow-hidden">
+                <img 
+                  src="/path/to/unicorn-image.png" 
+                  alt="Единорог" 
+                  className="w-full h-full object-contain transform group-hover:scale-110 transition-transform duration-500"
+                />
+                {/* Если изображение недоступно, можно использовать этот плейсхолдер */}
+                {/* <div className="w-full h-full bg-gradient-to-r from-[#E76832]/20 to-[#FFC24B]/20 flex items-center justify-center">
+                  <span className="text-xs text-gray-500">Изображение единорога</span>
+                </div> */}
               </div>
             </div>
             
