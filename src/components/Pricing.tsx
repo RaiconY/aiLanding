@@ -37,7 +37,7 @@ const Pricing: React.FC = () => {
                 rel="noopener noreferrer"
                 className="bg-gradient-to-r from-[#E76832] to-[#FFC24B] text-white font-medium px-8 py-4 rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 text-lg"
               >
-                Получить гайд сейчас
+                Получить гайд
               </a>
               
               {/* Мелкий текст под кнопкой с увеличенной шириной */}
