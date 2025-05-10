@@ -21,6 +21,7 @@ function App() {
   return (
     <div className="min-h-screen">
       <Hero />
+      <FullWidthImage />
       <StudyTime />
       {/* <Stats />  */}
       <ForWho />
