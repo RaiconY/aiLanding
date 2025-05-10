@@ -21,7 +21,7 @@ function App() {
     <div className="min-h-screen">
       <Hero />
       <StudyTime />
-      <Stats />
+      {/* <Stats />  */}
       <ForWho />
       <Benefits />
       <GuideContent />
