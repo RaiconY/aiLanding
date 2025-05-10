@@ -20,7 +20,7 @@ const StudyTime: React.FC = () => {
               {/* Здесь будет изображение единорога */}
               <div className="w-full h-full rounded-lg overflow-hidden">
                 <img 
-                  src="/path/to/unicorn-image.png" 
+                  src="https://egftuzzffkkyebeatghv.supabase.co/storage/v1/object/sign/images/Unicorn.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InN0b3JhZ2UtdXJsLXNpZ25pbmcta2V5X2QwZWQyZjQyLWU3OGEtNDk0MS05ZjEwLWMwODMwYjU1ODQ0MCJ9.eyJ1cmwiOiJpbWFnZXMvVW5pY29ybi5wbmciLCJpYXQiOjE3NDY4ODkzNjYsImV4cCI6MTc3ODQyNTM2Nn0.PURxxwVERrE2fVynAd5fOG-F2KPwWJh7FOqIw654Y7U" 
                   alt="Единорог" 
                   className="w-full h-full object-contain transform group-hover:scale-110 transition-transform duration-500"
                 />
