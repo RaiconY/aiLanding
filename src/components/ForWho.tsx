@@ -1,23 +1,24 @@
 import React from 'react';
 import { Lightbulb, Wrench, Users } from 'lucide-react';
 import SectionTitle from './SectionTitle';
+import CTAButton from './CTAButton'; // Импортируем кнопку CTA
 
 const ForWho: React.FC = () => {
   const categories = [
     {
       title: 'Знакомишься с ИИ',
       description: 'Если уже слышал про ChatGPT, но не знаешь, как эффективно использовать его в работе и жизни',
-      result: 'За неделю научитесь решать с помощью ChatGPT 80% повседневных задач',
+      result: 'За неделю научитесь решать с помощью ChatGPT 80% повседневных задач'
     },
     {
       title: 'Для экспертов',
       description: 'Если хочешь автоматизировать рутину и усилить свои возможности в работе',
-      result: 'Увеличьте свою продуктивность в 2-3 раза с продвинутыми техниками',
+      result: 'Увеличьте свою продуктивность в 2-3 раза с продвинутыми техниками'
     },
     {
       title: 'Для предпринимателей',
       description: 'Если работаешь один или с небольшой командой и хочешь делать больше без найма новых людей',
-      result: 'Автоматизируйте до 40% рутинных задач в вашем бизнесе',
+      result: 'Автоматизируйте до 40% рутинных задач в вашем бизнесе'
     }
   ];
 
@@ -49,11 +50,11 @@ const ForWho: React.FC = () => {
       <div className="container mx-auto max-w-6xl relative z-10">
         <SectionTitle title="Для кого этот гайд" />
         
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-10">
           {categories.map((category, index) => (
             <div 
               key={index} 
-              className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 transition-all duration-500 transform hover:scale-[1.02] hover:shadow-2xl shadow-lg animate-scale-in group relative"
+              className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 transition-all duration-500 transform hover:scale-[1.02] hover:shadow-2xl shadow-lg animate-scale-in group relative flex flex-col h-full"
               style={{ animationDelay: `${index * 150}ms` }}
             >
               {/* Gradient border on hover */}
@@ -61,7 +62,7 @@ const ForWho: React.FC = () => {
                 <div className="h-full w-full bg-white/80 backdrop-blur-sm rounded-2xl"></div>
               </div>
 
-              <div className="relative flex flex-col items-center text-center gap-6">
+              <div className="relative flex flex-col items-center text-center gap-6 h-full">
                 <div className="flex-shrink-0">
                   <div 
                     className="w-16 h-16 rounded-2xl flex items-center justify-center transform group-hover:rotate-12 transition-all duration-500 bg-gradient-to-r from-[#E76832] to-[#FFC24B] p-[2px]"
@@ -72,27 +73,27 @@ const ForWho: React.FC = () => {
                   </div>
                 </div>
                 
-                <div>
+                <div className="flex-1 flex flex-col h-full">
                   <h3 className="text-2xl font-semibold text-gray-900 mb-4">
                     {category.title}
                   </h3>
-                  <p className="text-gray-700 text-lg leading-relaxed mb-6">
+                  <p className="text-gray-700 text-lg leading-relaxed mb-6 flex-1">
                     {category.description}
                   </p>
-                  <div className="bg-gradient-to-r from-orange-50 to-amber-50 rounded-xl p-5 mb-6 transform group-hover:scale-105 transition-transform duration-300">
+                  <div className="bg-gradient-to-r from-orange-50 to-amber-50 rounded-xl p-5 transform group-hover:scale-105 transition-transform duration-300">
                     <p className="text-gray-800 font-medium text-lg">
                       {category.result}
                     </p>
                   </div>
-                  <button 
-                    className="inline-flex items-center text-[#E76832] hover:text-[#FFC24B] transition-all duration-300 font-medium group-hover:translate-x-2 transform text-lg"
-                  >
-                    {category.cta}
-                  </button>
                 </div>
               </div>
             </div>
           ))}
+        </div>
+        
+        {/* Общая CTA-кнопка внизу секции */}
+        <div className="flex justify-center mt-10">
+          <CTAButton />
         </div>
       </div>
     </section>
