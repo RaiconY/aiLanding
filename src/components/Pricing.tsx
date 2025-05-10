@@ -31,11 +31,21 @@ const Pricing: React.FC = () => {
                 </span>
               </div>
 
-              <button 
+              <a 
+                href="https://t.me/Ilya_Plv" 
+                target="_blank"
+                rel="noopener noreferrer"
                 className="bg-gradient-to-r from-[#E76832] to-[#FFC24B] text-white font-medium px-8 py-4 rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 text-lg"
               >
                 Получить гайд сейчас
-              </button>
+              </a>
+              
+              {/* Новый блок с пояснением */}
+              <div className="mt-6 p-4 bg-gray-50 rounded-xl max-w-lg text-center">
+                <p className="text-gray-700">
+                  Я еще не успел автоматизировать процесс покупки. Кнопка переведет вас в чат со мной — напишите, что хотите получить гайд, и я вышлю ссылку на оплату в личку, а затем гайд.
+                </p>
+              </div>
             </div>
           </div>
         </div>
