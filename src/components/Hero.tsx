@@ -23,7 +23,7 @@ const Hero: React.FC = () => {
             
             <div className="grid grid-cols-3 gap-2 sm:gap-4 pt-2">
               {[
-                { number: "+50", text: "шаблонов для экономии 2+ часов вс&nbsp;день" },
+                { number: "+50", text: "шаблонов для экономии 2+ часов в день" },
                 { number: "+20", text: "промптов заменяющих работу дизайнера" },
                 { number: "+10", text: "готовых AI-ассистентов для автоматизации" }
               ].map((stat, index) => (
