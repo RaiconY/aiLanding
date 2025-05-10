@@ -21,6 +21,32 @@ const Hero: React.FC = () => {
               Практическое руководство для тех, кто хочет внедрить ИИ в повседневную работу и получать реальные результаты
             </p>
             
+            {/* Статистические блоки */}
+            <div className="grid grid-cols-3 gap-2 sm:gap-4 pt-2">
+              {[
+                { number: "+50", text: "готовых промптов" },
+                { number: "+20", text: "промптов для создания картинок" },
+                { number: "+10", text: "GPTs под ваши задачи" }
+              ].map((stat, index) => (
+                <div 
+                  key={index} 
+                  className="bg-white/90 rounded-lg p-2 sm:p-3 shadow-sm"
+                >
+                  <span 
+                    className="text-lg sm:text-xl font-semibold"
+                    style={{ 
+                      background: 'linear-gradient(135deg, #E76832, #FFC24B)', 
+                      WebkitBackgroundClip: 'text', 
+                      WebkitTextFillColor: 'transparent'
+                    }}
+                  >
+                    {stat.number}
+                  </span>
+                  <div className="text-xs sm:text-sm text-gray-600">{stat.text}</div>
+                </div>
+              ))}
+            </div>
+            
             <div className="pt-4">
               <CTAButton />
             </div>
