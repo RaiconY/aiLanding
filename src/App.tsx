@@ -28,7 +28,7 @@ function App() {
       <TimeComparison />
       <WhyChatGPT />
       <AIDisclosure />
-      <Testimonials />
+      {/*<Testimonials /> */}
       <Pricing />
       <FAQ />
       <WhyAuthorCreated />
