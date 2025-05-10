@@ -1,3 +1,4 @@
+// Обновленный компонент CTAButton.tsx
 import React from 'react';
 
 const CTAButton: React.FC = () => {
@@ -16,7 +17,7 @@ const CTAButton: React.FC = () => {
     >
       Забрать гайд со скидкой
       <svg 
-        className="ml-2 w-3 h-3 sm:w-4 sm:h-4 group-hover:translate-x-1 transition-transform" 
+        className="ml-2 w-3 h-3 sm:w-4 sm:h-4 group-hover:translate-y-1 transition-transform" 
         fill="none" 
         stroke="currentColor" 
         viewBox="0 0 24 24" 
@@ -26,7 +27,7 @@ const CTAButton: React.FC = () => {
           strokeLinecap="round" 
           strokeLinejoin="round" 
           strokeWidth="2" 
-          d="M14 5l7 7m0 0l-7 7m7-7H3"
+          d="M19 14l-7 7m0 0l-7-7m7 7V3"
         />
       </svg>
     </button>
