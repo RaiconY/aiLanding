@@ -35,9 +35,7 @@ const Testimonials: React.FC = () => {
           {testimonials.map((testimonial, index) => (
             <div 
               key={index}
-              className={`group bg-white/80 backdrop-blur-sm rounded-2xl p-8 transition-all duration-500 hover:shadow-2xl relative ${
-                index === 0 ? 'md:col-span-3 lg:col-span-2' : ''
-              }`}
+              className="group bg-white/80 backdrop-blur-sm rounded-2xl p-8 transition-all duration-500 hover:shadow-2xl relative"
             >
               {/* Gradient border on hover */}
               <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-[#E76832] to-[#FFC24B] opacity-0 group-hover:opacity-100 transition-opacity duration-500" style={{ padding: '2px' }}>
