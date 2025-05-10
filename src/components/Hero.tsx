@@ -21,8 +21,16 @@ const Hero: React.FC = () => {
               Практическое руководство для тех, кто хочет внедрить ИИ в повседневную работу и получать реальные результаты
             </p>
             
-            <div className="pt-4">
+            <div className="flex flex-col items-center md:items-start gap-4">
               <CTAButton />
+              <div className="bg-white/80 backdrop-blur-sm rounded-xl px-4 py-3 max-w-md">
+                <p className="text-sm sm:text-base text-gray-800 font-medium">
+                  За неделю неспешного изучения гайда поймёте больше, чем за год самотыкания
+                </p>
+                <p className="text-xs sm:text-sm text-gray-600 italic mt-1">
+                  так как я изучил все за вас
+                </p>
+              </div>
             </div>
           </div>
           
