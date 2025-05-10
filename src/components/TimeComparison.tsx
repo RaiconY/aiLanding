@@ -1,14 +1,8 @@
 import React from 'react';
 import SectionTitle from './SectionTitle';
 
-interface TimeComparisonRow {
-  task: string;
-  timeSaved: string;
-  moneySaved: string;
-}
-
 const TimeComparison: React.FC = () => {
-  const comparisons: TimeComparisonRow[] = [
+  const comparisons = [
     {
       task: 'Написать e-mail',
       timeSaved: '15 минут быстрее',
@@ -63,28 +57,28 @@ const TimeComparison: React.FC = () => {
 
   return (
     <section className="py-12 md:py-20 px-4 sm:px-6 lg:px-8">
-      <div className="container mx-auto max-w-5xl"> {/* Уменьшили с max-w-6xl до max-w-5xl */}
+      <div className="container mx-auto max-w-5xl">
         <SectionTitle title="Сколько времени мне экономит ChatGPT" />
         
-        <div className="bg-white rounded-2xl p-4 md:p-8 shadow-lg overflow-x-auto">
-          <div className="max-w-3xl mx-auto"> {/* Добавили ограничение ширины таблицы */}
-            <table className="w-full">
+        <div className="bg-white rounded-2xl p-4 md:p-8 shadow-lg">
+          <div className="overflow-x-auto">
+            <table className="w-full border-collapse">
               <thead>
-                <tr className="bg-gray-50">
-                  <th className="py-4 px-4 text-left text-gray-900 font-semibold w-2/5">Задача</th> {/* Определили ширину */}
-                  <th className="py-4 px-4 text-left text-gray-900 font-semibold w-3/10">Экономия времени</th>
-                  <th className="py-4 px-4 text-left text-gray-900 font-semibold w-3/10">Экономия в ₽</th>
+                <tr className="border-b-2 border-gray-100">
+                  <th className="py-4 px-6 text-left text-gray-900 font-semibold">Задача</th>
+                  <th className="py-4 px-6 text-left text-gray-900 font-semibold">Экономия времени</th>
+                  <th className="py-4 px-6 text-left text-gray-900 font-semibold">Экономия в ₽</th>
                 </tr>
               </thead>
               <tbody>
                 {comparisons.map((row, index) => (
                   <tr 
                     key={index}
-                    className={index % 2 === 0 ? 'bg-gray-50' : ''}
+                    className="border-b border-gray-50 hover:bg-gray-50 transition-colors duration-150"
                   >
-                    <td className="py-4 px-4 text-gray-700">{row.task}</td>
+                    <td className="py-4 px-6 text-gray-700">{row.task}</td>
                     <td 
-                      className="py-4 px-4 font-medium"
+                      className="py-4 px-6 font-medium"
                       style={{ 
                         background: 'linear-gradient(135deg, #E76832 0%, #FFC24B 100%)',
                         WebkitBackgroundClip: 'text',
@@ -94,7 +88,7 @@ const TimeComparison: React.FC = () => {
                       {row.timeSaved}
                     </td>
                     <td 
-                      className="py-4 px-4 font-medium"
+                      className="py-4 px-6 font-medium"
                       style={{ 
                         background: 'linear-gradient(135deg, #E76832 0%, #FFC24B 100%)',
                         WebkitBackgroundClip: 'text',
@@ -109,8 +103,8 @@ const TimeComparison: React.FC = () => {
             </table>
           </div>
           
-          <div className="mt-4 text-gray-500 text-sm text-center">
-            <p>* При средней стоимости часа 5000₽</p>
+          <div className="mt-6 text-center text-gray-500 text-sm">
+            * При средней стоимости часа 5000₽
           </div>
         </div>
       </div>
