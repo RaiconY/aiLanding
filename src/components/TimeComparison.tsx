@@ -66,14 +66,13 @@ const TimeComparison: React.FC = () => {
       <div className="container mx-auto max-w-6xl">
         <SectionTitle title="Сколько времени мне экономит ChatGPT" />
         
-        <div className="bg-white rounded-2xl p-4 md:p-8 shadow-lg overflow-x-auto">
-          <div className="min-w-[768px]">
-            <table className="w-full">
+        <div className="bg-white rounded-2xl p-4 md:p-8 shadow-lg">
+          <div className="w-full">
+            <table className="w-full table-fixed">
               <thead>
                 <tr className="bg-gray-50">
-                  <th className="py-4 px-4 text-left text-gray-900 font-semibold">Задача</th>
-                  <th className="py-4 px-4 text-left text-gray-900 font-semibold">Экономия времени</th>
-                  <th className="py-4 px-4 text-left text-gray-900 font-semibold">Экономия в ₽</th>
+                  <th className="py-3 sm:py-4 px-2 sm:px-4 text-left text-gray-900 font-semibold w-1/2">Задача</th>
+                  <th className="py-3 sm:py-4 px-2 sm:px-4 text-right text-gray-900 font-semibold w-1/2">Экономия времени</th>
                 </tr>
               </thead>
               <tbody>
@@ -82,9 +81,9 @@ const TimeComparison: React.FC = () => {
                     key={index}
                     className={index % 2 === 0 ? 'bg-gray-50' : ''}
                   >
-                    <td className="py-4 px-4 text-gray-700">{row.task}</td>
+                    <td className="py-2 sm:py-4 px-2 sm:px-4 text-gray-700">{row.task}</td>
                     <td 
-                      className="py-4 px-4 font-medium"
+                      className="py-2 sm:py-4 px-2 sm:px-4 font-medium text-right"
                       style={{ 
                         background: 'linear-gradient(135deg, #E76832 0%, #FFC24B 100%)',
                         WebkitBackgroundClip: 'text',
@@ -92,16 +91,6 @@ const TimeComparison: React.FC = () => {
                       }}
                     >
                       {row.timeSaved}
-                    </td>
-                    <td 
-                      className="py-4 px-4 font-medium"
-                      style={{ 
-                        background: 'linear-gradient(135deg, #E76832 0%, #FFC24B 100%)',
-                        WebkitBackgroundClip: 'text',
-                        WebkitTextFillColor: 'transparent'
-                      }}
-                    >
-                      {row.moneySaved}
                     </td>
                   </tr>
                 ))}
