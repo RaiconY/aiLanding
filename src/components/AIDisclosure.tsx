@@ -28,7 +28,7 @@ const AIDisclosure: React.FC = () => {
             
             <div className="bg-gray-50 p-6 rounded-xl">
               <p className="text-xl font-medium mb-4 text-gray-900">
-                Одна из ключевых идей, которую я хочу донести через этот гайд — необходимость перестроить мышление
+               Главная идея гайда
               </p>
               <p className="mb-4">
                 Воспринимайте ИИ как партнера
