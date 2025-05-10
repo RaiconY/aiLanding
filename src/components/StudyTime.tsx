@@ -31,12 +31,12 @@ const StudyTime: React.FC = () => {
               <h3
                 className="text-lg sm:text-xl font-semibold mb-2 bg-gradient-to-r from-[#E76832] to-[#FFC24B] bg-clip-text text-transparent transform group-hover:scale-[1.02] transition-transform duration-300"
               >
-                Пару дней применения практик из гайда заменят год самостоятельного изучения
+               Неделя практики по&nbsp;гайду заменит месяцы проб и&nbsp;ошибок самостоятельного изучения
               </h3>
               <p 
                 className="text-gray-700 text-base transform group-hover:translate-y-[-2px] transition-transform duration-300"
               >
-                Я&nbsp;объединил 2&nbsp;года своего опыта и&nbsp;сотни часов экспериментов в&nbsp;систему, которая работает с&nbsp;первого применения
+                Я&nbsp;объединил 2&nbsp;года личного опыта и&nbsp;сотни часов экспериментов в&nbsp;пошаговую систему с&nbsp;готовыми шаблонами и&nbsp;проверенными стратегиями
               </p>
             </div>
           </div>
