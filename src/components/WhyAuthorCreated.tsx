@@ -29,30 +29,26 @@ const WhyAuthorCreated: React.FC = () => {
           {reasons.map((reason, index) => (
             <div 
               key={index}
-              className="bg-white rounded-2xl p-8 hover:bg-gray-50 transition-all duration-300 shadow-lg"
+              className="group bg-white/80 backdrop-blur-sm rounded-2xl p-8 transition-all duration-500 hover:shadow-2xl relative flex flex-col"
             >
-              <div className="flex flex-col items-center text-center gap-6">
+              {/* Gradient border on hover */}
+              <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-[#E76832] to-[#FFC24B] opacity-0 group-hover:opacity-100 transition-opacity duration-500" style={{ padding: '2px' }}>
+                <div className="h-full w-full bg-white/80 backdrop-blur-sm rounded-2xl" />
+              </div>
+
+              <div className="relative flex flex-col items-center text-center gap-6 h-full">
                 <div 
-                  className="w-12 h-12 rounded-full flex items-center justify-center"
-                  style={{
-                    background: 'white',
-                    border: '2px solid transparent',
-                    backgroundImage: 'linear-gradient(white, white), linear-gradient(135deg, #E76832 0%, #FFC24B 100%)',
-                    backgroundOrigin: 'border-box',
-                    backgroundClip: 'content-box, border-box'
-                  }}
+                  className="w-16 h-16 rounded-full flex items-center justify-center transform group-hover:rotate-12 transition-all duration-500 bg-gradient-to-r from-[#E76832] to-[#FFC24B] p-[2px]"
                 >
-                  <span style={{ 
-                    background: 'linear-gradient(135deg, #E76832 0%, #FFC24B 100%)',
-                    WebkitBackgroundClip: 'text',
-                    WebkitTextFillColor: 'transparent',
-                    fontWeight: 'bold'
-                  }}>
-                    {reason.number}
-                  </span>
+                  <div className="w-full h-full rounded-full bg-white flex items-center justify-center">
+                    <span className="text-2xl font-bold bg-gradient-to-r from-[#E76832] to-[#FFC24B] bg-clip-text text-transparent">
+                      {reason.number}
+                    </span>
+                  </div>
                 </div>
-                <div>
-                  <h3 className="text-xl font-semibold mb-3 text-gray-900">
+                
+                <div className="flex-1 flex flex-col">
+                  <h3 className="text-2xl font-semibold mb-4 text-gray-900">
                     {reason.title}
                   </h3>
                   <p className="text-gray-700 text-lg leading-relaxed">
