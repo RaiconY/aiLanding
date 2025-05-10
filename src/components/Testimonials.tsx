@@ -23,7 +23,7 @@ const Testimonials: React.FC = () => {
     а где-то мне их не хватило.
   `
 };
-  
+  {/* Отзывы
   const testimonials = [
     {
       text: "Здесь скоро появится первый отзыв",
@@ -41,7 +41,7 @@ const Testimonials: React.FC = () => {
       author: ""
     }
   ];
-
+*/}
   return (
     <section className="py-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
       {/* Background decorative elements */}
