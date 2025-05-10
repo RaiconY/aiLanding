@@ -24,7 +24,7 @@ const WhyChatGPT: React.FC = () => {
               src="https://egftuzzffkkyebeatghv.supabase.co/storage/v1/object/sign/images/ChatGPT%20Interface.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InN0b3JhZ2UtdXJsLXNpZ25pbmcta2V5X2QwZWQyZjQyLWU3OGEtNDk0MS05ZjEwLWMwODMwYjU1ODQ0MCJ9.eyJ1cmwiOiJpbWFnZXMvQ2hhdEdQVCBJbnRlcmZhY2UucG5nIiwiaWF0IjoxNzQ2ODAxNzE2LCJleHAiOjE3NzgzMzc3MTZ9.Z8txhmHG9lf_-9-V2-3Z-VU0s0Z7CRYA99uqmPJVRiE"
               alt="AI Technology Visualization"
               loading="lazy"
-              className="rounded-2xl w-full h-auto object-cover shadow-lg transform hover:scale-105 transition-all duration-500"
+              className="w-full h-auto object-contain transform hover:scale-105 transition-all duration-500"
             />
           </div>
           

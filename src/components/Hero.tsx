@@ -56,8 +56,8 @@ const Hero: React.FC = () => {
               <img 
                 src="https://egftuzzffkkyebeatghv.supabase.co/storage/v1/object/sign/images/Spiral%20Chapters.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InN0b3JhZ2UtdXJsLXNpZ25pbmcta2V5X2QwZWQyZjQyLWU3OGEtNDk0MS05ZjEwLWMwODMwYjU1ODQ0MCJ9.eyJ1cmwiOiJpbWFnZXMvU3BpcmFsIENoYXB0ZXJzLnBuZyIsImlhdCI6MTc0NjgwMTA5NCwiZXhwIjoxNzc4MzM3MDk0fQ.1u992xTmfzKWeyuOxWjvLsKaBBtb39r03uEIT7Y50Do"
                 alt="AI Assistant Interface"
-                loading="eager" // Keep eager loading for hero image
-                className="w-full h-auto object-contain px-4 sm:px-0"
+                loading="eager"
+                className="w-full h-auto object-contain"
               />
             </div>
           </div>

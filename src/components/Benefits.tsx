@@ -21,10 +21,6 @@ const Benefits: React.FC = () => {
 
   return (
     <section className="py-12 sm:py-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-b from-orange-50/50 to-transparent" />
-      <div className="absolute top-1/4 left-0 w-96 h-96 bg-gradient-to-r from-[#E76832] to-[#FFC24B] rounded-full filter blur-[128px] opacity-10 -translate-x-1/2" />
-      <div className="absolute bottom-1/4 right-0 w-96 h-96 bg-gradient-to-l from-[#E76832] to-[#FFC24B] rounded-full filter blur-[128px] opacity-10 translate-x-1/2" />
-
       <div className="container mx-auto max-w-6xl relative z-10">
         <SectionTitle title="Что получишь на выходе" />
         
@@ -34,7 +30,7 @@ const Benefits: React.FC = () => {
               src="https://egftuzzffkkyebeatghv.supabase.co/storage/v1/object/sign/images/WithAIComparing.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InN0b3JhZ2UtdXJsLXNpZ25pbmcta2V5X2QwZWQyZjQyLWU3OGEtNDk0MS05ZjEwLWMwODMwYjU1ODQ0MCJ9.eyJ1cmwiOiJpbWFnZXMvV2l0aEFJQ29tcGFyaW5nLnBuZyIsImlhdCI6MTc0NjgxMDQxMSwiZXhwIjoxNzc4MzQ2NDExfQ.pYk6AVXapF3ncAtqjgrR0Qdbb4ztvn8D6NE5SH-658k"
               alt="AI Assistant Interface"
               loading="lazy"
-              className="rounded-xl sm:rounded-2xl w-full h-auto object-contain transform hover:scale-105 transition-all duration-300"
+              className="w-full h-auto object-contain transform hover:scale-105 transition-all duration-300"
             />
           </div>
 

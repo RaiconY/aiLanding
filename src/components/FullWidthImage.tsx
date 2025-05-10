@@ -13,7 +13,7 @@ const FullWidthImage: React.FC<FullWidthImageProps> = ({ imageUrl }) => {
             src={imageUrl}
             alt="ChatGPT Interface"
             loading="lazy"
-            className="w-full h-auto object-contain rounded-xl sm:rounded-2xl shadow-lg"
+            className="w-full h-auto object-contain"
           />
         </div>
       </div>
