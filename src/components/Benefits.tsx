@@ -1,6 +1,7 @@
 import React from 'react';
 import { Sparkles, Timer, Briefcase } from 'lucide-react';
 import SectionTitle from './SectionTitle';
+import CTAButton from './CTAButton';
 
 const Benefits: React.FC = () => {
   const benefits = [
@@ -62,6 +63,11 @@ const Benefits: React.FC = () => {
                 </div>
               </div>
             ))}
+            
+            {/* CTA Button */}
+            <div className="flex justify-center mt-8">
+              <CTAButton />
+            </div>
           </div>
         </div>
       </div>
