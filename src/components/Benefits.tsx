@@ -6,58 +6,53 @@ import CTAButton from './CTAButton';
 const Benefits: React.FC = () => {
   const benefits = [
     {
-      icon: <Sparkles className="h-6 w-6 text-[#E76832]" />,
+      icon: <Sparkles className="h-5 w-5 sm:h-6 sm:w-6 text-[#E76832]" />,
       text: 'Системный навык работы с ChatGPT — точные результаты вместо случайных экспериментов'
     },
     {
-      icon: <Timer className="h-6 w-6 text-[#E76832]" />,
+      icon: <Timer className="h-5 w-5 sm:h-6 sm:w-6 text-[#E76832]" />,
       text: 'Экономию 2-3 часов в день на типовых задачах — от написания писем до принятия решений'
     },
     {
-      icon: <Briefcase className="h-6 w-6 text-[#E76832]" />,
+      icon: <Briefcase className="h-5 w-5 sm:h-6 sm:w-6 text-[#E76832]" />,
       text: 'Готовые шаблоны и сценарии для решения десятков конкретных задач в работе и повседневной жизни'
     }
   ];
 
   return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
-      {/* Gradient background */}
+    <section className="py-12 sm:py-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-b from-orange-50/50 to-transparent" />
-      
-      {/* Decorative blobs */}
       <div className="absolute top-1/4 left-0 w-96 h-96 bg-gradient-to-r from-[#E76832] to-[#FFC24B] rounded-full filter blur-[128px] opacity-10 -translate-x-1/2" />
       <div className="absolute bottom-1/4 right-0 w-96 h-96 bg-gradient-to-l from-[#E76832] to-[#FFC24B] rounded-full filter blur-[128px] opacity-10 translate-x-1/2" />
 
       <div className="container mx-auto max-w-6xl relative z-10">
         <SectionTitle title="Что получишь на выходе" />
         
-        <div className="grid grid-cols-1 lg:grid-cols-7 gap-8 items-center">
-          {/* Image column */}
+        <div className="grid grid-cols-1 lg:grid-cols-7 gap-6 sm:gap-8 items-center">
           <div className="lg:col-span-3 flex items-center justify-center">
             <img 
               src="https://egftuzzffkkyebeatghv.supabase.co/storage/v1/object/sign/images/WithAIComparing.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InN0b3JhZ2UtdXJsLXNpZ25pbmcta2V5X2QwZWQyZjQyLWU3OGEtNDk0MS05ZjEwLWMwODMwYjU1ODQ0MCJ9.eyJ1cmwiOiJpbWFnZXMvV2l0aEFJQ29tcGFyaW5nLnBuZyIsImlhdCI6MTc0NjgxMDQxMSwiZXhwIjoxNzc4MzQ2NDExfQ.pYk6AVXapF3ncAtqjgrR0Qdbb4ztvn8D6NE5SH-658k"
               alt="AI Assistant Interface"
-              className="rounded-2xl w-full h-auto object-contain transform hover:scale-105 transition-all duration-300"
+              className="rounded-xl sm:rounded-2xl w-full h-auto object-contain transform hover:scale-105 transition-all duration-300"
             />
           </div>
 
-          {/* Benefits column */}
           <div className="lg:col-span-4 flex flex-col justify-center gap-4">
             {benefits.map((benefit, index) => (
               <div 
                 key={index} 
-                className="bg-white/80 backdrop-blur-sm rounded-xl p-4 hover:shadow-lg transition-all duration-300 transform hover:scale-[1.02] shadow-md group"
+                className="bg-white/80 backdrop-blur-sm rounded-lg sm:rounded-xl p-4 sm:p-6 hover:shadow-lg transition-all duration-300 transform hover:scale-[1.02] shadow-md group"
               >
-                <div className="flex items-center gap-4">
+                <div className="flex items-center gap-3 sm:gap-4">
                   <div 
-                    className="w-12 h-12 rounded-xl flex items-center justify-center transform group-hover:rotate-12 transition-all duration-500 bg-gradient-to-r from-[#E76832] to-[#FFC24B] p-[2px] flex-shrink-0"
+                    className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg sm:rounded-xl flex items-center justify-center transform group-hover:rotate-12 transition-all duration-500 bg-gradient-to-r from-[#E76832] to-[#FFC24B] p-[2px] flex-shrink-0"
                   >
-                    <div className="w-full h-full rounded-xl bg-white flex items-center justify-center">
+                    <div className="w-full h-full rounded-lg sm:rounded-xl bg-white flex items-center justify-center">
                       {benefit.icon}
                     </div>
                   </div>
                   
-                  <p className="text-gray-700 text-base leading-relaxed">
+                  <p className="text-gray-700 text-sm sm:text-base leading-relaxed">
                     {benefit.text}
                   </p>
                 </div>
@@ -66,8 +61,7 @@ const Benefits: React.FC = () => {
           </div>
         </div>
         
-        {/* CTA Button - под обоими блоками */}
-        <div className="flex justify-center mt-12">
+        <div className="flex justify-center mt-8 sm:mt-12">
           <CTAButton />
         </div>
       </div>
