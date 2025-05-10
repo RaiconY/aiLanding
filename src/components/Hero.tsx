@@ -13,9 +13,9 @@ const Hero: React.FC = () => {
               <span className="font-semibold text-sm sm:text-base" style={{ color: '#E76832' }}>Гайд по ChatGPT</span>
             </div>
             
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-gray-900">
-              Увеличь свою продуктивность в&nbsp;3&nbsp;раза и&nbsp;зарабатывай больше с&nbsp;ChatGPT
-            </h1>
+            <h1 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold leading-tight text-gray-900">
+  Увеличь свою продуктивность в&nbsp;3&nbsp;раза и&nbsp;зарабатывай больше с&nbsp;ChatGPT
+</h1>
             
             <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-700 leading-relaxed">
               Практическое руководство для тех, кто хочет внедрить ИИ в повседневную работу и получать реальные результаты
