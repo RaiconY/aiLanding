@@ -33,7 +33,7 @@ const StudyTime: React.FC = () => {
             
             {/* Content */}
             <div className="relative flex-1 text-center md:text-left">
-              <h4 
+              <h3
                 className="text-xl sm:text-2xl font-semibold mb-2 bg-gradient-to-r from-[#E76832] to-[#FFC24B] bg-clip-text text-transparent transform group-hover:scale-[1.02] transition-transform duration-300"
               >
                 Пару дней применения практик из гайда заменят год самостоятельного изучения
