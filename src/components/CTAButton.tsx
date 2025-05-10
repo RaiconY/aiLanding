@@ -1,10 +1,9 @@
-// Обновленный компонент CTAButton.tsx
 import React from 'react';
 
 const CTAButton: React.FC = () => {
   return (
     <button 
-      className="group inline-flex items-center text-white font-medium py-2.5 sm:py-3 px-4 sm:px-6 rounded-full shadow-lg transform hover:scale-105 transition-all duration-300 text-sm sm:text-base"
+      className="group inline-flex items-center text-white font-medium py-3 sm:py-3.5 px-5 sm:px-6 rounded-full shadow-lg transform hover:scale-105 transition-all duration-300 text-sm sm:text-base"
       style={{
         background: 'linear-gradient(135deg, #E76832 0%, #FFC24B 100%)'
       }}
@@ -17,7 +16,7 @@ const CTAButton: React.FC = () => {
     >
       Забрать гайд со скидкой
       <svg 
-        className="ml-2 w-3 h-3 sm:w-4 sm:h-4 group-hover:translate-y-1 transition-transform" 
+        className="ml-2 w-4 h-4 group-hover:translate-y-1 transition-transform" 
         fill="none" 
         stroke="currentColor" 
         viewBox="0 0 24 24" 

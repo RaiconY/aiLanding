@@ -83,39 +83,39 @@ const GuideContent: React.FC = () => {
       <div className="container mx-auto max-w-4xl relative z-10">
         <SectionTitle title="Что внутри" />
         
-        <div className="space-y-3 sm:space-y-6">
+        <div className="space-y-4">
           {chapters.map((chapter, index) => (
             <div 
               key={index} 
-              className="bg-white/80 backdrop-blur-sm rounded-lg sm:rounded-2xl p-3 sm:p-6 shadow-md hover:shadow-lg transition-all duration-300 group"
+              className="bg-white/80 backdrop-blur-sm rounded-lg sm:rounded-2xl p-4 sm:p-6 shadow-md hover:shadow-lg transition-all duration-300 group"
             >
-              <div className="flex items-start sm:items-center gap-3 sm:gap-6 mb-3 sm:mb-6">
+              <div className="flex items-start gap-3 sm:gap-4 mb-3 sm:mb-4">
                 <div 
-                  className="w-8 h-8 sm:w-12 sm:h-12 rounded-lg sm:rounded-xl flex items-center justify-center bg-gradient-to-r from-[#E76832] to-[#FFC24B] p-[2px] transform group-hover:rotate-12 transition-all duration-500 flex-shrink-0"
+                  className="w-8 h-8 sm:w-10 sm:h-10 rounded-lg flex items-center justify-center bg-gradient-to-r from-[#E76832] to-[#FFC24B] p-[2px] transform group-hover:rotate-12 transition-all duration-500 flex-shrink-0"
                 >
-                  <div className="w-full h-full rounded-lg sm:rounded-xl bg-white flex items-center justify-center">
-                    <span className="text-base sm:text-xl font-bold bg-gradient-to-r from-[#E76832] to-[#FFC24B] bg-clip-text text-transparent">
+                  <div className="w-full h-full rounded-lg bg-white flex items-center justify-center">
+                    <span className="text-base sm:text-lg font-bold bg-gradient-to-r from-[#E76832] to-[#FFC24B] bg-clip-text text-transparent">
                       {chapter.number}
                     </span>
                   </div>
                 </div>
-                <h3 className="text-sm sm:text-xl font-semibold text-gray-900 pt-1 sm:pt-0">
+                <h3 className="text-base sm:text-lg font-semibold text-gray-900 pt-1">
                   {chapter.title}
                 </h3>
               </div>
               
-              <div className="pl-4 sm:pl-12 md:pl-24">
+              <div className="pl-11 sm:pl-14">
                 {chapter.topics.length > 0 ? (
-                  <ul className="space-y-2 sm:space-y-4">
+                  <ul className="space-y-2.5 sm:space-y-3">
                     {chapter.topics.map((topic, i) => (
                       <li key={i} className="flex items-start group">
                         <span className="mr-2 mt-1.5 w-1.5 h-1.5 rounded-full bg-gradient-to-r from-[#E76832] to-[#FFC24B] flex-shrink-0 group-hover:scale-150 transition-transform duration-300" />
-                        <span className="text-xs sm:text-base text-gray-700 leading-tight sm:leading-relaxed">{topic}</span>
+                        <span className="text-sm sm:text-base text-gray-700 leading-snug sm:leading-relaxed">{topic}</span>
                       </li>
                     ))}
                   </ul>
                 ) : (
-                  <p className="text-sm sm:text-lg text-gray-600 italic">
+                  <p className="text-sm sm:text-base text-gray-600 italic">
                     Специальный раздел с готовыми промптами для разных задач
                   </p>
                 )}
@@ -124,7 +124,7 @@ const GuideContent: React.FC = () => {
           ))}
         </div>
         
-        <div className="flex justify-center mt-8 sm:mt-12">
+        <div className="flex justify-center mt-8 sm:mt-10">
           <CTAButton />
         </div>
       </div>
