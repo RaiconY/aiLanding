@@ -41,7 +41,7 @@ const StudyTime: React.FC = () => {
               <p 
                 className="text-gray-700 text-base transform group-hover:translate-y-[-2px] transition-transform duration-300"
               >
-                Я объединил 2 года своего опыта и сотни часов экспериментов в систему, которая работает с первого применения
+                Я&nbsp;объединил 2&nbsp;года своего опыта и&nbsp;сотни часов экспериментов в&nbsp;систему, которая работает с&nbsp;первого применения
               </p>
             </div>
           </div>
