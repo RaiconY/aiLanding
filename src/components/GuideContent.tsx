@@ -72,11 +72,6 @@ const GuideContent: React.FC = () => {
       title: '50+ промптов на все случаи жизни',
       topics: []
     }
-    {
-      number: '08',
-      title: '50+ промптов на все случаи жизни',
-      topics: []
-    }
     ];
 
     
