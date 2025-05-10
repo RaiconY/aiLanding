@@ -3,83 +3,61 @@ import SectionTitle from './SectionTitle';
 
 interface TimeComparisonRow {
   task: string;
-  withoutAI: string;
-  withChatGPT: string;
-  savingsPercent: string;
-  savingsRubles: string;
+  timeSaved: string;
+  moneySaved: string;
 }
 
 const TimeComparison: React.FC = () => {
   const comparisons: TimeComparisonRow[] = [
     {
       task: 'Написать e-mail',
-      withoutAI: '15-20 мин',
-      withChatGPT: '3-5 мин',
-      savingsPercent: '75%',
-      savingsRubles: '1,100₽'
+      timeSaved: '15 минут быстрее',
+      moneySaved: '1 100 ₽'
     },
     {
       task: 'Небольшой пост',
-      withoutAI: '30-45 мин',
-      withChatGPT: '5-10 мин',
-      savingsPercent: '75%',
-      savingsRubles: '2,400₽'
+      timeSaved: '30 минут быстрее',
+      moneySaved: '2 400 ₽'
     },
     {
       task: 'Исследование',
-      withoutAI: '2-3 часа',
-      withChatGPT: '30-45 мин',
-      savingsPercent: '75%',
-      savingsRubles: '9,300₽'
+      timeSaved: '2 часа быстрее',
+      moneySaved: '9 300 ₽'
     },
     {
       task: 'ТЗ на сложную задачу',
-      withoutAI: '30-40 минут',
-      withChatGPT: '5-10 мин',
-      savingsPercent: '75%',
-      savingsRubles: '2,200₽'
+      timeSaved: '30 минут быстрее',
+      moneySaved: '2 200 ₽'
     },
     {
       task: 'Контент-план',
-      withoutAI: '1-2 часа',
-      withChatGPT: '15-20 мин',
-      savingsPercent: '80%',
-      savingsRubles: '6,000₽'
+      timeSaved: '1.5 часа быстрее',
+      moneySaved: '6 000 ₽'
     },
     {
       task: 'Генерация идей',
-      withoutAI: '45-60 мин',
-      withChatGPT: '7-10 мин',
-      savingsPercent: '85%',
-      savingsRubles: '3,700₽'
+      timeSaved: '40 минут быстрее',
+      moneySaved: '3 700 ₽'
     },
     {
       task: 'Презентации',
-      withoutAI: '12-14 часов',
-      withChatGPT: '2-2.5 часа',
-      savingsPercent: '85%',
-      savingsRubles: '27,600₽'
+      timeSaved: '10 часов быстрее',
+      moneySaved: '27 600 ₽'
     },
     {
       task: 'Анализ отзывов',
-      withoutAI: '2-3 часа',
-      withChatGPT: '30-45 мин',
-      savingsPercent: '75%',
-      savingsRubles: '4,700₽'
+      timeSaved: '2 часа быстрее',
+      moneySaved: '4 700 ₽'
     },
     {
       task: 'Большая статья',
-      withoutAI: '10-12 часов',
-      withChatGPT: '3-4 часа',
-      savingsPercent: '65%',
-      savingsRubles: '17,900₽'
+      timeSaved: '7 часов быстрее',
+      moneySaved: '17 900 ₽'
     },
     {
       task: 'Создание сайта',
-      withoutAI: '18-20 часов',
-      withChatGPT: '2-3 часа',
-      savingsPercent: '90%',
-      savingsRubles: '45,000₽'
+      timeSaved: '15 часов быстрее',
+      moneySaved: '45 000 ₽'
     }
   ];
 
@@ -94,10 +72,8 @@ const TimeComparison: React.FC = () => {
               <thead>
                 <tr className="bg-gray-50">
                   <th className="py-4 px-4 text-left text-gray-900 font-semibold">Задача</th>
-                  <th className="py-4 px-4 text-left text-gray-900 font-semibold">Сам</th>
-                  <th className="py-4 px-4 text-left text-gray-900 font-semibold">С ИИ</th>
-                  <th className="py-4 px-4 text-left text-gray-900 font-semibold">Экономия в %</th>
-                  <th className="py-4 px-4 text-left text-gray-900 font-semibold">Экономия в ₽*</th>
+                  <th className="py-4 px-4 text-left text-gray-900 font-semibold">Экономия времени</th>
+                  <th className="py-4 px-4 text-left text-gray-900 font-semibold">Экономия в ₽</th>
                 </tr>
               </thead>
               <tbody>
@@ -107,10 +83,26 @@ const TimeComparison: React.FC = () => {
                     className={index % 2 === 0 ? 'bg-gray-50' : ''}
                   >
                     <td className="py-4 px-4 text-gray-700">{row.task}</td>
-                    <td className="py-4 px-4 text-gray-700">{row.withoutAI}</td>
-                    <td className="py-4 px-4 text-gray-700">{row.withChatGPT}</td>
-                    <td className="py-4 px-4" style={{ color: '#E76832', fontWeight: '500' }}>{row.savingsPercent}</td>
-                    <td className="py-4 px-4" style={{ color: '#E76832', fontWeight: '500' }}>{row.savingsRubles}</td>
+                    <td 
+                      className="py-4 px-4 font-medium"
+                      style={{ 
+                        background: 'linear-gradient(135deg, #E76832 0%, #FFC24B 100%)',
+                        WebkitBackgroundClip: 'text',
+                        WebkitTextFillColor: 'transparent'
+                      }}
+                    >
+                      {row.timeSaved}
+                    </td>
+                    <td 
+                      className="py-4 px-4 font-medium"
+                      style={{ 
+                        background: 'linear-gradient(135deg, #E76832 0%, #FFC24B 100%)',
+                        WebkitBackgroundClip: 'text',
+                        WebkitTextFillColor: 'transparent'
+                      }}
+                    >
+                      {row.moneySaved}
+                    </td>
                   </tr>
                 ))}
               </tbody>
@@ -119,7 +111,6 @@ const TimeComparison: React.FC = () => {
           
           <div className="mt-4 text-gray-500 text-sm">
             <p>* При средней стоимости часа 5000₽</p>
-            <p>Это прям супер простые примеры</p>
           </div>
         </div>
       </div>
