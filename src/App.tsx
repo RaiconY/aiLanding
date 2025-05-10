@@ -31,9 +31,11 @@ function App() {
       <Testimonials />
       <Pricing />
       <FAQ />
-      <WhyGuide />
       <WhyAuthorCreated />
+      {/*
+      <WhyGuide />
       <AboutAuthor />
+      */}
       <Footer />
     </div>
   );
