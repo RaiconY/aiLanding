@@ -1,5 +1,6 @@
 import React from 'react';
 import SectionTitle from './SectionTitle';
+import CTAButton from './CTAButton';
 
 const GuideContent: React.FC = () => {
   const chapters = [
@@ -122,6 +123,11 @@ const GuideContent: React.FC = () => {
               </div>
             </div>
           ))}
+        </div>
+        
+        {/* CTA Button */}
+        <div className="flex justify-center mt-12">
+          <CTAButton />
         </div>
       </div>
     </section>
