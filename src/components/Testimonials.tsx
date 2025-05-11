@@ -32,11 +32,11 @@ const Testimonials: React.FC = () => {
           {testimonials.map((testimonial, index) => (
             <div 
               key={index}
-              className="group bg-white/80 backdrop-blur-sm rounded-2xl p-8 transition-all duration-500 hover:shadow-2xl relative"
+              className="group bg-white/80 backdrop-blur-sm rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-8 transition-all duration-500 hover:shadow-2xl relative"
             >
               {/* Gradient border on hover */}
-              <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-[#E76832] to-[#FFC24B] opacity-0 group-hover:opacity-100 transition-opacity duration-500" style={{ padding: '2px' }}>
-                <div className="h-full w-full bg-white/80 backdrop-blur-sm rounded-2xl" />
+              <div className="absolute inset-0 rounded-xl sm:rounded-2xl bg-gradient-to-r from-[#E76832] to-[#FFC24B] opacity-0 group-hover:opacity-100 transition-opacity duration-500" style={{ padding: '2px' }}>
+                <div className="h-full w-full bg-white/80 backdrop-blur-sm rounded-xl sm:rounded-2xl" />
               </div>
 
               <div className="relative flex flex-col items-center text-center gap-6">
@@ -53,11 +53,11 @@ const Testimonials: React.FC = () => {
                 </div>
                 
                 <div className="space-y-4">
-                  <div className="text-gray-700 text-sm sm:text-base leading-relaxed whitespace-pre-line">
+                  <div className="text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed whitespace-pre-line">
                     {testimonial.text}
                   </div>
                   {testimonial.author && (
-                    <p className="text-gray-600 font-medium mt-4 text-sm">{testimonial.author}</p>
+                    <p className="text-xs sm:text-sm text-gray-600 font-medium mt-4">{testimonial.author}</p>
                   )}
                 </div>
               </div>
