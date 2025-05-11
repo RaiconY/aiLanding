@@ -28,74 +28,129 @@ const Testimonials: React.FC = () => {
       <div className="container mx-auto max-w-6xl relative z-10">
         <SectionTitle title="Отзывы" />
         
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {testimonials.map((testimonial, index) => (
-            <div 
-              key={index}
-              className="group bg-white/80 backdrop-blur-sm rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-8 transition-all duration-500 hover:shadow-2xl relative"
-            >
-              {/* Gradient border on hover */}
-              <div className="absolute inset-0 rounded-xl sm:rounded-2xl bg-gradient-to-r from-[#E76832] to-[#FFC24B] opacity-0 group-hover:opacity-100 transition-opacity duration-500" style={{ padding: '2px' }}>
-                <div className="h-full w-full bg-white/80 backdrop-blur-sm rounded-xl sm:rounded-2xl" />
-              </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {/* Первый отзыв - слева */}
+          <div 
+            className="group bg-white/80 backdrop-blur-sm rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-8 transition-all duration-500 hover:shadow-2xl relative"
+          >
+            {/* Gradient border on hover */}
+            <div className="absolute inset-0 rounded-xl sm:rounded-2xl bg-gradient-to-r from-[#E76832] to-[#FFC24B] opacity-0 group-hover:opacity-100 transition-opacity duration-500" style={{ padding: '2px' }}>
+              <div className="h-full w-full bg-white/80 backdrop-blur-sm rounded-xl sm:rounded-2xl" />
+            </div>
 
-              <div className="relative flex flex-col items-center text-center gap-6">
+            <div className="relative flex flex-col items-center text-center gap-6">
+              <div 
+                className="w-12 h-12 rounded-full flex items-center justify-center transform group-hover:rotate-12 transition-all duration-500 bg-gradient-to-r from-[#E76832] to-[#FFC24B] p-[2px]"
+              >
+                <div className="w-full h-full rounded-full bg-white flex items-center justify-center">
+                  <Star className="h-6 w-6 text-[#E76832]" />
+                </div>
+              </div>
+              
+              <div className="space-y-4">
                 <div 
-                  className="w-12 h-12 rounded-full flex items-center justify-center transform group-hover:rotate-12 transition-all duration-500 bg-gradient-to-r from-[#E76832] to-[#FFC24B] p-[2px]"
+                  className="relative text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed whitespace-pre-line pl-6"
+                  style={{
+                    position: 'relative'
+                  }}
                 >
-                  <div className="w-full h-full rounded-full bg-white flex items-center justify-center">
-                    {index === 0 ? (
-                      <Star className="h-6 w-6 text-[#E76832]" />
-                    ) : (
+                  <span 
+                    className="absolute top-0 left-0 text-4xl font-serif text-orange-300 leading-none"
+                    style={{ 
+                      transform: 'translateY(-50%)',
+                      background: 'linear-gradient(135deg, #E76832 0%, #FFC24B 100%)',
+                      WebkitBackgroundClip: 'text',
+                      WebkitTextFillColor: 'transparent',
+                    }}
+                  >
+                    "
+                  </span>
+                  {testimonials[0].text}
+                  <span 
+                    className="inline-block ml-1 text-4xl font-serif text-orange-300 leading-none"
+                    style={{ 
+                      background: 'linear-gradient(135deg, #E76832 0%, #FFC24B 100%)',
+                      WebkitBackgroundClip: 'text',
+                      WebkitTextFillColor: 'transparent',
+                    }}
+                  >
+                    "
+                  </span>
+                </div>
+                
+                {testimonials[0].author && (
+                  <p className="text-xs sm:text-sm text-gray-600 font-medium mt-4">{testimonials[0].author}</p>
+                )}
+              </div>
+            </div>
+          </div>
+
+          {/* Второй и третий отзывы - справа, друг под другом */}
+          <div className="flex flex-col gap-6">
+            {testimonials.slice(1).map((testimonial, index) => (
+              <div 
+                key={index}
+                className="group bg-white/80 backdrop-blur-sm rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-8 transition-all duration-500 hover:shadow-2xl relative"
+              >
+                {/* Gradient border on hover */}
+                <div className="absolute inset-0 rounded-xl sm:rounded-2xl bg-gradient-to-r from-[#E76832] to-[#FFC24B] opacity-0 group-hover:opacity-100 transition-opacity duration-500" style={{ padding: '2px' }}>
+                  <div className="h-full w-full bg-white/80 backdrop-blur-sm rounded-xl sm:rounded-2xl" />
+                </div>
+
+                <div className="relative flex flex-col items-center text-center gap-6">
+                  <div 
+                    className="w-12 h-12 rounded-full flex items-center justify-center transform group-hover:rotate-12 transition-all duration-500 bg-gradient-to-r from-[#E76832] to-[#FFC24B] p-[2px]"
+                  >
+                    <div className="w-full h-full rounded-full bg-white flex items-center justify-center">
                       <MessageSquare className="h-6 w-6 text-[#E76832]" />
+                    </div>
+                  </div>
+                  
+                  <div className="space-y-4">
+                    {!testimonial.text.includes("тут будет") && !testimonial.text.includes("конечно же") ? (
+                      <div 
+                        className="relative text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed whitespace-pre-line pl-6"
+                        style={{
+                          position: 'relative'
+                        }}
+                      >
+                        <span 
+                          className="absolute top-0 left-0 text-4xl font-serif text-orange-300 leading-none"
+                          style={{ 
+                            transform: 'translateY(-50%)',
+                            background: 'linear-gradient(135deg, #E76832 0%, #FFC24B 100%)',
+                            WebkitBackgroundClip: 'text',
+                            WebkitTextFillColor: 'transparent',
+                          }}
+                        >
+                          "
+                        </span>
+                        {testimonial.text}
+                        <span 
+                          className="inline-block ml-1 text-4xl font-serif text-orange-300 leading-none"
+                          style={{ 
+                            background: 'linear-gradient(135deg, #E76832 0%, #FFC24B 100%)',
+                            WebkitBackgroundClip: 'text',
+                            WebkitTextFillColor: 'transparent',
+                          }}
+                        >
+                          "
+                        </span>
+                      </div>
+                    ) : (
+                      <div className="text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed whitespace-pre-line">
+                        {testimonial.text}
+                      </div>
+                    )}
+                    
+                    {testimonial.author && (
+                      <p className="text-xs sm:text-sm text-gray-600 font-medium mt-4">{testimonial.author}</p>
                     )}
                   </div>
                 </div>
-                
-                <div className="space-y-4">
-                  {testimonial.text && !testimonial.text.includes("тут будет") && !testimonial.text.includes("конечно же") ? (
-                    <div 
-                      className="relative text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed whitespace-pre-line pl-6"
-                      style={{
-                        position: 'relative'
-                      }}
-                    >
-                      <span 
-                        className="absolute top-0 left-0 text-4xl font-serif text-orange-300 leading-none"
-                        style={{ 
-                          transform: 'translateY(-50%)',
-                          background: 'linear-gradient(135deg, #E76832 0%, #FFC24B 100%)',
-                          WebkitBackgroundClip: 'text',
-                          WebkitTextFillColor: 'transparent',
-                        }}
-                      >
-                        "
-                      </span>
-                      {testimonial.text}
-                      <span 
-                        className="inline-block ml-1 text-4xl font-serif text-orange-300 leading-none"
-                        style={{ 
-                          background: 'linear-gradient(135deg, #E76832 0%, #FFC24B 100%)',
-                          WebkitBackgroundClip: 'text',
-                          WebkitTextFillColor: 'transparent',
-                        }}
-                      >
-                        "
-                      </span>
-                    </div>
-                  ) : (
-                    <div className="text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed whitespace-pre-line">
-                      {testimonial.text}
-                    </div>
-                  )}
-                  
-                  {testimonial.author && (
-                    <p className="text-xs sm:text-sm text-gray-600 font-medium mt-4">{testimonial.author}</p>
-                  )}
-                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </section>
