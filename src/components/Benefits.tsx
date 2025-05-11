@@ -30,7 +30,7 @@ const Benefits: React.FC = () => {
             {benefits.map((benefit, index) => (
               <div 
                 key={index} 
-                className="bg-white/80 backdrop-blur-sm rounded-lg sm:rounded-xl p-4 sm:p-6 hover:shadow-lg transition-all duration-300 transform hover:scale-[1.02] shadow-md group"
+                className="bg-white/80 backdrop-blur-sm rounded-lg sm:rounded-xl p-3 sm:p-5 hover:shadow-lg transition-all duration-300 transform hover:scale-[1.02] shadow-md group"
               >
                 <div className="flex items-center gap-3 sm:gap-4">
                   <div 
@@ -41,7 +41,7 @@ const Benefits: React.FC = () => {
                     </div>
                   </div>
                   
-                  <p className="text-gray-700 text-sm sm:text-base leading-relaxed">
+                  <p className="text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed">
                     {benefit.text}
                   </p>
                 </div>
