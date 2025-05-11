@@ -28,11 +28,11 @@ const Testimonials: React.FC = () => {
       <div className="container mx-auto max-w-6xl relative z-10">
         <SectionTitle title="Отзывы" />
         
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {testimonials.map((testimonial, index) => (
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
+          {/* Первый отзыв занимает больше места слева */}
+          <div className="md:col-span-6 lg:col-span-7">
             <div 
-              key={index}
-              className="group bg-white/80 backdrop-blur-sm rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-8 transition-all duration-500 hover:shadow-2xl relative"
+              className="group bg-white/80 backdrop-blur-sm rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-8 transition-all duration-500 hover:shadow-2xl relative h-full"
             >
               {/* Gradient border on hover */}
               <div className="absolute inset-0 rounded-xl sm:rounded-2xl bg-gradient-to-r from-[#E76832] to-[#FFC24B] opacity-0 group-hover:opacity-100 transition-opacity duration-500" style={{ padding: '2px' }}>
@@ -44,25 +44,74 @@ const Testimonials: React.FC = () => {
                   className="w-12 h-12 rounded-full flex items-center justify-center transform group-hover:rotate-12 transition-all duration-500 bg-gradient-to-r from-[#E76832] to-[#FFC24B] p-[2px]"
                 >
                   <div className="w-full h-full rounded-full bg-white flex items-center justify-center">
-                    {index === 0 ? (
-                      <Star className="h-6 w-6 text-[#E76832]" />
-                    ) : (
-                      <MessageSquare className="h-6 w-6 text-[#E76832]" />
-                    )}
+                    <Star className="h-6 w-6 text-[#E76832]" />
                   </div>
                 </div>
                 
                 <div className="space-y-4">
                   <div className="text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed whitespace-pre-line">
-                    {testimonial.text}
+                    {testimonials[0].text}
                   </div>
-                  {testimonial.author && (
-                    <p className="text-xs sm:text-sm text-gray-600 font-medium mt-4">{testimonial.author}</p>
+                  {testimonials[0].author && (
+                    <p className="text-xs sm:text-sm text-gray-600 font-medium mt-4">{testimonials[0].author}</p>
                   )}
                 </div>
               </div>
             </div>
-          ))}
+          </div>
+          
+          {/* Колонка для двух правых отзывов */}
+          <div className="md:col-span-6 lg:col-span-5 flex flex-col gap-6">
+            {/* Второй отзыв */}
+            <div 
+              className="group bg-white/80 backdrop-blur-sm rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-8 transition-all duration-500 hover:shadow-2xl relative"
+            >
+              <div className="absolute inset-0 rounded-xl sm:rounded-2xl bg-gradient-to-r from-[#E76832] to-[#FFC24B] opacity-0 group-hover:opacity-100 transition-opacity duration-500" style={{ padding: '2px' }}>
+                <div className="h-full w-full bg-white/80 backdrop-blur-sm rounded-xl sm:rounded-2xl" />
+              </div>
+
+              <div className="relative flex flex-col items-center text-center gap-6">
+                <div 
+                  className="w-12 h-12 rounded-full flex items-center justify-center transform group-hover:rotate-12 transition-all duration-500 bg-gradient-to-r from-[#E76832] to-[#FFC24B] p-[2px]"
+                >
+                  <div className="w-full h-full rounded-full bg-white flex items-center justify-center">
+                    <MessageSquare className="h-6 w-6 text-[#E76832]" />
+                  </div>
+                </div>
+                
+                <div className="space-y-4">
+                  <div className="text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed whitespace-pre-line">
+                    {testimonials[1].text}
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            {/* Третий отзыв */}
+            <div 
+              className="group bg-white/80 backdrop-blur-sm rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-8 transition-all duration-500 hover:shadow-2xl relative"
+            >
+              <div className="absolute inset-0 rounded-xl sm:rounded-2xl bg-gradient-to-r from-[#E76832] to-[#FFC24B] opacity-0 group-hover:opacity-100 transition-opacity duration-500" style={{ padding: '2px' }}>
+                <div className="h-full w-full bg-white/80 backdrop-blur-sm rounded-xl sm:rounded-2xl" />
+              </div>
+
+              <div className="relative flex flex-col items-center text-center gap-6">
+                <div 
+                  className="w-12 h-12 rounded-full flex items-center justify-center transform group-hover:rotate-12 transition-all duration-500 bg-gradient-to-r from-[#E76832] to-[#FFC24B] p-[2px]"
+                >
+                  <div className="w-full h-full rounded-full bg-white flex items-center justify-center">
+                    <MessageSquare className="h-6 w-6 text-[#E76832]" />
+                  </div>
+                </div>
+                
+                <div className="space-y-4">
+                  <div className="text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed whitespace-pre-line">
+                    {testimonials[2].text}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
