@@ -46,7 +46,7 @@ const FullWidthImage: React.FC<FullWidthImageProps> = ({ imageUrl }) => {
             <img
               src={imageUrl}
               alt="ChatGPT Interface - Enlarged View"
-              className="max-w-full max-h-[80vh] object-contain animate-scale-in"
+              className="max-w-full max-h-[90vh] object-contain animate-scale-in"
             />
             <button
               className="absolute top-4 right-4 bg-white rounded-full p-2 shadow-lg hover:bg-gray-100 transition-colors"
