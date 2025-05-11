@@ -53,38 +53,34 @@ const Testimonials: React.FC = () => {
                 </div>
                 
                 <div className="space-y-4">
-                  <div className="relative">
-                    <div className="absolute top-0 left-0 transform -translate-x-4 -translate-y-6">
-                      <span 
-                        className="text-6xl font-serif leading-none"
-                        style={{ 
-                          background: 'linear-gradient(135deg, #E76832 0%, #FFC24B 100%)',
-                          WebkitBackgroundClip: 'text',
-                          WebkitTextFillColor: 'transparent',
-                          opacity: 0.5
-                        }}
-                      >
-                        "
-                      </span>
-                    </div>
-                    
-                    <div className="text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed whitespace-pre-line px-4">
-                      {testimonial.text}
-                    </div>
-                    
-                    <div className="absolute bottom-0 right-0 transform translate-x-2 translate-y-4">
-                      <span 
-                        className="text-6xl font-serif leading-none"
-                        style={{ 
-                          background: 'linear-gradient(135deg, #E76832 0%, #FFC24B 100%)',
-                          WebkitBackgroundClip: 'text',
-                          WebkitTextFillColor: 'transparent',
-                          opacity: 0.5
-                        }}
-                      >
-                        "
-                      </span>
-                    </div>
+                  <div 
+                    className="relative text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed whitespace-pre-line pl-6"
+                    style={{
+                      position: 'relative'
+                    }}
+                  >
+                    <span 
+                      className="absolute top-0 left-0 text-4xl font-serif text-orange-300 leading-none"
+                      style={{ 
+                        transform: 'translateY(-50%)',
+                        background: 'linear-gradient(135deg, #E76832 0%, #FFC24B 100%)',
+                        WebkitBackgroundClip: 'text',
+                        WebkitTextFillColor: 'transparent'
+                      }}
+                    >
+                      "
+                    </span>
+                    {testimonial.text}
+                    <span 
+                      className="inline-block ml-1 text-4xl font-serif text-orange-300 leading-none"
+                      style={{ 
+                        background: 'linear-gradient(135deg, #E76832 0%, #FFC24B 100%)',
+                        WebkitBackgroundClip: 'text',
+                        WebkitTextFillColor: 'transparent'
+                      }}
+                    >
+                      "
+                    </span>
                   </div>
                   {testimonial.author && (
                     <p className="text-xs sm:text-sm text-gray-600 font-medium mt-4">{testimonial.author}</p>
