@@ -27,7 +27,7 @@ const FullWidthImage: React.FC<FullWidthImageProps> = ({ imageUrl }) => {
             src={imageUrl}
             alt="ChatGPT Interface"
             loading="lazy"
-            className="w-full h-auto object-contain cursor-pointer hover:opacity-95 transition-opacity duration-200 rounded-lg shadow-md hover:shadow-lg"
+            className="w-full h-auto object-contain cursor-pointer hover:opacity-95 transition-opacity duration-200"
             onClick={openModal}
           />
         </div>
@@ -46,7 +46,7 @@ const FullWidthImage: React.FC<FullWidthImageProps> = ({ imageUrl }) => {
             <img
               src={imageUrl}
               alt="ChatGPT Interface - Enlarged View"
-              className="max-w-full max-h-full object-contain rounded-lg shadow-2xl animate-scale-in"
+              className="max-w-full max-h-full object-contain animate-scale-in"
             />
             <button
               className="absolute top-4 right-4 bg-white rounded-full p-2 shadow-lg hover:bg-gray-100 transition-colors"
