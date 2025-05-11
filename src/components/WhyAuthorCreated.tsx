@@ -21,8 +21,14 @@ const WhyAuthorCreated: React.FC = () => {
   ];
 
   return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8">
-      <div className="container mx-auto max-w-6xl">
+    <section className="py-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+      {/* Подложка - декоративные элементы фона */}
+      <div className="absolute inset-0 bg-gradient-to-b from-orange-50/50 to-transparent" />
+      <div className="absolute top-1/4 left-0 w-96 h-96 bg-gradient-to-r from-[#E76832] to-[#FFC24B] rounded-full filter blur-[128px] opacity-10 -translate-x-1/2" />
+      <div className="absolute bottom-1/4 right-0 w-96 h-96 bg-gradient-to-l from-[#E76832] to-[#FFC24B] rounded-full filter blur-[128px] opacity-10 translate-x-1/2" />
+      <div className="absolute top-3/4 left-1/2 w-64 h-64 bg-gradient-to-br from-[#E76832] to-[#FFC24B] rounded-full filter blur-[100px] opacity-5 -translate-x-1/2" />
+
+      <div className="container mx-auto max-w-6xl relative z-10">
         <SectionTitle title="Зачем я написал этот гайд" />
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
