@@ -72,11 +72,7 @@ const GuideContent: React.FC = () => {
       title: '50+ промптов на все случаи жизни',
       topics: []
     }
-    ];
-
-      
-    
-    
+  ];
 
   return (
     <section className="py-12 sm:py-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
@@ -91,7 +87,7 @@ const GuideContent: React.FC = () => {
           {chapters.map((chapter, index) => (
             <div 
               key={index} 
-              className="bg-white/80 backdrop-blur-sm rounded-lg sm:rounded-2xl p-4 sm:p-6 shadow-md hover:shadow-lg transition-all duration-300 group"
+              className="bg-white/80 backdrop-blur-sm rounded-lg sm:rounded-xl p-3 sm:p-5 shadow-md hover:shadow-lg transition-all duration-300 group"
             >
               <div className="flex items-start gap-3 sm:gap-4">
                 <div 
@@ -104,7 +100,7 @@ const GuideContent: React.FC = () => {
                   </div>
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-base sm:text-lg font-semibold text-gray-900 mb-3">
+                  <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-3">
                     {chapter.title}
                   </h3>
                   
