@@ -53,7 +53,7 @@ const ForWho: React.FC = () => {
           {categories.map((category, index) => (
             <div 
               key={index} 
-              className="bg-white/80 backdrop-blur-sm rounded-xl sm:rounded-2xl p-6 sm:p-8 transition-all duration-500 transform hover:scale-[1.02] hover:shadow-2xl shadow-lg animate-scale-in group relative flex flex-col h-full"
+              className="bg-white/80 backdrop-blur-sm rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-8 transition-all duration-500 transform hover:scale-[1.02] hover:shadow-2xl shadow-lg animate-scale-in group relative flex flex-col h-full"
               style={{ animationDelay: `${index * 150}ms` }}
             >
               <div className="absolute inset-0 rounded-xl sm:rounded-2xl bg-gradient-to-r from-[#E76832] to-[#FFC24B] opacity-0 group-hover:opacity-100 transition-opacity duration-500" style={{ padding: '2px' }}>
@@ -75,11 +75,11 @@ const ForWho: React.FC = () => {
                   <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-3 sm:mb-4">
                     {category.title}
                   </h3>
-                  <p className="text-gray-700 text-base sm:text-lg leading-relaxed mb-4 sm:mb-6 flex-1">
+                  <p className="text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed mb-4 sm:mb-6 flex-1">
                     {category.description}
                   </p>
-                  <div className="bg-gradient-to-r from-orange-50 to-amber-50 rounded-lg sm:rounded-xl p-4 sm:p-5 transform group-hover:scale-105 transition-transform duration-300">
-                    <p className="text-gray-800 font-medium text-sm sm:text-base">
+                  <div className="bg-gradient-to-r from-orange-50 to-amber-50 rounded-lg sm:rounded-xl p-3 sm:p-4 transform group-hover:scale-105 transition-transform duration-300">
+                    <p className="text-sm sm:text-base text-gray-800 font-medium">
                       {category.result}
                     </p>
                   </div>
