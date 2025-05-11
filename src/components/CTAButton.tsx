@@ -3,7 +3,7 @@ import React from 'react';
 const CTAButton: React.FC = () => {
   return (
     <button 
-      className="group inline-flex items-center text-white font-medium py-3 sm:py-3.5 px-5 sm:px-6 rounded-full shadow-lg transform hover:scale-105 transition-all duration-300 text-sm sm:text-base"
+      className="group inline-flex items-center text-white font-medium py-3 sm:py-4 px-6 sm:px-8 rounded-full shadow-lg transform hover:scale-105 transition-all duration-300 text-base sm:text-lg"
       style={{
         background: 'linear-gradient(135deg, #E76832 0%, #FFC24B 100%)'
       }}
