@@ -29,11 +29,11 @@ const WhyAuthorCreated: React.FC = () => {
           {reasons.map((reason, index) => (
             <div 
               key={index}
-              className="group bg-white/80 backdrop-blur-sm rounded-2xl p-8 transition-all duration-500 hover:shadow-2xl relative flex flex-col"
+              className="group bg-white/80 backdrop-blur-sm rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-8 transition-all duration-500 hover:shadow-2xl relative flex flex-col"
             >
               {/* Gradient border on hover */}
-              <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-[#E76832] to-[#FFC24B] opacity-0 group-hover:opacity-100 transition-opacity duration-500" style={{ padding: '2px' }}>
-                <div className="h-full w-full bg-white/80 backdrop-blur-sm rounded-2xl" />
+              <div className="absolute inset-0 rounded-xl sm:rounded-2xl bg-gradient-to-r from-[#E76832] to-[#FFC24B] opacity-0 group-hover:opacity-100 transition-opacity duration-500" style={{ padding: '2px' }}>
+                <div className="h-full w-full bg-white/80 backdrop-blur-sm rounded-xl sm:rounded-2xl" />
               </div>
 
               <div className="relative flex flex-col items-center text-center gap-6 h-full">
@@ -48,10 +48,10 @@ const WhyAuthorCreated: React.FC = () => {
                 </div>
                 
                 <div className="flex-1 flex flex-col">
-                  <h3 className="text-xl font-semibold mb-4 text-gray-900">
+                  <h3 className="text-lg sm:text-xl font-semibold mb-4 text-gray-900">
                     {reason.title}
                   </h3>
-                  <p className="text-gray-700 text-lg leading-relaxed">
+                  <p className="text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed">
                     {reason.description}
                   </p>
                 </div>
