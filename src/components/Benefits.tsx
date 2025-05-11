@@ -25,15 +25,7 @@ const Benefits: React.FC = () => {
         <SectionTitle title="Что получишь на выходе" />
         
         <div className="grid grid-cols-1 lg:grid-cols-7 gap-6 sm:gap-8 items-center">
-          <div className="lg:col-span-3 flex items-center justify-center">
-            <img 
-              src="https://egftuzzffkkyebeatghv.supabase.co/storage/v1/object/sign/images/WithAIComparing.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InN0b3JhZ2UtdXJsLXNpZ25pbmcta2V5X2QwZWQyZjQyLWU3OGEtNDk0MS05ZjEwLWMwODMwYjU1ODQ0MCJ9.eyJ1cmwiOiJpbWFnZXMvV2l0aEFJQ29tcGFyaW5nLnBuZyIsImlhdCI6MTc0NjgxMDQxMSwiZXhwIjoxNzc4MzQ2NDExfQ.pYk6AVXapF3ncAtqjgrR0Qdbb4ztvn8D6NE5SH-658k"
-              alt="AI Assistant Interface"
-              loading="lazy"
-              className="w-full h-auto object-contain transform hover:scale-105 transition-all duration-300"
-            />
-          </div>
-
+          {/* Текстовый блок сначала (теперь слева) */}
           <div className="lg:col-span-4 flex flex-col justify-center gap-4">
             {benefits.map((benefit, index) => (
               <div 
@@ -55,6 +47,16 @@ const Benefits: React.FC = () => {
                 </div>
               </div>
             ))}
+          </div>
+          
+          {/* Изображение после (теперь справа) */}
+          <div className="lg:col-span-3 flex items-center justify-center">
+            <img 
+              src="https://egftuzzffkkyebeatghv.supabase.co/storage/v1/object/sign/images/WithAIComparing.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InN0b3JhZ2UtdXJsLXNpZ25pbmcta2V5X2QwZWQyZjQyLWU3OGEtNDk0MS05ZjEwLWMwODMwYjU1ODQ0MCJ9.eyJ1cmwiOiJpbWFnZXMvV2l0aEFJQ29tcGFyaW5nLnBuZyIsImlhdCI6MTc0NjgxMDQxMSwiZXhwIjoxNzc4MzQ2NDExfQ.pYk6AVXapF3ncAtqjgrR0Qdbb4ztvn8D6NE5SH-658k"
+              alt="AI Assistant Interface"
+              loading="lazy"
+              className="w-full h-auto object-contain transform hover:scale-105 transition-all duration-300"
+            />
           </div>
         </div>
         
