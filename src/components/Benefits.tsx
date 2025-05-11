@@ -22,7 +22,7 @@ const Benefits: React.FC = () => {
   return (
     <section className="py-12 sm:py-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
       <div className="container mx-auto max-w-6xl relative z-10">
-        <SectionTitle title="Что получишь" />
+        <SectionTitle title="Реальная выгода от гайда" />
         
         <div className="grid grid-cols-1 lg:grid-cols-7 gap-6 sm:gap-8 items-center">
           {/* Текстовый блок сначала (теперь слева) */}
