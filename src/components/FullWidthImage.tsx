@@ -40,13 +40,13 @@ const FullWidthImage: React.FC<FullWidthImageProps> = ({ imageUrl }) => {
           onClick={closeModal}
         >
           <div 
-            className="relative max-w-6xl max-h-[90vh] flex items-center justify-center"
+            className="relative w-full max-w-4xl flex items-center justify-center"
             onClick={(e) => e.stopPropagation()} // Предотвращает закрытие при клике на само изображение
           >
             <img
               src={imageUrl}
               alt="ChatGPT Interface - Enlarged View"
-              className="max-w-full max-h-full object-contain animate-scale-in"
+              className="max-w-full max-h-[80vh] object-contain animate-scale-in"
             />
             <button
               className="absolute top-4 right-4 bg-white rounded-full p-2 shadow-lg hover:bg-gray-100 transition-colors"
