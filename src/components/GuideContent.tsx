@@ -105,10 +105,10 @@ const GuideContent: React.FC = () => {
                   </h3>
                   
                   {chapter.topics.length > 0 ? (
-                    <ul className="space-y-2.5 sm:space-y-3">
+                    <ul className="space-y-2.5 sm:space-y-3 pl-0">
                       {chapter.topics.map((topic, i) => (
                         <li key={i} className="flex items-start group">
-                          <span className="mr-2 mt-1.5 w-1.5 h-1.5 rounded-full bg-gradient-to-r from-[#E76832] to-[#FFC24B] flex-shrink-0 group-hover:scale-150 transition-transform duration-300" />
+                          <span className="mr-1 md:mr-2 mt-1.5 w-1.5 h-1.5 rounded-full bg-gradient-to-r from-[#E76832] to-[#FFC24B] flex-shrink-0 group-hover:scale-150 transition-transform duration-300" />
                           <span className="text-sm sm:text-base text-gray-700 leading-snug sm:leading-relaxed">{topic}</span>
                         </li>
                       ))}
@@ -128,6 +128,18 @@ const GuideContent: React.FC = () => {
           <CTAButton />
         </div>
       </div>
+      
+      {/* Добавляем CSS для мобильной версии */}
+      <style jsx>{`
+        @media screen and (max-width: 640px) {
+          ul {
+            padding-left: 0 !important;
+          }
+          li span:first-child {
+            margin-right: 0.25rem !important;
+          }
+        }
+      `}</style>
     </section>
   );
 };
