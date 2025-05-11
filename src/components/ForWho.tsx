@@ -47,7 +47,7 @@ const ForWho: React.FC = () => {
       <div className="absolute bottom-1/4 right-0 w-96 h-96 bg-gradient-to-l from-[#E76832] to-[#FFC24B] rounded-full filter blur-[128px] opacity-10 translate-x-1/2" />
 
       <div className="container mx-auto max-w-6xl relative z-10">
-        <SectionTitle title="Для кого этот гайд" />
+        <SectionTitle title="Для кого" />
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-8 mb-8 sm:mb-10">
           {categories.map((category, index) => (
