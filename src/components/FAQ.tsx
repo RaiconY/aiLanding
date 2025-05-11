@@ -13,7 +13,7 @@ const FAQItem: React.FC<FAQItemProps> = ({ question, answer, isOpen, onClick }) 
   return (
     <div className="border-b border-gray-200 py-4">
       <button 
-        className="flex justify-between items-center w-full text-left font-medium text-lg text-gray-900 py-2"
+        className="flex justify-between items-center w-full text-left font-medium text-lg sm:text-xl text-gray-900 py-2"
         onClick={onClick}
       >
         {question}
@@ -26,7 +26,7 @@ const FAQItem: React.FC<FAQItemProps> = ({ question, answer, isOpen, onClick }) 
       <div 
         className={`overflow-hidden transition-all duration-300 ${isOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}
       >
-        <p className="py-4 text-gray-700 leading-relaxed">{answer}</p>
+        <p className="py-4 text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed">{answer}</p>
       </div>
     </div>
   );
@@ -83,7 +83,7 @@ const FAQ: React.FC = () => {
       <div className="container mx-auto max-w-4xl">
         <SectionTitle title="Часто задаваемые вопросы" />
         
-        <div className="bg-white rounded-2xl p-8 shadow-lg">
+        <div className="bg-white rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-8 shadow-lg">
           {faqs.map((faq, index) => (
             <FAQItem 
               key={index}
