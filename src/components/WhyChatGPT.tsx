@@ -32,17 +32,17 @@ const WhyChatGPT: React.FC = () => {
             {reasons.map((reason, index) => (
               <div 
                 key={index}
-                className="group relative bg-white rounded-2xl p-8 transition-all duration-300 hover:shadow-xl"
+                className="group relative bg-white rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-8 transition-all duration-300 hover:shadow-xl"
               >
-                <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-[#E76832] to-[#FFC24B] opacity-0 group-hover:opacity-100 transition-opacity duration-300" style={{ padding: '2px' }}>
-                  <div className="h-full w-full bg-white rounded-2xl" />
+                <div className="absolute inset-0 rounded-xl sm:rounded-2xl bg-gradient-to-r from-[#E76832] to-[#FFC24B] opacity-0 group-hover:opacity-100 transition-opacity duration-300" style={{ padding: '2px' }}>
+                  <div className="h-full w-full bg-white rounded-xl sm:rounded-2xl" />
                 </div>
                 
                 <div className="relative">
-                  <h3 className="text-xl font-semibold mb-3 bg-gradient-to-r from-[#E76832] to-[#FFC24B] bg-clip-text text-transparent transform group-hover:translate-x-1 transition-transform duration-300">
+                  <h3 className="text-lg sm:text-xl font-semibold mb-3 bg-gradient-to-r from-[#E76832] to-[#FFC24B] bg-clip-text text-transparent transform group-hover:translate-x-1 transition-transform duration-300">
                     {reason.title}
                   </h3>
-                  <p className="text-gray-700 text-lg leading-relaxed transform group-hover:translate-y-[-2px] transition-transform duration-300">
+                  <p className="text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed transform group-hover:translate-y-[-2px] transition-transform duration-300">
                     {reason.description}
                   </p>
                 </div>
