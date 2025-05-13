@@ -24,7 +24,7 @@ const Footer: React.FC = () => {
                   rel="noopener noreferrer"
                   className="hover:text-[#40A7E3] transition-colors"
                 >
-                  Телеграм @Ilya_Plv
+                  Телеграм @A_Grigorets
                 </a>
               </div>
               <div className="flex items-center text-gray-700 hover:text-gray-900 transition-colors">
