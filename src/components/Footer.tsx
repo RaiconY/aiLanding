@@ -22,7 +22,7 @@ const Footer: React.FC = () => {
                   href="https://t.me/A_Grigorets" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="hover:text-[#800080] transition-colors"
+                  className="hover:text-[#40A7E3] transition-colors"
                 >
                   Телеграм @Ilya_Plv
                 </a>
@@ -33,7 +33,7 @@ const Footer: React.FC = () => {
                   href="https://t.me/+s4wtiGQGCdkwOWMy" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="hover:text-[#ff6b81] transition-colors"
+                  className="hover:text-[#40A7E3] transition-colors"
                 >
                   Мой канал в Телеграме
                 </a>
