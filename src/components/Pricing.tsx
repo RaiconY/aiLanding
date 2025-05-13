@@ -17,7 +17,7 @@ const Pricing: React.FC = () => {
                 После добавления нового контента цена вырастет до 5990₽
               </p>
               <p className="text-lg text-gray-700">
-                Если ваш час стоит 50+$, то этот гайд окупится уже через пару часов
+                Если ваш час стоит более 3000₽, то этот гайд окупится уже через пару часов
               </p>
             </div>
 
@@ -27,7 +27,7 @@ const Pricing: React.FC = () => {
                   5 990 ₽
                 </span>
                 <span className="text-4xl font-bold bg-gradient-to-r from-[#E76832] to-[#FFC24B] bg-clip-text text-transparent">
-                  2 990 ₽
+                  2 990&nbsp;₽
                 </span>
               </div>
 
