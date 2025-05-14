@@ -42,7 +42,12 @@ const Pricing: React.FC = () => {
               
               {/* Мелкий текст под кнопкой с увеличенной шириной */}
               <p className="mt-4 text-sm text-gray-500 max-w-xl w-full px-4 sm:px-8 text-center">
-                После нажатия кнопки вы перейдете на защищенную страницу оплаты. После оплаты сразу получите ссылку на гайд. По всем вопросам можете писать @A_Grigorets https://t.me/A_Grigorets
+                После нажатия кнопки вы перейдете на защищенную страницу оплаты. После оплаты сразу получите ссылку на гайд. По всем вопросам можете писать <a 
+                  href="https://t.me/A_Grigorets" 
+                  className="text-[#E76832] hover:text-[#FFC24B] transition-colors duration-300"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >@A_Grigorets</a>
               </p>
             </div>
           </div>
