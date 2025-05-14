@@ -48,34 +48,37 @@ const Testimonials: React.FC = () => {
               </div>
               
               <div className="space-y-4">
-                <div 
-                  className="relative text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed whitespace-pre-line pl-6"
-                  style={{
-                    position: 'relative'
-                  }}
-                >
-                  <span 
-                    className="absolute top-0 left-0 text-4xl font-serif text-orange-300 leading-none"
-                    style={{ 
-                      transform: 'translateY(-50%)',
-                      background: 'linear-gradient(135deg, #E76832 0%, #FFC24B 100%)',
-                      WebkitBackgroundClip: 'text',
-                      WebkitTextFillColor: 'transparent',
-                    }}
-                  >
-                    "
-                  </span>
-                  {testimonials[0].text}
-                  <span 
-                    className="inline-block ml-1 text-4xl font-serif text-orange-300 leading-none"
-                    style={{ 
-                      background: 'linear-gradient(135deg, #E76832 0%, #FFC24B 100%)',
-                      WebkitBackgroundClip: 'text',
-                      WebkitTextFillColor: 'transparent',
-                    }}
-                  >
-                    "
-                  </span>
+                {/* ИСПРАВЛЕННЫЙ БЛОК ОТЗЫВА */}
+                <div className="relative text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed whitespace-pre-line">
+                  <div className="relative">
+                    <div 
+                      className="float-left mr-2 text-4xl font-serif leading-none"
+                      style={{ 
+                        height: "20px",
+                        margin: "0 8px 2px 0",
+                        background: 'linear-gradient(135deg, #E76832 0%, #FFC24B 100%)',
+                        WebkitBackgroundClip: 'text',
+                        WebkitTextFillColor: 'transparent',
+                      }}
+                    >
+                      "
+                    </div>
+                    
+                    {testimonials[0].text}
+                    
+                    <span 
+                      className="inline-block text-4xl font-serif leading-none ml-1"
+                      style={{ 
+                        background: 'linear-gradient(135deg, #E76832 0%, #FFC24B 100%)',
+                        WebkitBackgroundClip: 'text',
+                        WebkitTextFillColor: 'transparent',
+                        position: "relative",
+                        top: "4px"
+                      }}
+                    >
+                      "
+                    </span>
+                  </div>
                 </div>
                 
                 {testimonials[0].author && (
@@ -108,34 +111,36 @@ const Testimonials: React.FC = () => {
                   
                   <div className="space-y-4">
                     {!testimonial.text.includes("тут будет") && !testimonial.text.includes("конечно же") ? (
-                      <div 
-                        className="relative text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed whitespace-pre-line pl-6"
-                        style={{
-                          position: 'relative'
-                        }}
-                      >
-                        <span 
-                          className="absolute top-0 left-0 text-4xl font-serif text-orange-300 leading-none"
-                          style={{ 
-                            transform: 'translateY(-50%)',
-                            background: 'linear-gradient(135deg, #E76832 0%, #FFC24B 100%)',
-                            WebkitBackgroundClip: 'text',
-                            WebkitTextFillColor: 'transparent',
-                          }}
-                        >
-                          "
-                        </span>
-                        {testimonial.text}
-                        <span 
-                          className="inline-block ml-1 text-4xl font-serif text-orange-300 leading-none"
-                          style={{ 
-                            background: 'linear-gradient(135deg, #E76832 0%, #FFC24B 100%)',
-                            WebkitBackgroundClip: 'text',
-                            WebkitTextFillColor: 'transparent',
-                          }}
-                        >
-                          "
-                        </span>
+                      <div className="relative text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed whitespace-pre-line">
+                        <div className="relative">
+                          <div 
+                            className="float-left mr-2 text-4xl font-serif leading-none"
+                            style={{ 
+                              height: "20px",
+                              margin: "0 8px 2px 0",
+                              background: 'linear-gradient(135deg, #E76832 0%, #FFC24B 100%)',
+                              WebkitBackgroundClip: 'text',
+                              WebkitTextFillColor: 'transparent',
+                            }}
+                          >
+                            "
+                          </div>
+                          
+                          {testimonial.text}
+                          
+                          <span 
+                            className="inline-block text-4xl font-serif leading-none ml-1"
+                            style={{ 
+                              background: 'linear-gradient(135deg, #E76832 0%, #FFC24B 100%)',
+                              WebkitBackgroundClip: 'text',
+                              WebkitTextFillColor: 'transparent',
+                              position: "relative",
+                              top: "4px"
+                            }}
+                          >
+                            "
+                          </span>
+                        </div>
                       </div>
                     ) : (
                       <div className="text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed whitespace-pre-line">
