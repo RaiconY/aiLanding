@@ -39,7 +39,7 @@ const Testimonials: React.FC = () => {
                 className="w-12 h-12 rounded-full flex items-center justify-center transform group-hover:rotate-12 transition-all duration-500 bg-gradient-to-r from-[#E76832] to-[#FFC24B] p-[2px]"
               >
                 <div className="w-full h-full rounded-full bg-white flex items-center justify-center">
-                  <Star className="h-6 w-6 text-[#E76832]" />
+                  <MessageSquare className="h-6 w-6 text-[#E76832]" />
                 </div>
               </div>
               
