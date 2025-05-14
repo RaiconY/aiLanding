@@ -19,7 +19,7 @@ const Footer: React.FC = () => {
               <div className="flex items-center text-gray-700 hover:text-gray-900 transition-colors">
                 <MessageCircle className="h-5 w-5 mr-2" style={{ color: '#40A7E3' }} />
                 <a 
-                  href="https://t.me/A_Grigorets" 
+                  href="https://t.me/grigorets_assistant" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="hover:text-[#40A7E3] transition-colors"
