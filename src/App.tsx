@@ -32,7 +32,7 @@ function App() {
       
       <TimeComparison />
       <WhyChatGPT />
-      <AIDisclosure />
+      {/* <AIDisclosure />*/}
       <FullWidthImage imageUrl="https://egftuzzffkkyebeatghv.supabase.co/storage/v1/object/sign/images/Screens%20with%20rabbit%20Robot.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InN0b3JhZ2UtdXJsLXNpZ25pbmcta2V5X2QwZWQyZjQyLWU3OGEtNDk0MS05ZjEwLWMwODMwYjU1ODQ0MCJ9.eyJ1cmwiOiJpbWFnZXMvU2NyZWVucyB3aXRoIHJhYmJpdCBSb2JvdC5wbmciLCJpYXQiOjE3NDY5MDQ5ODYsImV4cCI6MTc3ODQ0MDk4Nn0.bPrkb9PEv1FjXfxWpYOQuj0f4ss6NPCFAU7OsGcVNLw" />
       <Testimonials /> 
       <Pricing />
