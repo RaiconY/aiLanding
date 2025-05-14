@@ -22,7 +22,7 @@ const Testimonials: React.FC = () => {
       <div className="absolute bottom-1/4 right-0 w-96 h-96 bg-gradient-to-l from-[#E76832] to-[#FFC24B] rounded-full filter blur-[128px] opacity-10 translate-x-1/2" />
 
       <div className="container mx-auto max-w-6xl relative z-10">
-        <SectionTitle title="Отзывы" />
+        <SectionTitle title="Первые отзывы" />
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {/* Первый отзыв - слева */}
