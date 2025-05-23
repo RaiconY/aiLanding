@@ -13,8 +13,7 @@ const Hero: React.FC = () => {
               <span className="font-semibold text-sm sm:text-base" style={{ color: '#E76832' }}>Гайд по ChatGPT</span>
             </div>
             
-            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-gray-900">
-              Научись работать с ChatGPT и экономь до 100 000₽ в месяц
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-gray-900">          Научись&nbsp;работать&nbsp;с&nbsp;ChatGPT&nbsp;и&nbsp;экономь&nbsp;до&nbsp;100&nbsp;000₽&nbsp;в&nbsp;месяц
             </h1>
             
             <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-700 leading-relaxed">
@@ -28,8 +27,8 @@ const Hero: React.FC = () => {
       text: "Освободи"
     },
     {
-      number: "от 40 000 ₽",
-      text: "Экономь"
+      number: "до 100 000 ₽",
+      text: "Экономь в месяц"
     },
     {
       text: "Автоматизируй",
