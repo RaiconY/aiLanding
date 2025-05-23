@@ -14,7 +14,7 @@ const Hero: React.FC = () => {
             </div>
             
             <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-gray-900">
-              Научись работать с ChatGPT и экономь 900 000₽ в год на своих задачах
+              Научись работать с ChatGPT и экономь 900 000₽
             </h1>
             
             <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-700 leading-relaxed">
