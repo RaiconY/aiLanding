@@ -40,6 +40,7 @@ const Hero: React.FC = () => {
                   key={index} 
                   className="bg-white/90 rounded-lg p-2 sm:p-3 shadow-sm hover:shadow-md transition-all duration-300"
                 >
+                  <div className="text-xs sm:text-sm text-gray-600">{stat.text}</div>
                   <span 
                     className="text-lg sm:text-xl font-semibold block mb-1"
                     style={{ 
@@ -50,7 +51,7 @@ const Hero: React.FC = () => {
                   >
                     {stat.number}
                   </span>
-                  <div className="text-xs sm:text-sm text-gray-600">{stat.text}</div>
+                  
                 </div>
               ))}
             </div>
