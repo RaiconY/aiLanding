@@ -5,19 +5,19 @@ import SectionTitle from './SectionTitle';
 const EnhancedTestimonials: React.FC = () => {
   const testimonials = [
     {
-      name: 'Евгений',
+      name: 'Евгений П.',
       position: 'Дизайнер',
       text: 'Мне очень понравилось как ты расписываешь для новичков — я кайфанул уже с самого пункта настройки. Оказывается в ChatGPT можно в настройках профиля очень много всего делать. Для меня это стопудово уже очень полезная информация.'
     },
     {
-      name: 'Максим',
-      position: 'Владелец большой компании',
+      name: 'Максим К.',
+      position: 'Владелец компании',
       text: 'Классный документ, структурирован и без воды. Я бы его прикупил у тебя для компании, чтобы ЛПР могли юзать.'
     },
     {
-      name: 'Наташа',
-      position: 'Владелица СММ агентства',
-      text: 'Самое полезное для меня — бот по SEO статьям 🤣 Это офигенно, что он может прямо писать за нас эти статьи. Полезно было в целом про функционал, про то, как чат думает. Про генерацию картинок круто — я это команде еще расскажу.'
+      name: 'Наташа Я.',
+      position: 'Основатель СММ агентства',
+      text: 'Очень понравилось, как детально всё расписано. Особенно впечатлил раздел про SEO статьи 🤣 Это потрясающе, как ChatGPT может генерировать качественный контент. Полезно было в целом про функционал, про то, как чат думает. Про генерацию картинок тоже круто — я это команде еще расскажу.'
     }
   ];
 
@@ -35,7 +35,7 @@ const EnhancedTestimonials: React.FC = () => {
           {testimonials.map((testimonial, index) => (
             <div 
               key={index} 
-              className="group bg-white/80 backdrop-blur-sm rounded-xl sm:rounded-2xl p-6 md:p-8 transition-all duration-500 transform hover:scale-[1.02] hover:shadow-2xl shadow-lg animate-scale-in relative"
+              className="group bg-white/80 backdrop-blur-sm rounded-xl sm:rounded-2xl p-5 md:p-6 transition-all duration-500 transform hover:scale-[1.02] hover:shadow-2xl shadow-lg animate-scale-in relative"
               style={{ animationDelay: `${index * 150}ms` }}
             >
               {/* Gradient border on hover */}
@@ -47,23 +47,23 @@ const EnhancedTestimonials: React.FC = () => {
                 {/* Content */}
                 <div className="flex flex-col h-full">
                   {/* Testimonial text */}
-                  <div className="mb-6 flex-1">
-                    <p className="text-gray-700 leading-relaxed text-lg whitespace-pre-line">
+                  <div className="mb-4 flex-1">
+                    <p className="text-gray-700 leading-relaxed text-base whitespace-pre-line">
                       {testimonial.text}
                     </p>
                   </div>
                   
                   {/* Author info */}
-                  <div className="flex items-center gap-4 pt-4 border-t border-gray-100">
-                    <div className="w-12 h-12 rounded-full flex items-center justify-center bg-gradient-to-r from-[#E76832] to-[#FFC24B] p-[2px] transform group-hover:rotate-12 transition-all duration-500">
+                  <div className="flex items-center gap-3 pt-3 border-t border-gray-100">
+                    <div className="w-10 h-10 rounded-full flex items-center justify-center bg-gradient-to-r from-[#E76832] to-[#FFC24B] p-[2px] transform group-hover:rotate-12 transition-all duration-500">
                       <div className="w-full h-full rounded-full bg-white flex items-center justify-center">
-                        <User className="h-6 w-6 text-[#E76832]" />
+                        <User className="h-5 w-5 text-[#E76832]" />
                       </div>
                     </div>
                     
                     <div>
-                      <h3 className="font-bold text-gray-900 text-lg">{testimonial.name}</h3>
-                      <p className="text-gray-600">{testimonial.position}</p>
+                      <h3 className="font-bold text-gray-900 text-base">{testimonial.name}</h3>
+                      <p className="text-gray-600 text-sm">{testimonial.position}</p>
                     </div>
                   </div>
                 </div>
