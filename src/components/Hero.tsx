@@ -32,7 +32,7 @@ const Hero: React.FC = () => {
       text: "экономь на дизайнере"
     },
     {
-      number: "80%",
+      number: "80% рутины",
       text: "Автоматизировано"
     },
               ].map((stat, index) => (
