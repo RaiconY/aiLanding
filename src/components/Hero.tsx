@@ -18,7 +18,7 @@ const Hero: React.FC = () => {
             </h1>
             
             <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-700 leading-relaxed">
-              Пошаговое руководство для тех, кто хочет внедрить ИИ в&nbsp;свою жизнь и получать реальные результаты
+              Пошаговое руководство для тех, кто хочет внедрить ИИ в&nbsp;свою жизнь и&nbsp;получить реальные результаты
             </p>
             
             <div className="grid grid-cols-3 gap-2 sm:gap-4 pt-2">
