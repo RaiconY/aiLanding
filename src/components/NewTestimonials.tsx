@@ -18,11 +18,6 @@ const EnhancedTestimonials: React.FC = () => {
       name: 'Наташа',
       position: 'Владелица СММ агентства',
       text: 'Самое полезное для меня — бот по SEO статьям 🤣 Это офигенно, что он может прямо писать за нас эти статьи. Полезно было в целом про функционал, про то, как чат думает. Про генерацию картинок круто — я это команде еще расскажу.'
-    },
-    {
-      name: 'Александра',
-      position: 'Продуктовый коуч',
-      text: 'Во-первых, это отдельное эстетическое удовольствие, которое я получаю от всего, к чему ты прикасаешься 💕\n\nПотому что то, что ты делаешь — это правда очень красиво и очень структурно\n\nВторое, что мне очень понравилось — ты пишешь с большим количеством примеров. Очень помогает, когда они есть'
     }
   ];
 
@@ -48,22 +43,9 @@ const EnhancedTestimonials: React.FC = () => {
                 <div className="h-full w-full bg-white/80 backdrop-blur-sm rounded-xl sm:rounded-2xl" />
               </div>
 
-              <div className="relative flex flex-col h-full">
-                {/* Quote marks */}
-                <div 
-                  className="text-5xl font-serif leading-none absolute -top-3 -left-1 transform -translate-y-1/2"
-                  style={{ 
-                    background: 'linear-gradient(135deg, #E76832 0%, #FFC24B 100%)',
-                    WebkitBackgroundClip: 'text',
-                    WebkitTextFillColor: 'transparent',
-                    opacity: 0.8
-                  }}
-                >
-                  "
-                </div>
-                
+              <div className="relative flex flex-col h-full">                
                 {/* Content */}
-                <div className="pt-4 flex flex-col h-full">
+                <div className="flex flex-col h-full">
                   {/* Testimonial text */}
                   <div className="mb-6 flex-1">
                     <p className="text-gray-700 leading-relaxed text-lg whitespace-pre-line">
@@ -84,19 +66,6 @@ const EnhancedTestimonials: React.FC = () => {
                       <p className="text-gray-600">{testimonial.position}</p>
                     </div>
                   </div>
-                </div>
-
-                {/* End quote mark */}
-                <div 
-                  className="text-5xl font-serif leading-none absolute bottom-4 right-6"
-                  style={{ 
-                    background: 'linear-gradient(135deg, #E76832 0%, #FFC24B 100%)',
-                    WebkitBackgroundClip: 'text',
-                    WebkitTextFillColor: 'transparent',
-                    opacity: 0.8
-                  }}
-                >
-                  "
                 </div>
               </div>
             </div>
