@@ -32,8 +32,9 @@ const Hero: React.FC = () => {
       text: "экономь на дизайнере"
     },
     {
+      text: "автоматизировано",
       number: "80% рутины",
-      text: "Автоматизировано"
+      
     },
               ].map((stat, index) => (
                 <div 
