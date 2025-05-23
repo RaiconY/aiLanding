@@ -46,4 +46,42 @@ const Hero: React.FC = () => {
               ].map(({ top, value }) => (
                 <div
                   key={value}
-                  className="bg-white/90 rounded-lg p-2 sm:p-3 shadow-sm hover:shadow-md transition-all du
+                  className="bg-white/90 rounded-lg p-2 sm:p-3 shadow-sm hover:shadow-md transition-all duration-300"
+                >
+                  <div className="text-xs sm:text-sm text-gray-600">{top}</div>
+                  <span
+                    className="text-lg sm:text-xl font-semibold block mb-1 text-accent"
+                  >
+                    {value}
+                  </span>
+                </div>
+              ))}
+            </div>
+
+            {/* CTA */}
+            <div className="pt-4">
+              <CTAButton />
+              <p className="mt-1 text-xs text-gray-500">
+                14-дневная гарантия возврата денег
+              </p>
+            </div>
+          </div>
+
+          {/* ---- IMAGE SIDE ------------------------------------------------- */}
+          <div className="flex justify-center items-center animate-fade-in order-1 md:order-2 -mx-4 sm:mx-0">
+            <div className="relative w-full md:w-[135%] transform hover:scale-105 transition-transform duration-500">
+              <img
+                src="https://egftuzzffkkyebeatghv.supabase.co/storage/v1/object/sign/images/Spiral%20Chapters.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InN0b3JhZ2UtdXJsLXNpZ25pbmcta2V5X2QwZWQyZjQyLWU3OGEtNDk0MS05ZjEwLWMwODMwYjU1ODQ0MCJ9.eyJ1cmwiOiJpbWFnZXMvU3BpcmFsIENoYXB0ZXJzLnBuZyIsImlhdCI6MTc0NjgwMTA5NCwiZXhwIjoxNzc4MzM3MDk0fQ.1u992xTmfzKWeyuOxWjvLsKaBBtb39r03uEIT7Y50Do"
+                alt="Обложки глав гайда"
+                loading="eager"
+                className="w-full h-auto object-contain"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Hero;
