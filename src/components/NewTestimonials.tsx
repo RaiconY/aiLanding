@@ -43,28 +43,28 @@ const EnhancedTestimonials: React.FC = () => {
                 <div className="h-full w-full bg-white/80 backdrop-blur-sm rounded-xl sm:rounded-2xl" />
               </div>
 
-              <div className="relative flex flex-col h-full">                
+              <div className="relative flex flex-col h-full">
+                {/* Author info at the top */}
+                <div className="flex items-center gap-3 mb-4 pb-3 border-b border-gray-100">
+                  <div className="w-10 h-10 rounded-full flex items-center justify-center bg-gradient-to-r from-[#E76832] to-[#FFC24B] p-[2px] transform group-hover:rotate-12 transition-all duration-500">
+                    <div className="w-full h-full rounded-full bg-white flex items-center justify-center">
+                      <User className="h-5 w-5 text-[#E76832]" />
+                    </div>
+                  </div>
+                  
+                  <div>
+                    <h3 className="font-bold text-gray-900 text-base">{testimonial.name}</h3>
+                    <p className="text-gray-600 text-sm">{testimonial.position}</p>
+                  </div>
+                </div>
+                
                 {/* Content */}
                 <div className="flex flex-col h-full">
                   {/* Testimonial text */}
-                  <div className="mb-4 flex-1">
+                  <div className="flex-1">
                     <p className="text-gray-700 leading-relaxed text-base whitespace-pre-line">
                       {testimonial.text}
                     </p>
-                  </div>
-                  
-                  {/* Author info */}
-                  <div className="flex items-center gap-3 pt-3 border-t border-gray-100">
-                    <div className="w-10 h-10 rounded-full flex items-center justify-center bg-gradient-to-r from-[#E76832] to-[#FFC24B] p-[2px] transform group-hover:rotate-12 transition-all duration-500">
-                      <div className="w-full h-full rounded-full bg-white flex items-center justify-center">
-                        <User className="h-5 w-5 text-[#E76832]" />
-                      </div>
-                    </div>
-                    
-                    <div>
-                      <h3 className="font-bold text-gray-900 text-base">{testimonial.name}</h3>
-                      <p className="text-gray-600 text-sm">{testimonial.position}</p>
-                    </div>
                   </div>
                 </div>
               </div>
