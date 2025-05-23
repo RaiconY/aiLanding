@@ -1,5 +1,6 @@
 import React from 'react';
 import Hero from './components/Hero';
+import NewTestimonials from './components/NewTestimonials';
 import StudyTime from './components/StudyTime';
 import Stats from './components/Stats';
 import ForWho from './components/ForWho';
@@ -21,6 +22,7 @@ function App() {
   return (
     <div className="min-h-screen">
       <Hero />
+      <NewTestimonials />
       <FullWidthImage imageUrl="https://egftuzzffkkyebeatghv.supabase.co/storage/v1/object/sign/images/Screens_with_circle%20(1).png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InN0b3JhZ2UtdXJsLXNpZ25pbmcta2V5X2QwZWQyZjQyLWU3OGEtNDk0MS05ZjEwLWMwODMwYjU1ODQ0MCJ9.eyJ1cmwiOiJpbWFnZXMvU2NyZWVuc193aXRoX2NpcmNsZSAoMSkucG5nIiwiaWF0IjoxNzQ2OTA0MzUwLCJleHAiOjE3Nzg0NDAzNTB9.fTllEdp66BfVieoSTuX2RpUKJJWI04_ar-xXQdroVhQ" />
       <StudyTime />
       {/* <Stats />  */}
@@ -29,7 +31,6 @@ function App() {
       <FullWidthImage imageUrl="https://egftuzzffkkyebeatghv.supabase.co/storage/v1/object/sign/images/Screens%20with%20rabbit%20lamp.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InN0b3JhZ2UtdXJsLXNpZ25pbmcta2V5X2QwZWQyZjQyLWU3OGEtNDk0MS05ZjEwLWMwODMwYjU1ODQ0MCJ9.eyJ1cmwiOiJpbWFnZXMvU2NyZWVucyB3aXRoIHJhYmJpdCBsYW1wLnBuZyIsImlhdCI6MTc0NjkwNTUzNSwiZXhwIjoxNzc4NDQxNTM1fQ.j9ROEIIktDYAFaqsyNO47SRSKTnunjZWY8x8jE5I7Uk" />
       <GuideContent />
       <FullWidthImage imageUrl="https://egftuzzffkkyebeatghv.supabase.co/storage/v1/object/sign/images/Screens%20with%20chapters.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InN0b3JhZ2UtdXJsLXNpZ25pbmcta2V5X2QwZWQyZjQyLWU3OGEtNDk0MS05ZjEwLWMwODMwYjU1ODQ0MCJ9.eyJ1cmwiOiJpbWFnZXMvU2NyZWVucyB3aXRoIGNoYXB0ZXJzLnBuZyIsImlhdCI6MTc0NjkwNTIwMywiZXhwIjoxNzc4NDQxMjAzfQ.R4PyK3VeUSSicQ70U26f7H-44URHouQt_X9C3sTAhwc" />
-      
       <TimeComparison />
       <WhyChatGPT />
       {/* <AIDisclosure />*/}
@@ -46,5 +47,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
