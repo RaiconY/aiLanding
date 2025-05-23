@@ -14,11 +14,11 @@ const Hero: React.FC = () => {
             </div>
             
             <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-gray-900">
-              Увеличь свою продуктивность в&nbsp;3&nbsp;раза с&nbsp;ChatGPT
+              Экономь 900 000₽ в год на рутинных задачах с помощью ChatGPT
             </h1>
             
             <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-700 leading-relaxed">
-              Практическое руководство для тех, кто хочет внедрить ИИ в повседневную работу и получать реальные результаты
+              Пошаговая система от практика, который 2 года использует ИИ для бизнеса
             </p>
             
             <div className="grid grid-cols-3 gap-2 sm:gap-4 pt-2">
