@@ -23,9 +23,19 @@ const Hero: React.FC = () => {
             
             <div className="grid grid-cols-3 gap-2 sm:gap-4 pt-2">
               {[
-                { number: "+50", text: "шаблонов для экономии 2+ часов в день" },
-                { number: "+20", text: "промптов, заменяющих работу дизайнера" },
-                { number: "+10", text: "готовых GPTs для автоматизации основных задач" }
+                {
+      number: "3 часа",
+      text: "экономь ежедневно"
+    },
+    {
+      number: "40 000₽/мес",
+      text: "экономь на дизайнере"
+    },
+    {
+      text: "Автоматизируй",
+      number: "80%",
+      text: "рутины"
+    },
               ].map((stat, index) => (
                 <div 
                   key={index} 
