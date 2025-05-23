@@ -31,11 +31,11 @@ const EnhancedTestimonials: React.FC = () => {
       <div className="container mx-auto max-w-6xl relative z-10">
         <SectionTitle title="Отзывы от профессионалов" />
         
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-5">
           {testimonials.map((testimonial, index) => (
             <div 
               key={index} 
-              className="group bg-white/80 backdrop-blur-sm rounded-xl sm:rounded-2xl p-5 md:p-6 transition-all duration-500 transform hover:scale-[1.02] hover:shadow-2xl shadow-lg animate-scale-in relative"
+              className="group bg-white/80 backdrop-blur-sm rounded-xl sm:rounded-2xl p-4 md:p-5 transition-all duration-500 transform hover:scale-[1.02] hover:shadow-2xl shadow-lg animate-scale-in relative"
               style={{ animationDelay: `${index * 150}ms` }}
             >
               {/* Gradient border on hover */}
