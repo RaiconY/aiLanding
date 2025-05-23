@@ -34,7 +34,6 @@ const Hero: React.FC = () => {
     {
       text: "автоматизировано",
       number: "80% рутины",
-      
     },
               ].map((stat, index) => (
                 <div 
