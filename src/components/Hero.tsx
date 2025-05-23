@@ -24,8 +24,8 @@ const Hero: React.FC = () => {
             <div className="grid grid-cols-3 gap-2 sm:gap-4 pt-2">
               {[
                 {
-      number: "3 часа",
-      text: "Освободи ежедневно"
+      number: "3 часа в день",
+      text: "Освободи"
     },
     {
       number: "от 40 000 ₽",
