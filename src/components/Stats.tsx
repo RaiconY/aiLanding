@@ -3,16 +3,17 @@ import React from 'react';
 const Stats: React.FC = () => {
   const stats = [
     {
-      number: "+50",
-      text: "готовых промптов"
+      number: "3 часа",
+      text: "экономь ежедневно"
     },
     {
-      number: "+20",
-      text: "промптов для создания картинок"
+      number: "40 000₽/мес",
+      text: "экономь на дизайнере"
     },
     {
-      number: "+10",
-      text: "GPTs под ваши задачи"
+      text: "Автоматизируй"
+      number: "80%",
+      text: "рутины"
     },
   ];
 
