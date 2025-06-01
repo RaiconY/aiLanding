@@ -11,10 +11,10 @@ const Pricing: React.FC = () => {
           <div className="max-w-2xl mx-auto space-y-8">
             <div className="text-center space-y-6">
               <p className="text-xl text-gray-900">
-                Стартовая цена гайда — <span className="font-semibold">3&nbsp;990&nbsp;₽</span>
+                Стартовая цена гайда — <span className="font-semibold">4&nbsp;990&nbsp;₽</span>
               </p>
               <p className="text-lg text-gray-700">
-                После добавления нового контента цена вырастет до 5&nbsp;990&nbsp;₽
+                7 июня цена вырастит до 7&nbsp;777&nbsp;₽
               </p>
               <p className="text-lg text-gray-700">
                 Если ваш час стоит более 3&nbsp;000&nbsp;₽, то этот гайд окупится уже через пару часов
@@ -24,15 +24,15 @@ const Pricing: React.FC = () => {
             <div className="flex flex-col items-center pt-8 border-t border-gray-100">
               <div className="flex items-center gap-6 mb-8">
                 <span className="text-3xl font-bold text-gray-400 line-through">
-                  5&nbsp;990&nbsp;₽
+                  7&nbsp;777&nbsp;₽
                 </span>
                 <span className="text-4xl font-bold bg-gradient-to-r from-[#E76832] to-[#FFC24B] bg-clip-text text-transparent">
-                  3&nbsp;990&nbsp;₽
+                  4&nbsp;990&nbsp;₽
                 </span>
               </div>
 
               <a 
-                href="https://payform.ru/c97mLiR/" 
+                href="https://payform.ru/s37Ay19/" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-gradient-to-r from-[#E76832] to-[#FFC24B] text-white font-medium px-8 py-4 rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 text-lg"
