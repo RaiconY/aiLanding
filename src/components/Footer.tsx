@@ -19,15 +19,15 @@ const Footer: React.FC = () => {
               <div className="flex items-center text-gray-700 hover:text-gray-900 transition-colors">
                 <MessageCircle className="h-5 w-5 mr-2" style={{ color: '#40A7E3' }} />
                 <a 
-                  href="https://t.me/Ilya_Plv" 
+                  href="https://t.me/grigorets_assistant" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="hover:text-[#40A7E3] transition-colors"
                 >
-                  Телеграм @Ilya_Plv
+                  Телеграм @grigorets_assistant
                 </a>
               </div>
-              <div className="flex items-center text-gray-700 hover:text-gray-900 transition-colors">
+              {/* <div className="flex items-center text-gray-700 hover:text-gray-900 transition-colors">
                 <Send className="h-5 w-5 mr-2" style={{ color: '#40A7E3' }} />
                 <a 
                   href="https://t.me/iliaprovse" 
@@ -37,7 +37,7 @@ const Footer: React.FC = () => {
                 >
                   Мой канал в Телеграме
                 </a>
-              </div>
+              </div> */}
             </div>
           </div>
           
