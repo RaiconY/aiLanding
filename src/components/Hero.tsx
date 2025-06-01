@@ -14,23 +14,33 @@ const Hero: React.FC = () => {
             </div>
             
             <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-gray-900">
-              Увеличь свою продуктивность в&nbsp;3&nbsp;раза с&nbsp;ChatGPT
+Научись работать с&nbsp;ChatGPT и&nbsp;экономь до&nbsp;100&nbsp;000&nbsp;₽ в&nbsp;месяц
             </h1>
             
             <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-700 leading-relaxed">
-              Практическое руководство для тех, кто хочет внедрить ИИ в повседневную работу и получать реальные результаты
+              Пошаговое руководство для тех, кто хочет внедрить ИИ в&nbsp;свою жизнь и&nbsp;получить реальные результаты
             </p>
             
             <div className="grid grid-cols-3 gap-2 sm:gap-4 pt-2">
               {[
-                { number: "+50", text: "шаблонов для экономии 2+ часов в день" },
-                { number: "+20", text: "промптов, заменяющих работу дизайнера" },
-                { number: "+10", text: "готовых GPTs для автоматизации основных задач" }
+                {
+      number: "3 часа в день",
+      text: "Освободи"
+    },
+    {
+      number: "до 100 000 ₽",
+      text: "Экономь в месяц"
+    },
+    {
+      text: "Автоматизируй",
+      number: "80% рутины",
+    },
               ].map((stat, index) => (
                 <div 
                   key={index} 
                   className="bg-white/90 rounded-lg p-2 sm:p-3 shadow-sm hover:shadow-md transition-all duration-300"
                 >
+                  <div className="text-xs sm:text-sm text-gray-600">{stat.text}</div>
                   <span 
                     className="text-lg sm:text-xl font-semibold block mb-1"
                     style={{ 
@@ -41,7 +51,7 @@ const Hero: React.FC = () => {
                   >
                     {stat.number}
                   </span>
-                  <div className="text-xs sm:text-sm text-gray-600">{stat.text}</div>
+                  
                 </div>
               ))}
             </div>
@@ -54,7 +64,7 @@ const Hero: React.FC = () => {
           <div className="flex justify-center items-center animate-fade-in order-1 md:order-2 -mx-4 sm:mx-0">
             <div className="relative w-full md:w-[135%] transform hover:scale-105 transition-transform duration-500">
               <img 
-                src="https://egftuzzffkkyebeatghv.supabase.co/storage/v1/object/sign/images/Spiral%20Chapters.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InN0b3JhZ2UtdXJsLXNpZ25pbmcta2V5X2QwZWQyZjQyLWU3OGEtNDk0MS05ZjEwLWMwODMwYjU1ODQ0MCJ9.eyJ1cmwiOiJpbWFnZXMvU3BpcmFsIENoYXB0ZXJzLnBuZyIsImlhdCI6MTc0NjgwMTA5NCwiZXhwIjoxNzc4MzM3MDk0fQ.1u992xTmfzKWeyuOxWjvLsKaBBtb39r03uEIT7Y50Do"
+                src="https://egftuzzffkkyebeatghv.supabase.co/storage/v1/object/sign/images/WithAIComparing.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InN0b3JhZ2UtdXJsLXNpZ25pbmcta2V5X2QwZWQyZjQyLWU3OGEtNDk0MS05ZjEwLWMwODMwYjU1ODQ0MCJ9.eyJ1cmwiOiJpbWFnZXMvV2l0aEFJQ29tcGFyaW5nLnBuZyIsImlhdCI6MTc0ODc4ODIxNSwiZXhwIjoxNzgwMzI0MjE1fQ.bmzhCY_Hf0dStJIDlAYjCRX-Ow_iZ2HZDWjB4SIoyRQ"
                 alt="AI Assistant Interface"
                 loading="eager"
                 className="w-full h-auto object-contain"
