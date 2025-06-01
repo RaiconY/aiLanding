@@ -17,8 +17,8 @@ const StudyTime: React.FC = () => {
             <div className="flex-shrink-0 w-20 h-20 md:w-24 md:h-24 md:mr-8 mb-4 md:mb-0 relative z-10">
               <div className="w-full h-full rounded-lg overflow-hidden">
                 <img 
-                  src="https://egftuzzffkkyebeatghv.supabase.co/storage/v1/object/sign/images/Unicorn.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InN0b3JhZ2UtdXJsLXNpZ25pbmcta2V5X2QwZWQyZjQyLWU3OGEtNDk0MS05ZjEwLWMwODMwYjU1ODQ0MCJ9.eyJ1cmwiOiJpbWFnZXMvVW5pY29ybi5wbmciLCJpYXQiOjE3NDY4ODk1MDMsImV4cCI6MTc3ODQyNTUwM30.4poHwr_voRmjtWqVXY9Nk85eqABPudR8U2PVNl1zQEg" 
-                  alt="Единорог" 
+                  src="https://egftuzzffkkyebeatghv.supabase.co/storage/v1/object/sign/images/Rabbit.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InN0b3JhZ2UtdXJsLXNpZ25pbmcta2V5X2QwZWQyZjQyLWU3OGEtNDk0MS05ZjEwLWMwODMwYjU1ODQ0MCJ9.eyJ1cmwiOiJpbWFnZXMvUmFiYml0LnBuZyIsImlhdCI6MTc0ODc5MjExOCwiZXhwIjoxNzgwMzI4MTE4fQ.WPdiP9HUSbAhdr3R47fet_FDBZB5dTgCIg6u4R55KRE" 
+                  alt="Rabbit" 
                   loading="lazy"
                   className="w-full h-full object-contain transform group-hover:scale-110 transition-transform duration-500"
                 />
