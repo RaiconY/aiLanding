@@ -14,7 +14,7 @@ const StudyTime: React.FC = () => {
               className="absolute inset-0 bg-gradient-to-r from-[#E76832]/5 to-[#FFC24B]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
             />
             
-            <div className="flex-shrink-0 w-24 h-4 md:w-28 md:h-28 md:mr-8 mb-4 md:mb-0 relative z-10">
+            <div className="flex-shrink-0 w-24 h-24 md:w-28 md:h-28 md:mr-8 mb-4 md:mb-0 relative z-10">
               <div className="w-full h-full rounded-lg overflow-hidden">
                 <img 
                   src="https://egftuzzffkkyebeatghv.supabase.co/storage/v1/object/sign/images/Rabbit.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InN0b3JhZ2UtdXJsLXNpZ25pbmcta2V5X2QwZWQyZjQyLWU3OGEtNDk0MS05ZjEwLWMwODMwYjU1ODQ0MCJ9.eyJ1cmwiOiJpbWFnZXMvUmFiYml0LnBuZyIsImlhdCI6MTc0ODc5MjExOCwiZXhwIjoxNzgwMzI4MTE4fQ.WPdiP9HUSbAhdr3R47fet_FDBZB5dTgCIg6u4R55KRE" 
