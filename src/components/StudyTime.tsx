@@ -2,7 +2,7 @@ import React from 'react';
 
 const StudyTime: React.FC = () => {
   return (
-    <div className="py-8 px-4 sm:px-6 lg:px-8">
+    <div className="py-12 sm:py-16 lg:py-24 px-4 sm:px-6 lg:px-8">
       <div className="container mx-auto max-w-4xl">
         <div 
           className="bg-gradient-to-r from-[#E76832] to-[#FFC24B] p-0.5 rounded-xl shadow-lg transform hover:scale-[1.02] transition-all duration-300 hover:shadow-xl group"
