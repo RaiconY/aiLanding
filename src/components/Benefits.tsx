@@ -52,7 +52,7 @@ const Benefits: React.FC = () => {
           {/* Изображение после (теперь справа) */}
           <div className="lg:col-span-3 flex items-center justify-center">
             <img 
-              src="https://egftuzzffkkyebeatghv.supabase.co/storage/v1/object/sign/images/Screens%20with%20chapters.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InN0b3JhZ2UtdXJsLXNpZ25pbmcta2V5X2QwZWQyZjQyLWU3OGEtNDk0MS05ZjEwLWMwODMwYjU1ODQ0MCJ9.eyJ1cmwiOiJpbWFnZXMvU2NyZWVucyB3aXRoIGNoYXB0ZXJzLnBuZyIsImlhdCI6MTc0ODc5MjU4MSwiZXhwIjoxNzgwMzI4NTgxfQ.BzoBgVJLxyXRzUYkl2Hss2Apbq4bsrBuydm35Gry8M0"
+              src="https://egftuzzffkkyebeatghv.supabase.co/storage/v1/object/sign/images/Spiral%20Chapters.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InN0b3JhZ2UtdXJsLXNpZ25pbmcta2V5X2QwZWQyZjQyLWU3OGEtNDk0MS05ZjEwLWMwODMwYjU1ODQ0MCJ9.eyJ1cmwiOiJpbWFnZXMvU3BpcmFsIENoYXB0ZXJzLnBuZyIsImlhdCI6MTc0ODc5MjY1NiwiZXhwIjoxNzgwMzI4NjU2fQ.gJrhOZfPv8Q0NahNBVGv6Cy0WuWi1kAA-jsKMb3m3KE"
               alt="AI Assistant Interface"
               loading="lazy"
               className="w-full h-auto object-contain transform hover:scale-105 transition-all duration-300"
