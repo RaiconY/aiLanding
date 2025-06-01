@@ -32,7 +32,7 @@ const Pricing: React.FC = () => {
               </div>
 
               <a 
-                href="https://payform.ru/gq7oZdE/" 
+                href="https://t.me/Ilya_Plv" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-gradient-to-r from-[#E76832] to-[#FFC24B] text-white font-medium px-8 py-4 rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 text-lg"
@@ -42,7 +42,7 @@ const Pricing: React.FC = () => {
               
               {/* Мелкий текст под кнопкой с увеличенной шириной */}
               <p className="mt-4 text-sm text-gray-500 max-w-xl w-full px-4 sm:px-8 text-center">
-                После нажатия кнопки вы перейдете на защищенную страницу оплаты. И сразу после оплаты получите ссылку на гайд 🫡
+                После нажатия на кнопку вас перекинет в чат со мной. Я пока еще не настроил автоматическую оплату 🫡
                 <br /><br />По всем вопросам можете писать <a 
                   href="https://t.me/Ilya_Plv" 
                   className="text-[#E76832] hover:text-[#FFC24B] transition-colors duration-300"
