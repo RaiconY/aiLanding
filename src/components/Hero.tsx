@@ -64,7 +64,7 @@ const Hero: React.FC = () => {
           <div className="flex justify-center items-center animate-fade-in order-1 md:order-2 -mx-4 sm:mx-0">
             <div className="relative w-full md:w-[135%] transform hover:scale-105 transition-transform duration-500">
               <img 
-                src="https://egftuzzffkkyebeatghv.supabase.co/storage/v1/object/sign/images/Spiral%20Chapters.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InN0b3JhZ2UtdXJsLXNpZ25pbmcta2V5X2QwZWQyZjQyLWU3OGEtNDk0MS05ZjEwLWMwODMwYjU1ODQ0MCJ9.eyJ1cmwiOiJpbWFnZXMvU3BpcmFsIENoYXB0ZXJzLnBuZyIsImlhdCI6MTc0NjgwMTA5NCwiZXhwIjoxNzc4MzM3MDk0fQ.1u992xTmfzKWeyuOxWjvLsKaBBtb39r03uEIT7Y50Do"
+                src="https://egftuzzffkkyebeatghv.supabase.co/storage/v1/object/sign/images/WithAIComparing.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InN0b3JhZ2UtdXJsLXNpZ25pbmcta2V5X2QwZWQyZjQyLWU3OGEtNDk0MS05ZjEwLWMwODMwYjU1ODQ0MCJ9.eyJ1cmwiOiJpbWFnZXMvV2l0aEFJQ29tcGFyaW5nLnBuZyIsImlhdCI6MTc0ODc4ODIxNSwiZXhwIjoxNzgwMzI0MjE1fQ.bmzhCY_Hf0dStJIDlAYjCRX-Ow_iZ2HZDWjB4SIoyRQ"
                 alt="AI Assistant Interface"
                 loading="eager"
                 className="w-full h-auto object-contain"
