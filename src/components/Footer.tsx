@@ -17,23 +17,23 @@ const Footer: React.FC = () => {
             <h3 className="text-lg font-semibold mb-4 text-gray-900">Контакты</h3>
             <div className="flex flex-col items-center gap-4">
               <div className="flex items-center text-gray-700 hover:text-gray-900 transition-colors">
-                <MessageCircle className="h-5 w-5 mr-2" style={{ color: '#800080' }} />
+                <MessageCircle className="h-5 w-5 mr-2" style={{ color: '#40A7E3' }} />
                 <a 
                   href="https://t.me/Ilya_Plv" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="hover:text-[#800080] transition-colors"
+                  className="hover:text-[#40A7E3] transition-colors"
                 >
                   Телеграм @Ilya_Plv
                 </a>
               </div>
               <div className="flex items-center text-gray-700 hover:text-gray-900 transition-colors">
-                <Send className="h-5 w-5 mr-2" style={{ color: '#ff6b81' }} />
+                <Send className="h-5 w-5 mr-2" style={{ color: '#40A7E3' }} />
                 <a 
                   href="https://t.me/iliaprovse" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="hover:text-[#ff6b81] transition-colors"
+                  className="hover:text-[#40A7E3] transition-colors"
                 >
                   Мой канал в Телеграме
                 </a>
