@@ -18,7 +18,7 @@ const Hero: React.FC = () => {
             </h1>
             
             <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-700 leading-relaxed">
-              Пошаговое руководство для тех, кто хочет внедрить ИИ в&nbsp;свою жизнь и&nbsp;получить реальные результаты
+              Полное практическое руководство по внедрению ChatGPT в работу и жизнь с конкретными кейсами экономии времени на задачах
             </p>
             
             <div className="grid grid-cols-3 gap-2 sm:gap-4 pt-2">
