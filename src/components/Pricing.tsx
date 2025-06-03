@@ -14,7 +14,7 @@ const Pricing: React.FC = () => {
                 Стартовая цена гайда — <span className="font-semibold">4&nbsp;990&nbsp;₽</span>
               </p>
               <p className="text-lg text-gray-700">
-                3 июня цена вырастет до&nbsp;6&nbsp;990&nbsp;₽
+                7 июня цена вырастет до&nbsp;7&nbsp;777&nbsp;₽
               </p>
               <p className="text-lg text-gray-700">
                 Если ваш час стоит более 3&nbsp;000&nbsp;₽, то этот гайд окупится уже через пару часов
@@ -24,7 +24,7 @@ const Pricing: React.FC = () => {
             <div className="flex flex-col items-center pt-8 border-t border-gray-100">
               <div className="flex items-center gap-6 mb-8">
                 <span className="text-3xl font-bold text-gray-400 line-through">
-                  6&nbsp;990&nbsp;₽
+                  7&nbsp;777&nbsp;₽
                 </span>
                 <span className="text-4xl font-bold bg-gradient-to-r from-[#E76832] to-[#FFC24B] bg-clip-text text-transparent">
                   4&nbsp;990&nbsp;₽
