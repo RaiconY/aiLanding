@@ -14,9 +14,6 @@ const Pricing: React.FC = () => {
                 Стартовая цена гайда — <span className="font-semibold">4&nbsp;990&nbsp;₽</span>
               </p>
               <p className="text-lg text-gray-700">
-                7 июня цена вырастет до&nbsp;7&nbsp;777&nbsp;₽
-              </p>
-              <p className="text-lg text-gray-700">
                 Если ваш час стоит более 3&nbsp;000&nbsp;₽, то этот гайд окупится уже через пару часов
               </p>
             </div>
