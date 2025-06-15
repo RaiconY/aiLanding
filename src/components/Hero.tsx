@@ -64,7 +64,7 @@ const Hero: React.FC = () => {
           <div className="flex justify-center items-center animate-fade-in order-1 md:order-2 -mx-4 sm:mx-0">
             <div className="relative w-full md:w-[135%] transform hover:scale-105 transition-transform duration-500">
               <img 
-                src="/home/project/src/images/ChatGPT Interface.png"
+                src="https://i.postimg.cc/BQ7bPz3Y/With-AIComparing.png"
                 alt="AI Assistant Interface"
                 loading="eager"
                 className="w-full h-auto object-contain"
