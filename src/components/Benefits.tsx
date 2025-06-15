@@ -52,7 +52,7 @@ const Benefits: React.FC = () => {
           {/* Изображение после (теперь справа) */}
           <div className="lg:col-span-3 flex items-center justify-center">
             <img 
-              src="https://egftuzzffkkyebeatghv.supabase.co/storage/v1/object/sign/images/Spiral%20Chapters.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InN0b3JhZ2UtdXJsLXNpZ25pbmcta2V5X2QwZWQyZjQyLWU3OGEtNDk0MS05ZjEwLWMwODMwYjU1ODQ0MCJ9.eyJ1cmwiOiJpbWFnZXMvU3BpcmFsIENoYXB0ZXJzLnBuZyIsImlhdCI6MTc0NjgwMTA5NCwiZXhwIjoxNzc4MzM3MDk0fQ.1u992xTmfzKWeyuOxWjvLsKaBBtb39r03uEIT7Y50Do"
+              src="https://raw.githubusercontent.com/RaiconY/aiLanding/main/src/images/SpiralChapters.png"
               alt="AI Assistant Interface"
               loading="lazy"
               className="w-full h-auto object-contain transform hover:scale-105 transition-all duration-300"
