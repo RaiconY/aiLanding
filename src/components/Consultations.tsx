@@ -63,7 +63,7 @@ const Consultations: React.FC = () => {
                 Если ты хочешь быстрее освоить ИИ или адаптировать его под свой бизнес — я провожу индивидуальные консультации и разборы.
               </p>
               
-              <div className="bg-gradient-to-r from-orange-50 to-amber-50 rounded-xl p-6 border border-orange-100">
+              <div className="rounded-xl p-6">
                 <h3 className="text-xl font-bold text-gray-900 mb-6 flex items-center gap-2">
                   <span className="w-8 h-8 rounded-full bg-gradient-to-r from-[#E76832] to-[#FFC24B] flex items-center justify-center">
                     <Zap className="h-4 w-4 text-white" />
