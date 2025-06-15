@@ -40,11 +40,11 @@ const Consultations: React.FC = () => {
             <span>Персональные консультации</span>
           </div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            По поводу консультаций —{' '}
+            А если хотите консультацию по ИИ —{' '}
             <span 
               className="bg-gradient-to-r from-[#E76832] to-[#FFC24B] bg-clip-text text-transparent"
             >
-              вам сюда
+              то вам сюда
             </span>
           </h2>
           <div 
