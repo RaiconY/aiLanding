@@ -60,7 +60,7 @@ const Consultations: React.FC = () => {
           <div className="space-y-8">
             <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-6 sm:p-8 shadow-xl border border-white/20 transform hover:scale-[1.02] transition-all duration-300">
               <p className="text-xl text-gray-700 leading-relaxed mb-6 font-medium">
-                Если ты хочешь быстрее освоить ИИ или адаптировать его под свой бизнес — я провожу индивидуальные консультации и разборы.
+                Если ты хочешь быстрее освоить ИИ или адаптировать его под свой бизнес — я провожу индивидуальные консультации и разборы
               </p>
               
               <div className="rounded-xl">
@@ -68,7 +68,7 @@ const Consultations: React.FC = () => {
                   <span className="w-8 h-8 rounded-full bg-gradient-to-r from-[#E76832] to-[#FFC24B] flex items-center justify-center">
                     <Zap className="h-4 w-4 text-white" />
                   </span>
-                  Обычно за одну сессию мы:
+                  Обычно за одну сессию мы
                 </h3>
                 <div className="grid grid-cols-1 gap-4">
                   {benefits.map((benefit, index) => (
@@ -104,9 +104,6 @@ const Consultations: React.FC = () => {
                 </div>
                 
                 <div>
-                  <h3 className="text-2xl font-bold text-gray-900 mb-2">
-                    Готов начать?
-                  </h3>
                   <p className="text-gray-600 mb-6">
                     Напиши мне в Telegram и расскажи о своих задачах
                   </p>
