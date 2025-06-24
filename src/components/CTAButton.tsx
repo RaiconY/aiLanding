@@ -14,7 +14,7 @@ const CTAButton: React.FC = () => {
         }
       }}
     >
-      Забрать гайд со скидкой
+      Забрать гайд
       <svg 
         className="ml-2 w-4 h-4 group-hover:translate-y-1 transition-transform" 
         fill="none" 
