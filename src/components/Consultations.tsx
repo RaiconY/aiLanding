@@ -39,7 +39,7 @@ const Consultations: React.FC = () => {
             <MessageCircle className="h-4 w-4" />
             <span>Персональные консультации</span>
           </div>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4">
             А если хотите консультацию по ИИ —{' '}
             <span 
               className="bg-gradient-to-r from-[#E76832] to-[#FFC24B] bg-clip-text text-transparent"
