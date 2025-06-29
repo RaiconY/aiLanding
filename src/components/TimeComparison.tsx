@@ -58,7 +58,7 @@ const TimeComparison: React.FC = () => {
   return (
     <section className="py-12 md:py-20 px-4 sm:px-6 lg:px-8">
       <div className="container mx-auto max-w-5xl">
-        <SectionTitle title="Сколько времени мне экономит ChatGPT" />
+        <SectionTitle title="Сколько времени может экономить ChatGPT" />
         
         <div className="bg-white rounded-2xl p-4 md:p-8 shadow-lg">
           <div className="overflow-x-auto">
