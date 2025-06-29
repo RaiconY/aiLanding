@@ -49,7 +49,7 @@ const AboutAuthor: React.FC = () => {
                 <div>
                   <h4 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4">Илья</h4>
                   <p className="text-gray-700 leading-relaxed text-base sm:text-lg">
-                    «Решаю задачи через системы и процессы. 6 лет помогаю стартапам запускать продукты, последние 2 года — внедряю ИИ в бизнес.»
+                    Решаю задачи через системы и процессы. Продуктовый дизайнер, 6 лет помогаю стартапам запускать продукты
                   </p>
                 </div>
               </div>
@@ -70,7 +70,7 @@ const AboutAuthor: React.FC = () => {
                 <div>
                   <h4 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4">Артём</h4>
                   <p className="text-gray-700 leading-relaxed text-base sm:text-lg">
-                    «Проверяю всё на массовых результатах. За год с помощью ИИ и автоматизации набрал 600 000 подписчиков и 400+ млн охватов.»
+                    Проверяю всё на массовых результатах. За год с помощью ИИ и автоматизации набрал 600 000 подписчиков и 400+ млн охватов
                   </p>
                 </div>
               </div>
