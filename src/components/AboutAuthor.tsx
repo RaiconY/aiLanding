@@ -3,59 +3,143 @@ import { MessageCircle } from 'lucide-react';
 import SectionTitle from './SectionTitle';
 
 const AboutAuthor: React.FC = () => {
+  const benefits = [
+    {
+      text: 'Поймёшь, **как заставить ChatGPT работать правильно**'
+    },
+    {
+      text: 'Узнаешь, **что с этим делать в реальных задачах** — от кода и анализа до контента и идей'
+    },
+    {
+      text: '**Сэкономишь месяцы тестов** — мы уже всё проверили на себе и клиентах'
+    }
+  ];
+
   return (
     <section className="py-20 px-4 sm:px-6 lg:px-8">
-      <div className="container mx-auto max-w-4xl">
-        <SectionTitle title="Кто я" />
+      <div className="container mx-auto max-w-6xl">
+        <SectionTitle title="Про авторов" />
         
         <div className="bg-white rounded-2xl p-8 shadow-lg">
-          <div className="flex flex-col items-center text-center gap-8">
-            <div className="flex-shrink-0">
-              <div 
-                className="w-40 h-40 rounded-full flex items-center justify-center bg-gradient-to-br from-[#E76832] to-[#FFC24B] p-[3px] shadow-xl"
-              >
-                <div className="w-full h-full rounded-full overflow-hidden bg-white">
-                  <img 
-                    src="https://raw.githubusercontent.com/RaiconY/aiLanding/main/src/images/MyImage.png"
-                    alt="Илья Плужников"
-                    className="w-full h-full object-cover"
-                  />
+          <div className="space-y-8">
+            {/* Intro */}
+            <div className="text-center">
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                Мы — Илья и Артём. Два человека, которые превратили ChatGPT в реальный рабочий инструмент.
+              </h3>
+            </div>
+
+            {/* Authors section */}
+            <div className="space-y-8">
+              <h4 className="text-xl font-semibold text-gray-900 text-center">
+                Почему нам можно доверять
+              </h4>
+              
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                {/* Илья */}
+                <div className="flex flex-col items-center text-center">
+                  <div className="flex-shrink-0 mb-6">
+                    <div 
+                      className="w-32 h-32 rounded-full flex items-center justify-center bg-gradient-to-br from-[#E76832] to-[#FFC24B] p-[3px] shadow-xl"
+                    >
+                      <div className="w-full h-full rounded-full overflow-hidden bg-white">
+                        <img 
+                          src="https://raw.githubusercontent.com/RaiconY/aiLanding/main/src/images/MyImage.png"
+                          alt="Илья"
+                          className="w-full h-full object-cover"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div className="space-y-3">
+                    <h5 className="text-lg font-semibold text-gray-900">Илья</h5>
+                    <p className="text-gray-700 leading-relaxed">
+                      «Решаю задачи через системы и процессы. 6 лет помогаю стартапам запускать продукты, последние 2 года — внедряю ИИ в бизнес.»
+                    </p>
+                  </div>
+                </div>
+
+                {/* Артём */}
+                <div className="flex flex-col items-center text-center">
+                  <div className="flex-shrink-0 mb-6">
+                    <div 
+                      className="w-32 h-32 rounded-full flex items-center justify-center bg-gradient-to-br from-[#E76832] to-[#FFC24B] p-[3px] shadow-xl"
+                    >
+                      <div className="w-full h-full rounded-full overflow-hidden bg-gray-100 flex items-center justify-center">
+                        {/* Placeholder for second avatar */}
+                        <span className="text-gray-400 text-lg font-medium">Артём</span>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div className="space-y-3">
+                    <h5 className="text-lg font-semibold text-gray-900">Артём</h5>
+                    <p className="text-gray-700 leading-relaxed">
+                      «Проверяю всё на массовых результатах. За год с помощью ИИ и автоматизации набрал 600 000 подписчиков и 400+ млн охватов.»
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
-            
-            <div className="flex-1 space-y-6 max-w-2xl">
-              <div className="space-y-4 text-gray-700 text-lg leading-relaxed">
-                <p>
-                  Меня зовут Илья, и я — продуктовый дизайнер и AI-консультант. Уже более 6 лет я помогаю стартапам запускать продукты, делаю интерфейсы и строю системы, которые действительно работают 💫
-                </p>
-                
-                <p>
-                  Последние полтора года я глубоко погружён в искусственный интеллект — не на уровне «поиграться», а как полноценный инструмент, который экономит время, деньги и нервы.
-                </p>
-                
-                <p>
-                  В этом гайде я собрал всё то, что реально помогает мне и моим клиентам. И добавил достаточно теории, чтобы после прочтения у тебя осталось полноценное понимание того, как работают такие интерфейсы, почему они устроены именно так и как использовать их с максимальной пользой.
-                </p>
 
-                <div className="bg-gradient-to-r from-orange-50 to-amber-50 rounded-xl p-6 border-2 border-[#E76832]/20 shadow-md transform hover:scale-[1.02] transition-all duration-300">
-                  <p className="text-xl font-semibold text-gray-900 leading-relaxed">
-                    Этот гайд — результат сотен часов экспериментов, консультаций, запусков продуктов и личных наблюдений. Надеюсь, он сэкономит тебе месяцы самостоятельного поиска 🫡
-                  </p>
-                </div>
-              </div>
+            {/* What you'll get */}
+            <div className="space-y-6">
+              <h4 className="text-xl font-semibold text-gray-900 text-center">
+                Что ты получишь
+              </h4>
               
-              <div className="pt-6 border-t border-gray-100">
-                <a 
-                  href="https://t.me/Ilya_Plv" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="inline-flex items-center gap-2 text-[#E76832] hover:text-[#FFC24B] transition-colors duration-300 font-medium"
-                >
-                  <MessageCircle className="h-5 w-5" />
-                  <span>@Ilya_Plv</span>
-                </a>
+              <div className="space-y-4">
+                {benefits.map((benefit, index) => (
+                  <div 
+                    key={index}
+                    className="flex items-start gap-4 p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-all duration-300"
+                  >
+                    <div className="w-6 h-6 rounded-full bg-gradient-to-r from-[#E76832] to-[#FFC24B] flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <span className="text-white text-sm font-bold">✓</span>
+                    </div>
+                    <p 
+                      className="text-gray-700 leading-relaxed"
+                      dangerouslySetInnerHTML={{ 
+                        __html: benefit.text.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>') 
+                      }}
+                    />
+                  </div>
+                ))}
               </div>
+            </div>
+
+            {/* What's inside */}
+            <div className="space-y-6">
+              <h4 className="text-xl font-semibold text-gray-900 text-center">
+                Что внутри гайда
+              </h4>
+              
+              <div className="text-center space-y-4">
+                <p className="text-gray-700 text-lg leading-relaxed">
+                  Это не просто список промптов. Это <strong>рабочая система</strong>, которая помогает нам и нашим клиентам каждый день. Добавили ровно столько теории, чтобы ты понял, <strong>почему GPT работает именно так</strong>, и научился <strong>извлекать из него максимум</strong>.
+                </p>
+              </div>
+            </div>
+
+            {/* Final message */}
+            <div className="bg-gradient-to-r from-orange-50 to-amber-50 rounded-xl p-6 border-2 border-[#E76832]/20 shadow-md transform hover:scale-[1.02] transition-all duration-300">
+              <p className="text-xl font-semibold text-gray-900 leading-relaxed text-center">
+                Этот гайд — результат сотен часов запусков, экспериментов и консультаций. Надеемся, он сэкономит тебе месяцы самостоятельного поиска 🫡
+              </p>
+            </div>
+            
+            {/* Contact */}
+            <div className="pt-6 border-t border-gray-100 text-center">
+              <a 
+                href="https://t.me/Ilya_Plv" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="inline-flex items-center gap-2 text-[#E76832] hover:text-[#FFC24B] transition-colors duration-300 font-medium"
+              >
+                <MessageCircle className="h-5 w-5" />
+                <span>@Ilya_Plv</span>
+              </a>
             </div>
           </div>
         </div>
