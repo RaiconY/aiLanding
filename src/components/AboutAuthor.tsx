@@ -24,7 +24,7 @@ const AboutAuthor: React.FC = () => {
           <div className="space-y-12">
           {/* Общий текст о нас */}
           <div className="text-center max-w-4xl mx-auto">
-            <h3 className="text-xl sm:text-3xl font-medium text-gray-900 mb-6">
+            <h3 className="text-xl sm:text-1xl font-medium text-gray-900 mb-6">
               Мы — Илья и Артём. Два человека, которые давно увлечены ИИ и превратили его в реальный рабочий инструмент 💫
             </h3>
           </div>
