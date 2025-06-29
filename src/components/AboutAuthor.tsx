@@ -23,11 +23,11 @@ const AboutAuthor: React.FC = () => {
         <div className="bg-white rounded-2xl p-6 sm:p-8 lg:p-12 shadow-lg">
           <div className="space-y-12">
           {/* Общий текст о нас */}
-          <div className="text-center max-w-4xl mx-auto">
+          {/* <div className="text-center max-w-4xl mx-auto">
             <h3 className="text-xl sm:text-2xl font-medium text-gray-900 mb-6">
               Мы — Илья и Артём. Два человека, которые давно увлечены ИИ и превратили его в реальный рабочий инструмент 💫
             </h3>
-          </div>
+          </div> */}
 
           {/* Карточки авторов */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
