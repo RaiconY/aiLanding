@@ -1,5 +1,5 @@
 import React from 'react';
-import { MessageCircle, Send, ArrowUp } from 'lucide-react';
+import { MessageCircle, ArrowUp } from 'lucide-react';
 
 const Footer: React.FC = () => {
   return (
@@ -25,17 +25,6 @@ const Footer: React.FC = () => {
                   className="hover:text-[#40A7E3] transition-colors"
                 >
                   Телеграм @Ilya_Plv
-                </a>
-              </div>
-              <div className="flex items-center text-gray-700 hover:text-gray-900 transition-colors">
-                <Send className="h-5 w-5 mr-2" style={{ color: '#40A7E3' }} />
-                <a 
-                  href="https://t.me/iliaprovse" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="hover:text-[#40A7E3] transition-colors"
-                >
-                  Мой канал в Телеграме
                 </a>
               </div>
             </div>
