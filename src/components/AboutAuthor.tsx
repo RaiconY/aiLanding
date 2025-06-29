@@ -32,7 +32,7 @@ const AboutAuthor: React.FC = () => {
           {/* Карточки авторов */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
             {/* Илья */}
-            <div className="group relative border-2 border-[#E76832]/20 rounded-2xl hover:scale-[1.02] transition-all duration-300">
+            <div className="group relative border-2 border-[#E76832]/40 rounded-2xl hover:scale-[1.05] transition-all duration-300">
               <div className="bg-white rounded-2xl p-6 sm:p-8 text-center space-y-6">
                 <div className="flex justify-center">
                   <div className="w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-gradient-to-br from-[#E76832] to-[#FFC24B] p-[3px] shadow-xl">
@@ -56,7 +56,7 @@ const AboutAuthor: React.FC = () => {
             </div>
 
             {/* Артём */}
-            <div className="group relative border-2 border-[#E76832]/20 rounded-2xl hover:scale-[1.02] transition-all duration-300">
+            <div className="group relative border-2 border-[#E76832]/40 rounded-2xl hover:scale-[1.05] transition-all duration-300">
               <div className="bg-white rounded-2xl p-6 sm:p-8 text-center space-y-6">
                 <div className="flex justify-center">
                   <div className="w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-gradient-to-br from-[#E76832] to-[#FFC24B] p-[3px] shadow-xl">
