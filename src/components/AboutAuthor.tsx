@@ -20,7 +20,8 @@ const AboutAuthor: React.FC = () => {
       <div className="container mx-auto max-w-6xl">
         <SectionTitle title="Про авторов" />
         
-        <div className="space-y-12">
+        <div className="bg-white rounded-2xl p-6 sm:p-8 lg:p-12 shadow-lg">
+          <div className="space-y-12">
           {/* Общий текст о нас */}
           <div className="text-center max-w-4xl mx-auto">
             <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">
@@ -147,6 +148,7 @@ const AboutAuthor: React.FC = () => {
               <MessageCircle className="h-5 w-5" />
               <span>@Ilya_Plv</span>
             </a>
+          </div>
           </div>
         </div>
       </div>
