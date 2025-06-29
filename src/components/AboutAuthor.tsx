@@ -49,7 +49,7 @@ const AboutAuthor: React.FC = () => {
                 <div>
                   <h4 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4">Илья</h4>
                   <p className="text-gray-700 leading-relaxed text-base sm:text-lg">
-                    Решаю задачи через системы и процессы. Продуктовый дизайнер, 6 лет помогаю стартапам запускать продукты
+                    Решаю задачи через системы и процессы. Продуктовый дизайнер, 6 лет помогаю стартапам запускать новые бизнесы и продукты
                   </p>
                 </div>
               </div>
