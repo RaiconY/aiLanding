@@ -90,9 +90,11 @@ const AboutAuthor: React.FC = () => {
                   <div className="flex justify-center">
                     <div className="w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-gradient-to-br from-[#042989] to-[#4A90E2] p-[3px] shadow-xl transform group-hover:rotate-6 transition-transform duration-500">
                       <div className="w-full h-full rounded-full overflow-hidden bg-white">
-                        <div className="w-full h-full bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center">
-                          <span className="text-3xl font-bold text-[#042989]">А</span>
-                        </div>
+                        <img 
+                          src="https://raw.githubusercontent.com/RaiconY/aiLanding/main/src/images/ArtemImage.png"
+                          alt="Артём"
+                          className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+                        />
                       </div>
                     </div>
                   </div>
