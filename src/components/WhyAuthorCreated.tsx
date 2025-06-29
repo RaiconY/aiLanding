@@ -6,17 +6,17 @@ const WhyAuthorCreated: React.FC = () => {
     {
       number: '1',
       title: 'Вера в технологию',
-      description: 'За последние месяцы я изучил огромное количество информации по ИИ. Считаю эту технологию ключевой для будущего'
+      description: 'За последние месяцы мы изучили огромное количество информации по ИИ. Считаем эту технологию ключевой для будущего'
     },
     {
       number: '2',
       title: 'Личный опыт',
-      description: 'Моя эффективность с ИИ выросла в 2-3 раза. Даже минимальные улучшения в использовании дают огромный эффект'
+      description: 'Наша эффективность с ИИ выросла в 2-3 раза. Даже минимальные улучшения в использовании дают огромный эффект'
     },
     {
       number: '3',
       title: 'Миссия',
-      description: 'Через гайд я делюсь знаниями с тысячами людей вместо десятков на консультациях. Через год этот навык станет критически важным'
+      description: 'Через гайд мы делимся знаниями с тысячами людей вместо десятков на консультациях. Через год этот навык станет критически важным'
     }
   ];
 
@@ -29,7 +29,7 @@ const WhyAuthorCreated: React.FC = () => {
       <div className="absolute top-3/4 left-1/2 w-64 h-64 bg-gradient-to-br from-[#E76832] to-[#FFC24B] rounded-full filter blur-[100px] opacity-5 -translate-x-1/2" />
 
       <div className="container mx-auto max-w-6xl relative z-10">
-        <SectionTitle title="Зачем я написал этот гайд" />
+        <SectionTitle title="Зачем мы написали этот гайд" />
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {reasons.map((reason, index) => (

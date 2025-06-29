@@ -39,8 +39,8 @@ function App() {
       <Testimonials /> 
       <Pricing />
       <FAQ />
-      <WhyAuthorCreated />
       <AboutAuthor />
+      <WhyAuthorCreated />
       <Consultations />
       {/*
       <WhyGuide />
