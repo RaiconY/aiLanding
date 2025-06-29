@@ -60,7 +60,7 @@ const Consultations: React.FC = () => {
           <div className="space-y-8">
             <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-6 sm:p-8 shadow-xl border border-white/20 transform hover:scale-[1.02] transition-all duration-300">
               <p className="text-xl text-gray-700 leading-relaxed mb-6 font-medium">
-                Если ты хочешь быстрее освоить ИИ или адаптировать его под свой бизнес — я провожу индивидуальные консультации и разборы
+                Если ты хочешь быстрее освоить ИИ или адаптировать его под свой бизнес — мы проводим индивидуальные консультации и разборы
               </p>
               
               <div className="rounded-xl">
