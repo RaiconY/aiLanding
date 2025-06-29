@@ -22,6 +22,38 @@ const AboutAuthor: React.FC = () => {
         
         <div className="bg-white rounded-2xl p-8 shadow-lg">
           <div className="space-y-8">
+            {/* Authors avatars */}
+            <div className="flex justify-center items-center gap-4 sm:gap-8 mb-8">
+              {/* Илья */}
+              <div className="flex flex-col items-center">
+                <div 
+                  className="w-24 h-24 sm:w-32 sm:h-32 rounded-full flex items-center justify-center bg-gradient-to-br from-[#E76832] to-[#FFC24B] p-[3px] shadow-xl"
+                >
+                  <div className="w-full h-full rounded-full overflow-hidden bg-white">
+                    <img 
+                      src="https://raw.githubusercontent.com/RaiconY/aiLanding/main/src/images/MyImage.png"
+                      alt="Илья"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                </div>
+                <span className="text-base sm:text-lg font-semibold text-gray-900 mt-2 sm:mt-3">Илья</span>
+              </div>
+
+              {/* Артём */}
+              <div className="flex flex-col items-center">
+                <div 
+                  className="w-24 h-24 sm:w-32 sm:h-32 rounded-full flex items-center justify-center bg-gradient-to-br from-[#E76832] to-[#FFC24B] p-[3px] shadow-xl"
+                >
+                  <div className="w-full h-full rounded-full overflow-hidden bg-gray-100 flex items-center justify-center">
+                    {/* Placeholder for second avatar */}
+                    <span className="text-gray-400 text-sm sm:text-lg font-medium">Артём</span>
+                  </div>
+                </div>
+                <span className="text-base sm:text-lg font-semibold text-gray-900 mt-2 sm:mt-3">Артём</span>
+              </div>
+            </div>
+
             {/* Intro */}
             <div className="text-center">
               <h3 className="text-2xl font-bold text-gray-900 mb-4">
@@ -29,7 +61,7 @@ const AboutAuthor: React.FC = () => {
               </h3>
             </div>
 
-            {/* Authors section */}
+            {/* Authors descriptions */}
             <div className="space-y-8">
               <h4 className="text-xl font-semibold text-gray-900 text-center">
                 Почему нам можно доверять
@@ -37,48 +69,19 @@ const AboutAuthor: React.FC = () => {
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 {/* Илья */}
-                <div className="flex flex-col items-center text-center">
-                  <div className="flex-shrink-0 mb-6">
-                    <div 
-                      className="w-32 h-32 rounded-full flex items-center justify-center bg-gradient-to-br from-[#E76832] to-[#FFC24B] p-[3px] shadow-xl"
-                    >
-                      <div className="w-full h-full rounded-full overflow-hidden bg-white">
-                        <img 
-                          src="https://raw.githubusercontent.com/RaiconY/aiLanding/main/src/images/MyImage.png"
-                          alt="Илья"
-                          className="w-full h-full object-cover"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  
-                  <div className="space-y-3">
-                    <h5 className="text-lg font-semibold text-gray-900">Илья</h5>
-                    <p className="text-gray-700 leading-relaxed">
-                      «Решаю задачи через системы и процессы. 6 лет помогаю стартапам запускать продукты, последние 2 года — внедряю ИИ в бизнес.»
-                    </p>
-                  </div>
+                <div className="text-center">
+                  <h5 className="text-lg font-semibold text-gray-900 mb-3">Илья</h5>
+                  <p className="text-gray-700 leading-relaxed">
+                    «Решаю задачи через системы и процессы. 6 лет помогаю стартапам запускать продукты, последние 2 года — внедряю ИИ в бизнес.»
+                  </p>
                 </div>
 
                 {/* Артём */}
-                <div className="flex flex-col items-center text-center">
-                  <div className="flex-shrink-0 mb-6">
-                    <div 
-                      className="w-32 h-32 rounded-full flex items-center justify-center bg-gradient-to-br from-[#E76832] to-[#FFC24B] p-[3px] shadow-xl"
-                    >
-                      <div className="w-full h-full rounded-full overflow-hidden bg-gray-100 flex items-center justify-center">
-                        {/* Placeholder for second avatar */}
-                        <span className="text-gray-400 text-lg font-medium">Артём</span>
-                      </div>
-                    </div>
-                  </div>
-                  
-                  <div className="space-y-3">
-                    <h5 className="text-lg font-semibold text-gray-900">Артём</h5>
-                    <p className="text-gray-700 leading-relaxed">
-                      «Проверяю всё на массовых результатах. За год с помощью ИИ и автоматизации набрал 600 000 подписчиков и 400+ млн охватов.»
-                    </p>
-                  </div>
+                <div className="text-center">
+                  <h5 className="text-lg font-semibold text-gray-900 mb-3">Артём</h5>
+                  <p className="text-gray-700 leading-relaxed">
+                    «Проверяю всё на массовых результатах. За год с помощью ИИ и автоматизации набрал 600 000 подписчиков и 400+ млн охватов.»
+                  </p>
                 </div>
               </div>
             </div>
