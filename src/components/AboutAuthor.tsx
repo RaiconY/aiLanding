@@ -20,26 +20,20 @@ const AboutAuthor: React.FC = () => {
       <div className="container mx-auto max-w-6xl">
         <SectionTitle title="Про авторов" />
         
-        <div className="bg-white rounded-2xl p-6 sm:p-8 lg:p-12 shadow-lg border-2 border-[#E76832]/20">
+        <div className="bg-white rounded-2xl p-6 sm:p-8 lg:p-12 shadow-lg">
           <div className="space-y-12">
           {/* Общий текст о нас */}
           <div className="text-center max-w-4xl mx-auto">
             <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">
               Мы — Илья и Артём. Два человека, которые превратили ChatGPT в реальный рабочий инструмент.
             </h3>
-            <p className="text-lg text-gray-600 mb-8">
-              Почему нам можно доверять
-            </p>
           </div>
 
           {/* Карточки авторов */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
             {/* Илья */}
-            <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-br from-[#E76832] to-[#FFC24B] rounded-2xl p-[3px]">
-                <div className="h-full w-full bg-white rounded-2xl"></div>
-              </div>
-              <div className="relative bg-white rounded-2xl p-6 sm:p-8 text-center space-y-6">
+            <div className="group relative border-2 border-[#E76832]/20 rounded-2xl hover:scale-[1.02] transition-all duration-300">
+              <div className="bg-white rounded-2xl p-6 sm:p-8 text-center space-y-6">
                 <div className="flex justify-center">
                   <div className="w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-gradient-to-br from-[#E76832] to-[#FFC24B] p-[3px] shadow-xl">
                     <div className="w-full h-full rounded-full overflow-hidden bg-white">
@@ -62,11 +56,8 @@ const AboutAuthor: React.FC = () => {
             </div>
 
             {/* Артём */}
-            <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-br from-[#E76832] to-[#FFC24B] rounded-2xl p-[3px]">
-                <div className="h-full w-full bg-white rounded-2xl"></div>
-              </div>
-              <div className="relative bg-white rounded-2xl p-6 sm:p-8 text-center space-y-6">
+            <div className="group relative border-2 border-[#E76832]/20 rounded-2xl hover:scale-[1.02] transition-all duration-300">
+              <div className="bg-white rounded-2xl p-6 sm:p-8 text-center space-y-6">
                 <div className="flex justify-center">
                   <div className="w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-gradient-to-br from-[#E76832] to-[#FFC24B] p-[3px] shadow-xl">
                     <div className="w-full h-full rounded-full overflow-hidden bg-gray-100 flex items-center justify-center">
