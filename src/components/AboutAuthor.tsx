@@ -156,4 +156,4 @@ const AboutAuthor: React.FC = () => {
   );
 };
 
-export default AboutAuthor;
+export default AboutAuthor
