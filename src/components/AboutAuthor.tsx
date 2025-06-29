@@ -59,7 +59,7 @@ const AboutAuthor: React.FC = () => {
             <div className="group relative border-2 border-[#042989]/40 rounded-2xl hover:scale-[1.05] transition-all duration-300">
               <div className="bg-white rounded-2xl p-6 sm:p-8 text-center space-y-6">
                 <div className="flex justify-center">
-                  <div className="w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-gradient-to-br from-[#042989] to-[#4A90E2] p-[3px] shadow-xl">
+                  <div className="w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-gradient-to-br from-[#042989] to-[#4A90E2] p-[4px] shadow-xl">
                     <div className="w-full h-full rounded-full overflow-hidden bg-white">
                       <img 
                         src="/src/images/ArtemImage.png"
