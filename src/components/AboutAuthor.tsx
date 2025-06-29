@@ -24,7 +24,7 @@ const AboutAuthor: React.FC = () => {
           <div className="space-y-12">
           {/* Общий текст о нас */}
           <div className="text-center max-w-4xl mx-auto">
-            <h3 className="text-xl sm:text-1xl font-medium text-gray-900 mb-6">
+            <h3 className="text-xl sm:text-2xl font-medium text-gray-900 mb-6">
               Мы — Илья и Артём. Два человека, которые давно увлечены ИИ и превратили его в реальный рабочий инструмент 💫
             </h3>
           </div>
@@ -60,9 +60,12 @@ const AboutAuthor: React.FC = () => {
               <div className="bg-white rounded-2xl p-6 sm:p-8 text-center space-y-6">
                 <div className="flex justify-center">
                   <div className="w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-gradient-to-br from-[#E76832] to-[#FFC24B] p-[3px] shadow-xl">
-                    <div className="w-full h-full rounded-full overflow-hidden bg-gray-100 flex items-center justify-center">
-                      {/* Placeholder for second avatar */}
-                      <span className="text-gray-400 text-lg font-medium">Артём</span>
+                    <div className="w-full h-full rounded-full overflow-hidden bg-white">
+                      <img 
+                        src="/src/images/ArtemImage.png"
+                        alt="Артём"
+                        className="w-full h-full object-cover"
+                      />
                     </div>
                   </div>
                 </div>
