@@ -114,7 +114,7 @@ const UnifiedAuthors: React.FC = () => {
                   </div>
 
                   {/* Experience */}
-                  <p className="text-gray-600 leading-relaxed text-sm mb-4">
+                  <p className="text-gray-600 leading-relaxed text-base mb-4">
                     {author.experience}
                   </p>
 
