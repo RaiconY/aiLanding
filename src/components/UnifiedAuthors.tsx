@@ -1,5 +1,5 @@
 import React from 'react';
-import { ExternalLink, CheckCircle } from 'lucide-react';
+import { ExternalLink, Star, Award, Zap, Target, TrendingUp, Users, Lightbulb } from 'lucide-react';
 
 const UnifiedAuthors: React.FC = () => {
   const authors = [
@@ -8,10 +8,10 @@ const UnifiedAuthors: React.FC = () => {
       position: 'Отвечаю за системность и структуру',
       image: 'https://raw.githubusercontent.com/RaiconY/aiLanding/main/src/images/My Real Image.jpg',
       bullets: [
-        'Продуктовый дизайнер с 6-летним опытом',
-        'Написал 40+ статей по ИИ и бизнесу',
-        'И провёл более 30 персональных консультаций по ИИ',
-        'Последний год ушёл из найма и полностью погружён в ИИ и создание своих продуктов'
+        { text: 'Продуктовый дизайнер с 6-летним опытом', icon: <Award className="h-3 w-3 text-white" /> },
+        { text: 'Написал 40+ статей по ИИ и бизнесу', icon: <Lightbulb className="h-3 w-3 text-white" /> },
+        { text: 'И провёл более 30 персональных консультаций по ИИ', icon: <Users className="h-3 w-3 text-white" /> },
+        { text: 'Последний год ушёл из найма и полностью погружён в ИИ и создание своих продуктов', icon: <Target className="h-3 w-3 text-white" /> }
       ],
       experience: 'Специализируюсь на превращении сложных технологий в понятные решения. Проводил воркшопы для самых больших IT-компаний РФ. Мой подход — системность, структурированная подача материала и фокус на практическом применении.',
       links: [
@@ -24,10 +24,10 @@ const UnifiedAuthors: React.FC = () => {
       position: 'Отвечаю за масштаб и автоматизацию',
       image: 'https://raw.githubusercontent.com/RaiconY/aiLanding/main/src/images/Artem Real Image.jpg',
       bullets: [
-        'Работал 5 лет в маркетинге P&G',
-        'За год с помощью ИИ набрал 800 000 подписчиков',
-        'За это время создал более 5000 рилс и получил 400+ млн просмотров',
-        'Ушёл из найма и строю бизнес на ИИ'
+        { text: 'Работал 5 лет в маркетинге P&G', icon: <Star className="h-3 w-3 text-white" /> },
+        { text: 'За год с помощью ИИ набрал 800 000 подписчиков', icon: <TrendingUp className="h-3 w-3 text-white" /> },
+        { text: 'За это время создал более 5000 рилс и получил 400+ млн просмотров', icon: <Zap className="h-3 w-3 text-white" /> },
+        { text: 'Ушёл из найма и строю бизнес на ИИ', icon: <Target className="h-3 w-3 text-white" /> }
       ],
       experience: 'Эксперт по автоматизации контента и масштабированию в социальных сетях. Знаю, как превратить ChatGPT и другие ИИ инструменты в мощный инструмент для создания контента и построения аудитории.',
       links: [
@@ -102,14 +102,14 @@ const UnifiedAuthors: React.FC = () => {
                 
                 {/* Content */}
                 <div className="px-6 pb-6">
-                  {/* Description - bullets for both authors */}
+                  {/* Description - bullets with different icons */}
                   <div className="space-y-3 mb-4">
                     {author.bullets.map((bullet, i) => (
                       <div key={i} className="flex items-start gap-3">
-                        <div className={`w-5 h-5 rounded-full bg-gradient-to-r ${author.gradient} flex items-center justify-center flex-shrink-0 mt-0.5`}>
-                          <CheckCircle className="h-2.5 w-2.5 text-white" />
+                        <div className={`w-6 h-6 rounded-lg bg-gradient-to-r ${author.gradient} flex items-center justify-center flex-shrink-0 mt-0.5 transform group-hover:rotate-12 transition-all duration-300`}>
+                          {bullet.icon}
                         </div>
-                        <span className="text-gray-700 text-base leading-relaxed">{bullet}</span>
+                        <span className="text-gray-700 text-base leading-relaxed">{bullet.text}</span>
                       </div>
                     ))}
                   </div>
