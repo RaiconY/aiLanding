@@ -162,7 +162,7 @@ const UnifiedAuthors: React.FC = () => {
               </div>
               
               <p className="text-xl md:text-2xl font-semibold text-gray-900 max-w-4xl mx-auto leading-relaxed">
-                Вместе у&nbsp;нас получилось создать отличный продукт, который проведет тебя от&nbsp;теории до&nbsp;реальных результатов.
+                Вместе у&nbsp;нас получилось создать отличный продукт, который проведет тебя от&nbsp;теории до&nbsp;реальных результатов
               </p>
               
               {/* Subtle accent line */}
