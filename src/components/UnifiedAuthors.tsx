@@ -141,16 +141,35 @@ const UnifiedAuthors: React.FC = () => {
           ))}
         </div>
 
-        {/* Synergy section */}
-        <div className="bg-gradient-to-r from-orange-50 via-white to-blue-50 rounded-3xl p-6 mt-12 border border-gray-100">
-          <div className="text-center">
-            <h3 className="text-xl font-bold text-gray-900 mb-3">
-              Почему мы&nbsp;объединились
-            </h3>
-            <p className="text-base text-gray-700 max-w-3xl mx-auto leading-relaxed">
-              Илья отвечает за&nbsp;систематизацию, дизайн и&nbsp;понятные объяснения. А&nbsp;Артём — за&nbsp;практическое применение и&nbsp;масштабирование. 
-              <span className="font-semibold text-gray-900"> Вместе у&nbsp;нас получилось создать отличный продукт, который проведет тебя от&nbsp;теории до&nbsp;реальных результатов.</span>
-            </p>
+        {/* Enhanced synergy section */}
+        <div className="relative mt-16">
+          {/* Background decorative elements for the synergy section */}
+          <div className="absolute inset-0 bg-gradient-to-r from-[#E76832]/5 via-transparent to-[#042989]/5 rounded-3xl" />
+          <div className="absolute top-0 left-1/4 w-32 h-32 bg-gradient-to-r from-[#E76832] to-[#FFC24B] rounded-full filter blur-[60px] opacity-20 animate-pulse" />
+          <div className="absolute bottom-0 right-1/4 w-32 h-32 bg-gradient-to-r from-[#042989] to-[#4A90E2] rounded-full filter blur-[60px] opacity-20 animate-pulse" style={{ animationDelay: '1s' }} />
+          
+          <div className="relative bg-white/60 backdrop-blur-sm rounded-3xl p-8 md:p-12 border border-white/30 shadow-xl">
+            <div className="text-center">
+              {/* Decorative icon */}
+              <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-gradient-to-r from-[#E76832] to-[#042989] p-[2px] animate-pulse">
+                <div className="w-full h-full rounded-full bg-white flex items-center justify-center">
+                  <div className="flex items-center gap-1">
+                    <div className="w-3 h-3 rounded-full bg-gradient-to-r from-[#E76832] to-[#FFC24B]" />
+                    <div className="w-1 h-1 rounded-full bg-gray-400" />
+                    <div className="w-3 h-3 rounded-full bg-gradient-to-r from-[#042989] to-[#4A90E2]" />
+                  </div>
+                </div>
+              </div>
+              
+              <p className="text-xl md:text-2xl font-semibold text-gray-900 max-w-4xl mx-auto leading-relaxed">
+                Вместе у&nbsp;нас получилось создать отличный продукт, который проведет тебя от&nbsp;теории до&nbsp;реальных результатов.
+              </p>
+              
+              {/* Subtle accent line */}
+              <div className="mt-6 flex justify-center">
+                <div className="h-1 w-32 rounded-full bg-gradient-to-r from-[#E76832] via-[#FFC24B] to-[#042989]" />
+              </div>
+            </div>
           </div>
         </div>
       </div>
