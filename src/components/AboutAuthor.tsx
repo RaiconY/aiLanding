@@ -1,5 +1,5 @@
 import React from 'react';
-import { MessageCircle, Sparkles, Users, CheckCircle, Star } from 'lucide-react';
+import { Sparkles, Users, CheckCircle, Star } from 'lucide-react';
 
 const AboutAuthor: React.FC = () => {
   const ilyaAchievements = [
@@ -41,7 +41,7 @@ const AboutAuthor: React.FC = () => {
         </div>
 
         {/* Основной контент */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Илья */}
           <div className="group">
             <div className="bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:scale-[1.02] border border-gray-100">
@@ -115,19 +115,6 @@ const AboutAuthor: React.FC = () => {
               </div>
             </div>
           </div>
-        </div>
-
-        {/* CTA */}
-        <div className="text-center">
-          <a 
-            href="https://t.me/Ilya_Plv" 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            className="inline-flex items-center gap-3 bg-gradient-to-r from-[#E76832] to-[#042989] text-white px-8 py-4 rounded-full font-bold text-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 group"
-          >
-            <MessageCircle className="h-5 w-5 group-hover:rotate-12 transition-transform duration-300" />
-            <span>Написать в Telegram</span>
-          </a>
         </div>
       </div>
     </section>
