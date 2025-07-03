@@ -20,7 +20,7 @@ const UnifiedAuthors: React.FC = () => {
       gradient: 'from-[#E76832] to-[#FFC24B]'
     },
     {
-      name: 'Артём',
+      name: 'Артём Григорец',
       position: 'Отвечаю за масштаб и автоматизацию',
       image: 'https://raw.githubusercontent.com/RaiconY/aiLanding/main/src/images/Artem Real Image.jpg',
       bullets: [
