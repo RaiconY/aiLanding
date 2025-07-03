@@ -1,5 +1,5 @@
 import React from 'react';
-import { MessageCircle, ExternalLink, CheckCircle, Award, Target, Lightbulb, PenTool } from 'lucide-react';
+import { MessageCircle, ExternalLink } from 'lucide-react';
 
 const UnifiedAuthors: React.FC = () => {
   const authors = [
@@ -7,53 +7,8 @@ const UnifiedAuthors: React.FC = () => {
       name: 'Илья Плужников',
       position: 'Отвечаю за системность и структуру',
       image: 'https://raw.githubusercontent.com/RaiconY/aiLanding/main/src/images/My Real Image.jpg',
-      description: 'Продуктовый дизайнер с 6-летним опытом. Специализируюсь на превращении сложных технологий в понятные и удобные решения.',
-      detailedInfo: {
-        experience: [
-          {
-            icon: <Award className="h-4 w-4" />,
-            title: 'Профессиональный опыт',
-            items: [
-              '6 лет в продуктовом дизайне',
-              'Работал с крупными IT-компаниями',
-              'Специализация на UX/UI для сложных продуктов'
-            ]
-          },
-          {
-            icon: <Target className="h-4 w-4" />,
-            title: 'Экспертиза в ИИ',
-            items: [
-              'Провёл 30+ персональных консультаций по ИИ',
-              '1.5 года глубокого изучения ChatGPT и LLM',
-              'Автор воркшопов по внедрению ИИ в компаниях'
-            ]
-          },
-          {
-            icon: <PenTool className="h-4 w-4" />,
-            title: 'Контент и образование',
-            items: [
-              'Написал 50+ статей по ИИ и бизнесу',
-              'Превращаю сложное в простое и понятное',
-              'Структурированная подача материала'
-            ]
-          },
-          {
-            icon: <Lightbulb className="h-4 w-4" />,
-            title: 'Подход к обучению',
-            items: [
-              'Фокус на практическом применении',
-              'Системный подход к освоению технологий',
-              'Проверенные методики и стратегии'
-            ]
-          }
-        ]
-      },
-      achievements: [
-        'Провёл 30+ консультаций по ИИ',
-        'Написал 50+ статей по ИИ и бизнесу',
-        'Специалист по превращению сложного в простое',
-        'Автор воркшопов для компаний'
-      ],
+      description: 'Продуктовый дизайнер с 6-летним опытом. За 1.5 года глубокого изучения ChatGPT провёл 30+ персональных консультаций по ИИ и написал 50+ статей по ИИ и бизнесу.',
+      experience: 'Специализируюсь на превращении сложных технологий в понятные решения. Автор воркшопов по внедрению ИИ в компаниях. Мой подход — системность, структурированная подача материала и фокус на практическом применении.',
       links: [
         { text: '@Ilya_Plv', url: 'https://t.me/Ilya_Plv' },
         { text: 'Телеграм-канал @iliaprovse', url: 'https://t.me/iliaprovse' }
@@ -64,12 +19,8 @@ const UnifiedAuthors: React.FC = () => {
       name: 'Артём',
       position: 'Отвечаю за масштаб и автоматизацию',
       image: 'https://raw.githubusercontent.com/RaiconY/aiLanding/main/src/images/Artem Real Image.jpg',
-      description: '5 лет в маркетинге P&G. Эксперт по автоматизации контента и масштабированию в социальных сетях.',
-      achievements: [
-        '800K подписчиков за год с ChatGPT',
-        '5000+ рилс с 400+ млн просмотров',
-        'Эксперт по автоматизации контента'
-      ],
+      description: '5 лет в маркетинге P&G. За год с ChatGPT набрал 800K подписчиков, создал 5000+ рилс с 400+ млн просмотров.',
+      experience: 'Эксперт по автоматизации контента и масштабированию в социальных сетях. Знаю, как превратить ChatGPT в мощный инструмент для создания контента и построения аудитории.',
       links: [
         { text: '@artem_channel', url: 'https://t.me/artem_channel' }
       ],
@@ -120,17 +71,17 @@ const UnifiedAuthors: React.FC = () => {
 
               <div className="relative">
                 {/* Header with name and position */}
-                <div className="p-8 pb-6">
-                  <div className="mb-6">
-                    <h3 className="text-2xl font-bold text-gray-900 mb-1">{author.name}</h3>
-                    <p className={`text-lg font-medium bg-gradient-to-r ${author.gradient} bg-clip-text text-transparent`}>
+                <div className="p-6 pb-4">
+                  <div className="mb-4">
+                    <h3 className="text-xl font-bold text-gray-900 mb-1">{author.name}</h3>
+                    <p className={`text-base font-medium bg-gradient-to-r ${author.gradient} bg-clip-text text-transparent`}>
                       {author.position}
                     </p>
                   </div>
                 </div>
 
-                {/* Large photo */}
-                <div className="px-8 mb-6">
+                {/* Photo */}
+                <div className="px-6 mb-4">
                   <div className="w-full aspect-[4/3] rounded-2xl overflow-hidden bg-gray-100 transform group-hover:scale-[1.02] transition-all duration-500">
                     <img 
                       src={author.image}
@@ -141,49 +92,16 @@ const UnifiedAuthors: React.FC = () => {
                 </div>
                 
                 {/* Content */}
-                <div className="px-8 pb-8">
+                <div className="px-6 pb-6">
                   {/* Description */}
-                  <p className="text-gray-700 leading-relaxed text-base mb-6">
+                  <p className="text-gray-700 leading-relaxed text-base mb-4">
                     {author.description}
                   </p>
 
-                  {/* Detailed info for Ilya */}
-                  {author.detailedInfo && (
-                    <div className="space-y-6 mb-6">
-                      {author.detailedInfo.experience.map((section, i) => (
-                        <div key={i} className="bg-gray-50/80 rounded-xl p-4">
-                          <div className="flex items-center gap-2 mb-3">
-                            <div className={`w-6 h-6 rounded-lg bg-gradient-to-r ${author.gradient} flex items-center justify-center text-white`}>
-                              {section.icon}
-                            </div>
-                            <h4 className="font-semibold text-gray-900 text-sm">{section.title}</h4>
-                          </div>
-                          <div className="space-y-2">
-                            {section.items.map((item, j) => (
-                              <div key={j} className="flex items-start gap-2">
-                                <div className="w-1.5 h-1.5 rounded-full bg-gray-400 mt-2 flex-shrink-0" />
-                                <span className="text-gray-700 text-sm leading-relaxed">{item}</span>
-                              </div>
-                            ))}
-                          </div>
-                        </div>
-                      ))}
-                    </div>
-                  )}
-
-                  {/* Achievements for Artem */}
-                  {!author.detailedInfo && (
-                    <div className="space-y-3 mb-6">
-                      {author.achievements.map((achievement, i) => (
-                        <div key={i} className="flex items-start gap-3">
-                          <div className={`w-5 h-5 rounded-full bg-gradient-to-r ${author.gradient} flex items-center justify-center flex-shrink-0 mt-0.5`}>
-                            <CheckCircle className="h-3 w-3 text-white" />
-                          </div>
-                          <span className="text-gray-700 text-sm leading-relaxed">{achievement}</span>
-                        </div>
-                      ))}
-                    </div>
-                  )}
+                  {/* Experience */}
+                  <p className="text-gray-600 leading-relaxed text-sm mb-4">
+                    {author.experience}
+                  </p>
 
                   {/* Links */}
                   <div className="space-y-2">
@@ -208,12 +126,12 @@ const UnifiedAuthors: React.FC = () => {
         </div>
 
         {/* Synergy section */}
-        <div className="bg-gradient-to-r from-orange-50 via-white to-blue-50 rounded-3xl p-8 mt-12 border border-gray-100">
+        <div className="bg-gradient-to-r from-orange-50 via-white to-blue-50 rounded-3xl p-6 mt-12 border border-gray-100">
           <div className="text-center">
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">
+            <h3 className="text-xl font-bold text-gray-900 mb-3">
               Почему мы объединились
             </h3>
-            <p className="text-lg text-gray-700 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-base text-gray-700 max-w-3xl mx-auto leading-relaxed">
               Илья отвечает за системность и понятные объяснения. Артём — за практическое применение и масштабирование. 
               <span className="font-semibold text-gray-900"> Вместе мы покрываем весь путь от теории до реальных результатов.</span>
             </p>
@@ -221,14 +139,14 @@ const UnifiedAuthors: React.FC = () => {
         </div>
 
         {/* CTA */}
-        <div className="text-center mt-12">
+        <div className="text-center mt-8">
           <a 
             href="https://t.me/Ilya_Plv" 
             target="_blank" 
             rel="noopener noreferrer" 
-            className="inline-flex items-center gap-3 bg-gradient-to-r from-[#E76832] to-[#042989] text-white px-8 py-4 rounded-full font-bold text-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 group"
+            className="inline-flex items-center gap-3 bg-gradient-to-r from-[#E76832] to-[#042989] text-white px-6 py-3 rounded-full font-bold text-base shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 group"
           >
-            <MessageCircle className="h-5 w-5 group-hover:rotate-12 transition-transform duration-300" />
+            <MessageCircle className="h-4 w-4 group-hover:rotate-12 transition-transform duration-300" />
             <span>Написать в Telegram</span>
           </a>
         </div>
