@@ -11,8 +11,7 @@ import WhyChatGPT from './components/WhyChatGPT';
 import AIDisclosure from './components/AIDisclosure';
 import WhyGuide from './components/WhyGuide';
 import WhyAuthorCreated from './components/WhyAuthorCreated';
-import AboutAuthor from './components/AboutAuthor';
-import WhoWeAre from './components/WhoWeAre';
+import UnifiedAuthors from './components/UnifiedAuthors';
 import Consultations from './components/Consultations';
 import Testimonials from './components/Testimonials';
 import Pricing from './components/Pricing';
@@ -40,8 +39,7 @@ function App() {
       <Testimonials /> 
       <Pricing />
       <FAQ />
-      <AboutAuthor />
-      <WhoWeAre />
+      <UnifiedAuthors />
       <WhyAuthorCreated />
       <Consultations />
       {/*
