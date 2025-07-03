@@ -133,37 +133,6 @@ const AboutAuthor: React.FC = () => {
           </div>
         </div>
 
-        {/* Что получишь */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-          {[
-            {
-              icon: <Sparkles className="h-6 w-6" />,
-              title: 'Системный подход',
-              description: 'Поймёшь, как правильно работать с ChatGPT от основ до продвинутых техник'
-            },
-            {
-              icon: <Star className="h-6 w-6" />,
-              title: 'Практические навыки',
-              description: 'Научишься применять ИИ в реальных задачах — от кода до контента'
-            },
-            {
-              icon: <Award className="h-6 w-6" />,
-              title: 'Проверенный опыт',
-              description: 'Сэкономишь время на экспериментах — мы уже проверили, что работает'
-            }
-          ].map((benefit, index) => (
-            <div key={index} className="text-center group">
-              <div className="w-16 h-16 bg-gradient-to-r from-[#E76832] to-[#042989] rounded-2xl flex items-center justify-center mx-auto mb-4 transform group-hover:scale-110 transition-transform duration-300">
-                <div className="text-white">
-                  {benefit.icon}
-                </div>
-              </div>
-              <h4 className="text-xl font-bold text-gray-900 mb-3">{benefit.title}</h4>
-              <p className="text-gray-700">{benefit.description}</p>
-            </div>
-          ))}
-        </div>
-
         {/* CTA */}
         <div className="text-center">
           <a 
