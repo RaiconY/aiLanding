@@ -1,5 +1,5 @@
 import React from 'react';
-import { MessageCircle, ExternalLink, CheckCircle } from 'lucide-react';
+import { ExternalLink, CheckCircle } from 'lucide-react';
 
 const UnifiedAuthors: React.FC = () => {
   const authors = [
@@ -150,19 +150,6 @@ const UnifiedAuthors: React.FC = () => {
               <span className="font-semibold text-gray-900"> Вместе мы покрываем весь путь от теории до реальных результатов.</span>
             </p>
           </div>
-        </div>
-
-        {/* CTA */}
-        <div className="text-center mt-8">
-          <a 
-            href="https://t.me/Ilya_Plv" 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            className="inline-flex items-center gap-3 bg-gradient-to-r from-[#E76832] to-[#042989] text-white px-6 py-3 rounded-full font-bold text-base shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 group"
-          >
-            <MessageCircle className="h-4 w-4 group-hover:rotate-12 transition-transform duration-300" />
-            <span>Написать в Telegram</span>
-          </a>
         </div>
       </div>
     </section>
