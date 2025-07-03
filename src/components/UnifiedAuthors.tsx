@@ -1,5 +1,5 @@
 import React from 'react';
-import { MessageCircle, ExternalLink, CheckCircle } from 'lucide-react';
+import { MessageCircle, ExternalLink, CheckCircle, Award, Target, Lightbulb } from 'lucide-react';
 
 const UnifiedAuthors: React.FC = () => {
   const authors = [
@@ -7,7 +7,38 @@ const UnifiedAuthors: React.FC = () => {
       name: 'Илья Плужников',
       position: 'Отвечаю за системность и структуру',
       image: 'https://raw.githubusercontent.com/RaiconY/aiLanding/main/src/images/My Real Image.jpg',
-      description: 'Продуктовый дизайнер с 6-летним опытом. Специалист по превращению сложного в простое и автор воркшопов для компаний.',
+      description: 'Продуктовый дизайнер с 6-летним опытом. Специализируюсь на превращении сложных технологий в понятные и удобные решения.',
+      detailedInfo: {
+        experience: [
+          {
+            icon: <Award className="h-4 w-4" />,
+            title: 'Профессиональный опыт',
+            items: [
+              '6 лет в продуктовом дизайне',
+              'Работал с крупными IT-компаниями',
+              'Специализация на UX/UI для сложных продуктов'
+            ]
+          },
+          {
+            icon: <Target className="h-4 w-4" />,
+            title: 'Экспертиза в ИИ',
+            items: [
+              'Провёл 30+ персональных консультаций по ИИ',
+              '1.5 года глубокого изучения ChatGPT и LLM',
+              'Автор воркшопов по внедрению ИИ в компаниях'
+            ]
+          },
+          {
+            icon: <Lightbulb className="h-4 w-4" />,
+            title: 'Подход к обучению',
+            items: [
+              'Превращаю сложное в простое и понятное',
+              'Структурированная подача материала',
+              'Фокус на практическом применении'
+            ]
+          }
+        ]
+      },
       achievements: [
         'Провёл 30+ консультаций по ИИ',
         'Специалист по превращению сложного в простое',
@@ -106,17 +137,43 @@ const UnifiedAuthors: React.FC = () => {
                     {author.description}
                   </p>
 
-                  {/* Achievements */}
-                  <div className="space-y-3 mb-6">
-                    {author.achievements.map((achievement, i) => (
-                      <div key={i} className="flex items-start gap-3">
-                        <div className={`w-5 h-5 rounded-full bg-gradient-to-r ${author.gradient} flex items-center justify-center flex-shrink-0 mt-0.5`}>
-                          <CheckCircle className="h-3 w-3 text-white" />
+                  {/* Detailed info for Ilya */}
+                  {author.detailedInfo && (
+                    <div className="space-y-6 mb-6">
+                      {author.detailedInfo.experience.map((section, i) => (
+                        <div key={i} className="bg-gray-50/80 rounded-xl p-4">
+                          <div className="flex items-center gap-2 mb-3">
+                            <div className={`w-6 h-6 rounded-lg bg-gradient-to-r ${author.gradient} flex items-center justify-center text-white`}>
+                              {section.icon}
+                            </div>
+                            <h4 className="font-semibold text-gray-900 text-sm">{section.title}</h4>
+                          </div>
+                          <div className="space-y-2">
+                            {section.items.map((item, j) => (
+                              <div key={j} className="flex items-start gap-2">
+                                <div className="w-1.5 h-1.5 rounded-full bg-gray-400 mt-2 flex-shrink-0" />
+                                <span className="text-gray-700 text-sm leading-relaxed">{item}</span>
+                              </div>
+                            ))}
+                          </div>
                         </div>
-                        <span className="text-gray-700 text-sm leading-relaxed">{achievement}</span>
-                      </div>
-                    ))}
-                  </div>
+                      ))}
+                    </div>
+                  )}
+
+                  {/* Achievements for Artem */}
+                  {!author.detailedInfo && (
+                    <div className="space-y-3 mb-6">
+                      {author.achievements.map((achievement, i) => (
+                        <div key={i} className="flex items-start gap-3">
+                          <div className={`w-5 h-5 rounded-full bg-gradient-to-r ${author.gradient} flex items-center justify-center flex-shrink-0 mt-0.5`}>
+                            <CheckCircle className="h-3 w-3 text-white" />
+                          </div>
+                          <span className="text-gray-700 text-sm leading-relaxed">{achievement}</span>
+                        </div>
+                      ))}
+                    </div>
+                  )}
 
                   {/* Links */}
                   <div className="space-y-2">
