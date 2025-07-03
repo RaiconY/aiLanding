@@ -150,8 +150,8 @@ const UnifiedAuthors: React.FC = () => {
           
           <div className="relative bg-white/60 backdrop-blur-sm rounded-3xl p-8 md:p-12 border border-white/30 shadow-xl">
             <div className="text-center">
-              {/* Decorative icon */}
-              <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-gradient-to-r from-[#E76832] to-[#042989] p-[2px] animate-pulse">
+              {/* Decorative icon with gradient shimmer */}
+              <div className="w-16 h-16 mx-auto mb-6 rounded-full animate-gradient-shimmer p-[2px]">
                 <div className="w-full h-full rounded-full bg-white flex items-center justify-center">
                   <div className="flex items-center gap-1">
                     <div className="w-3 h-3 rounded-full bg-gradient-to-r from-[#E76832] to-[#FFC24B]" />

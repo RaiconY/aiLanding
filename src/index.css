@@ -47,6 +47,15 @@
     }
   }
 
+  @keyframes gradientShimmer {
+    0% {
+      background-position: -200% center;
+    }
+    100% {
+      background-position: 200% center;
+    }
+  }
+
   .animate-slide-up {
     animation: slideUp 0.6s ease-out forwards;
   }
@@ -57,6 +66,19 @@
 
   .animate-scale-in {
     animation: scaleIn 0.5s ease-out forwards;
+  }
+
+  .animate-gradient-shimmer {
+    background: linear-gradient(
+      90deg,
+      #E76832 0%,
+      #FFC24B 25%,
+      #042989 50%,
+      #4A90E2 75%,
+      #E76832 100%
+    );
+    background-size: 200% 100%;
+    animation: gradientShimmer 3s ease-in-out infinite;
   }
 
   .section-gradient {
