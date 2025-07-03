@@ -46,14 +46,21 @@ const UnifiedAuthors: React.FC = () => {
       <div className="container mx-auto max-w-6xl relative z-10">
         {/* Title */}
         <div className="text-center mb-16">
-          <div className="inline-flex items-center gap-2 bg-gradient-to-r from-[#E76832] to-[#042989] text-white px-6 py-3 rounded-full text-sm font-medium mb-6">
-            <MessageCircle className="h-4 w-4" />
-            <span># кто мы?</span>
+          <div className="mb-6">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              # кто мы?
+            </h2>
+            <div 
+              className="h-1 w-24 rounded mx-auto"
+              style={{
+                background: 'linear-gradient(135deg, #E76832, #FFC24B)'
+              }}
+            />
           </div>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+          <h3 className="text-xl sm:text-2xl lg:text-3xl font-semibold text-gray-900 mb-4">
             Мы — Илья и Артём
-          </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          </h3>
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
             Два эксперта, которые объединили свой опыт, чтобы создать самый полный гайд по ChatGPT на русском языке
           </p>
         </div>
