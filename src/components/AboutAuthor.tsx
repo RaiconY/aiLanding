@@ -52,8 +52,8 @@ const AboutAuthor: React.FC = () => {
 
               <div className="relative flex flex-col h-full">
                 {/* Author info at the top */}
-                <div className="flex items-center gap-3 mb-4 pb-3 border-b border-gray-100">
-                  <div className="w-12 h-12 rounded-full overflow-hidden bg-gradient-to-r from-[#E76832] to-[#FFC24B] p-[2px] transform group-hover:rotate-12 transition-all duration-500 flex-shrink-0">
+                <div className="flex items-center gap-4 mb-6 pb-4 border-b border-gray-100">
+                  <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-full overflow-hidden bg-gradient-to-r from-[#E76832] to-[#FFC24B] p-[3px] transform group-hover:rotate-12 transition-all duration-500 flex-shrink-0">
                     <div className="w-full h-full rounded-full bg-white flex items-center justify-center overflow-hidden">
                       <img 
                         src={author.image}
@@ -64,8 +64,8 @@ const AboutAuthor: React.FC = () => {
                   </div>
                   
                   <div>
-                    <h3 className="font-bold text-gray-900 text-base">{author.name}</h3>
-                    <p className="text-gray-600 text-sm">{author.position}</p>
+                    <h3 className="font-bold text-gray-900 text-lg sm:text-xl">{author.name}</h3>
+                    <p className="text-gray-600 text-base">{author.position}</p>
                   </div>
                 </div>
                 
@@ -73,13 +73,13 @@ const AboutAuthor: React.FC = () => {
                 <div className="flex flex-col h-full">
                   {/* Achievements */}
                   <div className="flex-1">
-                    <div className="space-y-3">
+                    <div className="space-y-4">
                       {author.achievements.map((achievement, i) => (
                         <div key={i} className="flex items-start gap-3">
-                          <div className="w-5 h-5 rounded-full bg-gradient-to-r from-[#E76832] to-[#FFC24B] flex items-center justify-center flex-shrink-0 mt-0.5">
+                          <div className="w-6 h-6 rounded-full bg-gradient-to-r from-[#E76832] to-[#FFC24B] flex items-center justify-center flex-shrink-0 mt-0.5">
                             <CheckCircle className="h-3 w-3 text-white" />
                           </div>
-                          <span className="text-gray-700 text-sm leading-relaxed">{achievement}</span>
+                          <span className="text-gray-700 text-base leading-relaxed">{achievement}</span>
                         </div>
                       ))}
                     </div>
