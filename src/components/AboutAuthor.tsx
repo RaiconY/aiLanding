@@ -1,241 +1,180 @@
 import React from 'react';
-import { MessageCircle, Sparkles, Zap, CheckCircle, Users, Rocket, TrendingUp } from 'lucide-react';
-import SectionTitle from './SectionTitle';
+import { MessageCircle, Sparkles, Users, CheckCircle, Star, Award } from 'lucide-react';
 
 const AboutAuthor: React.FC = () => {
-  const ilyaFacts = [
-    { text: 'Продуктовый дизайнер, 6 лет помогаю стартапам запускать продукты', highlight: '6 лет' },
-    { text: 'Провожу воркшопы по ИИ для компаний', highlight: 'воркшопы' },
-    { text: 'Пишу статьи про ИИ и дизайн', highlight: false },
-    { text: 'Провёл 30+ консультаций — клиенты экономят 15+ часов в неделю', highlight: '15+ часов' },
-    { text: 'Специализация: превращаю сложное в понятные пошаговые системы', highlight: 'пошаговые системы' }
+  const ilyaAchievements = [
+    'Продуктовый дизайнер с 6-летним опытом',
+    'Провёл 30+ консультаций по ИИ',
+    'Специалист по превращению сложного в простое',
+    'Автор воркшопов для компаний'
   ];
 
-  const artemFacts = [
-    { text: '5 лет работал в маркетинге P&G', highlight: 'P&G' },
-    { text: 'За год набрал 800,000 подписчиков используя ChatGPT', highlight: '800,000' },
-    { text: 'Создал 5000+ рилс с 400+ млн просмотров', highlight: '400+ млн' },
-    { text: 'Разработал Telegram-бота для автоматизации контента', highlight: 'автоматизации' },
-    { text: 'Специализация: масштабирование контента и автоматизация', highlight: 'масштабирование' }
+  const artemAchievements = [
+    '5 лет в маркетинге P&G',
+    '800K подписчиков за год с ChatGPT',
+    '5000+ рилс с 400+ млн просмотров',
+    'Эксперт по автоматизации контента'
   ];
-
-  const benefits = [
-    { icon: <Sparkles className="h-5 w-5" />, text: 'Поймёшь, как правильно работать с ChatGPT' },
-    { icon: <Rocket className="h-5 w-5" />, text: 'Научишься применять его в реальных задачах — от написания кода до создания контента' },
-    { icon: <TrendingUp className="h-5 w-5" />, text: 'Сэкономишь время на экспериментах — мы уже проверили, что работает, а что нет' }
-  ];
-
-  const highlightText = (text: string, highlight: string | false) => {
-    if (!highlight) return text;
-    const parts = text.split(highlight);
-    return (
-      <>
-        {parts[0]}
-        <span className="font-bold text-gray-900">{highlight}</span>
-        {parts[1]}
-      </>
-    );
-  };
 
   return (
     <section className="py-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
-      {/* Enhanced dramatic background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-orange-100 via-amber-50 to-blue-50" />
-      <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-[#E76832]/5 to-[#042989]/5" />
-      
-      {/* Multiple animated floating elements */}
-      <div className="absolute top-1/4 left-0 w-96 h-96 bg-gradient-to-r from-[#E76832] to-[#FFC24B] rounded-full filter blur-[128px] opacity-20 -translate-x-1/2 animate-pulse" />
-      <div className="absolute bottom-1/4 right-0 w-96 h-96 bg-gradient-to-l from-[#042989] to-[#4A90E2] rounded-full filter blur-[128px] opacity-20 translate-x-1/2 animate-pulse" style={{ animationDelay: '1s' }} />
-      <div className="absolute top-1/2 left-1/3 w-72 h-72 bg-gradient-to-br from-[#FFC24B] to-[#E76832] rounded-full filter blur-[100px] opacity-15 animate-pulse" style={{ animationDelay: '2s' }} />
-      <div className="absolute bottom-1/3 right-1/4 w-64 h-64 bg-gradient-to-tl from-[#042989] to-[#4A90E2] rounded-full filter blur-[100px] opacity-15 animate-pulse" style={{ animationDelay: '1.5s' }} />
+      {/* Фоновые элементы */}
+      <div className="absolute inset-0 bg-gradient-to-br from-orange-50 via-white to-blue-50" />
+      <div className="absolute top-0 left-0 w-full h-full">
+        <div className="absolute top-1/4 left-0 w-80 h-80 bg-[#E76832]/20 rounded-full filter blur-[100px] -translate-x-1/2 animate-pulse" />
+        <div className="absolute bottom-1/4 right-0 w-80 h-80 bg-[#042989]/20 rounded-full filter blur-[100px] translate-x-1/2 animate-pulse" style={{ animationDelay: '1s' }} />
+      </div>
 
       <div className="container mx-auto max-w-6xl relative z-10">
-        {/* Header with badge */}
-        <div className="text-center mb-12">
-          <div className="inline-flex items-center gap-2 bg-gradient-to-r from-[#E76832] to-[#FFC24B] text-white px-4 py-2 rounded-full text-sm font-medium mb-4 animate-bounce">
+        {/* Заголовок */}
+        <div className="text-center mb-16">
+          <div className="inline-flex items-center gap-2 bg-gradient-to-r from-[#E76832] to-[#042989] text-white px-6 py-3 rounded-full text-sm font-medium mb-6">
             <Users className="h-4 w-4" />
             <span>Авторы гайда</span>
           </div>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Мы — Илья и Артём.{' '}
-            <span className="bg-gradient-to-r from-[#E76832] to-[#042989] bg-clip-text text-transparent">
-              Два человека, которые давно работают с ИИ
-            </span>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+            Мы — Илья и Артём
           </h2>
-          <div 
-            className="h-1 w-32 rounded mx-auto"
-            style={{
-              background: 'linear-gradient(90deg, #E76832 0%, #FFC24B 50%, #042989 100%)'
-            }}
-          />
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            Два эксперта, которые объединили свой опыт, чтобы создать самый полный гайд по ChatGPT на русском языке
+          </p>
         </div>
-        
-        {/* Main content card */}
-        <div className="bg-white/90 backdrop-blur-sm rounded-3xl p-6 sm:p-8 lg:p-12 shadow-2xl border border-white/20">
-          <div className="space-y-12">
-            {/* Author cards with enhanced design */}
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-              {/* Илья - Orange theme */}
-              <div className="relative group">
-                {/* Glow effect */}
-                <div className="absolute inset-0 bg-gradient-to-r from-[#E76832] to-[#FFC24B] rounded-2xl blur-xl opacity-20 group-hover:opacity-30 transition-opacity duration-500" />
-                
-                {/* Card with gradient border */}
-                <div className="relative bg-gradient-to-br from-[#E76832] to-[#FFC24B] p-[3px] rounded-2xl shadow-xl transform group-hover:scale-[1.02] transition-all duration-500">
-                  <div className="bg-white rounded-2xl p-6 sm:p-8 space-y-6 h-full">
-                    {/* Header with avatar */}
-                    <div className="flex items-center gap-4">
-                      <div className="relative">
-                        <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-[#E76832] to-[#FFC24B] p-[2px] shadow-xl transform group-hover:rotate-6 transition-transform duration-500">
-                          <div className="w-full h-full rounded-2xl overflow-hidden bg-white">
-                            <img 
-                              src="https://raw.githubusercontent.com/RaiconY/aiLanding/main/src/images/MyImage.png"
-                              alt="Илья"
-                              className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
-                            />
-                          </div>
-                        </div>
-                        <div className="absolute -top-2 -right-2 w-8 h-8 bg-gradient-to-r from-[#E76832] to-[#FFC24B] rounded-full flex items-center justify-center animate-pulse">
-                          <Sparkles className="h-4 w-4 text-white" />
-                        </div>
-                      </div>
-                      <div>
-                        <h4 className="text-2xl font-bold bg-gradient-to-r from-[#E76832] to-[#FFC24B] bg-clip-text text-transparent">
-                          Илья
-                        </h4>
-                        <p className="text-gray-600 font-medium">Системность и ясность</p>
-                      </div>
-                    </div>
-                    
-                    {/* Facts with enhanced styling */}
-                    <ul className="space-y-3">
-                      {ilyaFacts.map((fact, index) => (
-                        <li 
-                          key={index} 
-                          className="flex items-start gap-3 text-gray-700 text-sm sm:text-base group/item hover:translate-x-1 transition-transform duration-300"
-                        >
-                          <div className="w-5 h-5 rounded-full bg-gradient-to-r from-[#E76832] to-[#FFC24B] flex items-center justify-center flex-shrink-0 mt-0.5 transform group-hover/item:rotate-12 transition-transform duration-300">
-                            <CheckCircle className="h-3 w-3 text-white" />
-                          </div>
-                          <span>{highlightText(fact.text, fact.highlight)}</span>
-                        </li>
-                      ))}
-                    </ul>
+
+        {/* Основной контент */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
+          {/* Илья */}
+          <div className="group">
+            <div className="bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:scale-[1.02] border border-gray-100">
+              {/* Аватар и имя */}
+              <div className="flex items-center gap-6 mb-8">
+                <div className="relative">
+                  <div className="w-24 h-24 rounded-2xl overflow-hidden shadow-lg">
+                    <img 
+                      src="https://raw.githubusercontent.com/RaiconY/aiLanding/main/src/images/MyImage.png"
+                      alt="Илья"
+                      className="w-full h-full object-cover"
+                    />
                   </div>
+                  <div className="absolute -top-2 -right-2 w-8 h-8 bg-gradient-to-r from-[#E76832] to-[#FFC24B] rounded-full flex items-center justify-center">
+                    <Sparkles className="h-4 w-4 text-white" />
+                  </div>
+                </div>
+                <div>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-2">Илья Плужников</h3>
+                  <p className="text-lg text-[#E76832] font-medium">Системность и структура</p>
                 </div>
               </div>
 
-              {/* Артём - Blue theme */}
-              <div className="relative group">
-                {/* Glow effect */}
-                <div className="absolute inset-0 bg-gradient-to-r from-[#042989] to-[#4A90E2] rounded-2xl blur-xl opacity-20 group-hover:opacity-30 transition-opacity duration-500" />
-                
-                {/* Card with gradient border */}
-                <div className="relative bg-gradient-to-br from-[#042989] to-[#4A90E2] p-[3px] rounded-2xl shadow-xl transform group-hover:scale-[1.02] transition-all duration-500">
-                  <div className="bg-white rounded-2xl p-6 sm:p-8 space-y-6 h-full">
-                    {/* Header with avatar */}
-                    <div className="flex items-center gap-4">
-                      <div className="relative">
-                        <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-[#042989] to-[#4A90E2] p-[2px] shadow-xl transform group-hover:rotate-6 transition-transform duration-500">
-                          <div className="w-full h-full rounded-2xl overflow-hidden bg-white">
-                            <img 
-                              src="https://raw.githubusercontent.com/RaiconY/aiLanding/main/src/images/ArtemImage.png"
-                              alt="Артём"
-                              className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
-                            />
-                          </div>
-                        </div>
-                        <div className="absolute -top-2 -right-2 w-8 h-8 bg-gradient-to-r from-[#042989] to-[#4A90E2] rounded-full flex items-center justify-center animate-pulse">
-                          <Zap className="h-4 w-4 text-white" />
-                        </div>
-                      </div>
-                      <div>
-                        <h4 className="text-2xl font-bold bg-gradient-to-r from-[#042989] to-[#4A90E2] bg-clip-text text-transparent">
-                          Артём
-                        </h4>
-                        <p className="text-gray-600 font-medium">Масштаб и автоматизация</p>
-                      </div>
+              {/* Достижения */}
+              <div className="space-y-4">
+                {ilyaAchievements.map((achievement, index) => (
+                  <div key={index} className="flex items-start gap-3">
+                    <div className="w-6 h-6 rounded-full bg-gradient-to-r from-[#E76832] to-[#FFC24B] flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <CheckCircle className="h-3 w-3 text-white" />
                     </div>
-                    
-                    {/* Facts with enhanced styling */}
-                    <ul className="space-y-3">
-                      {artemFacts.map((fact, index) => (
-                        <li 
-                          key={index} 
-                          className="flex items-start gap-3 text-gray-700 text-sm sm:text-base group/item hover:translate-x-1 transition-transform duration-300"
-                        >
-                          <div className="w-5 h-5 rounded-full bg-gradient-to-r from-[#042989] to-[#4A90E2] flex items-center justify-center flex-shrink-0 mt-0.5 transform group-hover/item:rotate-12 transition-transform duration-300">
-                            <CheckCircle className="h-3 w-3 text-white" />
-                          </div>
-                          <span>{highlightText(fact.text, fact.highlight)}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Synergy section with enhanced design */}
-            <div className="relative group">
-              <div className="absolute inset-0 bg-gradient-to-r from-[#E76832] via-[#FFC24B] to-[#042989] rounded-2xl blur-xl opacity-10 group-hover:opacity-20 transition-opacity duration-500" />
-              <div className="relative bg-gradient-to-r from-orange-50 via-amber-50 to-blue-50 rounded-2xl p-8 text-center border-2 border-transparent bg-clip-padding" 
-                   style={{ backgroundImage: 'linear-gradient(to right, rgb(254 243 199), rgb(254 243 199), rgb(219 234 254)), linear-gradient(90deg, #E76832 0%, #FFC24B 50%, #042989 100%)', backgroundOrigin: 'border-box', backgroundClip: 'padding-box, border-box' }}>
-                <h4 className="text-2xl font-bold text-gray-900 mb-4">
-                  Почему мы объединились
-                </h4>
-                <p className="text-gray-700 text-lg leading-relaxed max-w-3xl mx-auto">
-                  Илья отвечает за системность и понятные объяснения. Артём — за практическое применение и масштабирование. 
-                  <span className="font-semibold"> Вместе покрываем весь путь от теории до реальных результатов.</span>
-                </p>
-              </div>
-            </div>
-
-            {/* Benefits section with cards */}
-            <div className="space-y-8">
-              <h4 className="text-2xl sm:text-3xl font-bold text-gray-900 text-center">
-                Что ты получишь
-              </h4>
-              
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                {benefits.map((benefit, index) => (
-                  <div 
-                    key={index}
-                    className="group relative animate-scale-in"
-                    style={{ animationDelay: `${index * 150}ms` }}
-                  >
-                    <div className="absolute inset-0 bg-gradient-to-br from-[#E76832]/10 to-[#042989]/10 rounded-xl blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                    <div className="relative bg-white rounded-xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 transform group-hover:scale-[1.02] border border-gray-100">
-                      <div className="w-12 h-12 rounded-xl bg-gradient-to-r from-[#E76832] to-[#FFC24B] p-[2px] mb-4 transform group-hover:rotate-12 transition-transform duration-500">
-                        <div className="w-full h-full rounded-xl bg-white flex items-center justify-center">
-                          <div className="text-[#E76832]">
-                            {benefit.icon}
-                          </div>
-                        </div>
-                      </div>
-                      <p className="text-gray-700 leading-relaxed">
-                        {benefit.text}
-                      </p>
-                    </div>
+                    <span className="text-gray-700">{achievement}</span>
                   </div>
                 ))}
               </div>
             </div>
-            
-            {/* Contact CTA */}
-            <div className="text-center pt-8">
-              <a 
-                href="https://t.me/Ilya_Plv" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="inline-flex items-center gap-3 bg-gradient-to-r from-[#E76832] to-[#FFC24B] text-white px-8 py-4 rounded-full font-bold text-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 group"
-              >
-                <MessageCircle className="h-5 w-5 group-hover:rotate-12 transition-transform duration-300" />
-                <span>Написать в Telegram</span>
-                <div className="w-2 h-2 bg-white/30 rounded-full animate-ping" />
-              </a>
+          </div>
+
+          {/* Артём */}
+          <div className="group">
+            <div className="bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:scale-[1.02] border border-gray-100">
+              {/* Аватар и имя */}
+              <div className="flex items-center gap-6 mb-8">
+                <div className="relative">
+                  <div className="w-24 h-24 rounded-2xl overflow-hidden shadow-lg">
+                    <img 
+                      src="https://raw.githubusercontent.com/RaiconY/aiLanding/main/src/images/ArtemImage.png"
+                      alt="Артём"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <div className="absolute -top-2 -right-2 w-8 h-8 bg-gradient-to-r from-[#042989] to-[#4A90E2] rounded-full flex items-center justify-center">
+                    <Star className="h-4 w-4 text-white" />
+                  </div>
+                </div>
+                <div>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-2">Артём</h3>
+                  <p className="text-lg text-[#042989] font-medium">Масштаб и автоматизация</p>
+                </div>
+              </div>
+
+              {/* Достижения */}
+              <div className="space-y-4">
+                {artemAchievements.map((achievement, index) => (
+                  <div key={index} className="flex items-start gap-3">
+                    <div className="w-6 h-6 rounded-full bg-gradient-to-r from-[#042989] to-[#4A90E2] flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <CheckCircle className="h-3 w-3 text-white" />
+                    </div>
+                    <span className="text-gray-700">{achievement}</span>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
+        </div>
+
+        {/* Синергия */}
+        <div className="bg-gradient-to-r from-orange-50 via-white to-blue-50 rounded-3xl p-8 mb-12 border border-gray-100">
+          <div className="text-center">
+            <div className="w-16 h-16 bg-gradient-to-r from-[#E76832] to-[#042989] rounded-2xl flex items-center justify-center mx-auto mb-6">
+              <Award className="h-8 w-8 text-white" />
+            </div>
+            <h3 className="text-2xl font-bold text-gray-900 mb-4">
+              Почему мы объединились
+            </h3>
+            <p className="text-lg text-gray-700 max-w-3xl mx-auto leading-relaxed">
+              Илья отвечает за системность и понятные объяснения. Артём — за практическое применение и масштабирование. 
+              <span className="font-semibold text-gray-900"> Вместе мы покрываем весь путь от теории до реальных результатов.</span>
+            </p>
+          </div>
+        </div>
+
+        {/* Что получишь */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+          {[
+            {
+              icon: <Sparkles className="h-6 w-6" />,
+              title: 'Системный подход',
+              description: 'Поймёшь, как правильно работать с ChatGPT от основ до продвинутых техник'
+            },
+            {
+              icon: <Star className="h-6 w-6" />,
+              title: 'Практические навыки',
+              description: 'Научишься применять ИИ в реальных задачах — от кода до контента'
+            },
+            {
+              icon: <Award className="h-6 w-6" />,
+              title: 'Проверенный опыт',
+              description: 'Сэкономишь время на экспериментах — мы уже проверили, что работает'
+            }
+          ].map((benefit, index) => (
+            <div key={index} className="text-center group">
+              <div className="w-16 h-16 bg-gradient-to-r from-[#E76832] to-[#042989] rounded-2xl flex items-center justify-center mx-auto mb-4 transform group-hover:scale-110 transition-transform duration-300">
+                <div className="text-white">
+                  {benefit.icon}
+                </div>
+              </div>
+              <h4 className="text-xl font-bold text-gray-900 mb-3">{benefit.title}</h4>
+              <p className="text-gray-700">{benefit.description}</p>
+            </div>
+          ))}
+        </div>
+
+        {/* CTA */}
+        <div className="text-center">
+          <a 
+            href="https://t.me/Ilya_Plv" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="inline-flex items-center gap-3 bg-gradient-to-r from-[#E76832] to-[#042989] text-white px-8 py-4 rounded-full font-bold text-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 group"
+          >
+            <MessageCircle className="h-5 w-5 group-hover:rotate-12 transition-transform duration-300" />
+            <span>Написать в Telegram</span>
+          </a>
         </div>
       </div>
     </section>
