@@ -1,5 +1,5 @@
 import React from 'react';
-import { MessageCircle, Sparkles, Users, CheckCircle, Star, Award } from 'lucide-react';
+import { MessageCircle, Sparkles, Users, CheckCircle, Star } from 'lucide-react';
 
 const AboutAuthor: React.FC = () => {
   const ilyaAchievements = [
@@ -114,22 +114,6 @@ const AboutAuthor: React.FC = () => {
                 ))}
               </div>
             </div>
-          </div>
-        </div>
-
-        {/* Синергия */}
-        <div className="bg-gradient-to-r from-orange-50 via-white to-blue-50 rounded-3xl p-8 mb-12 border border-gray-100">
-          <div className="text-center">
-            <div className="w-16 h-16 bg-gradient-to-r from-[#E76832] to-[#042989] rounded-2xl flex items-center justify-center mx-auto mb-6">
-              <Award className="h-8 w-8 text-white" />
-            </div>
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">
-              Почему мы объединились
-            </h3>
-            <p className="text-lg text-gray-700 max-w-3xl mx-auto leading-relaxed">
-              Илья отвечает за системность и понятные объяснения. Артём — за практическое применение и масштабирование. 
-              <span className="font-semibold text-gray-900"> Вместе мы покрываем весь путь от теории до реальных результатов.</span>
-            </p>
           </div>
         </div>
 
