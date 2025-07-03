@@ -9,7 +9,7 @@ const UnifiedAuthors: React.FC = () => {
       image: 'https://raw.githubusercontent.com/RaiconY/aiLanding/main/src/images/My Real Image.jpg',
       bullets: [
         'Продуктовый дизайнер с 6-летним опытом',
-        'Написал 40+ статей по ИИ и бизнесу'
+        'Написал 40+ статей по ИИ и бизнесу',
         'И провёл более персональных консультаций по ИИ',
         
       ],
