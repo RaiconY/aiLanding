@@ -59,10 +59,10 @@ const UnifiedAuthors: React.FC = () => {
             />
           </div>
           <h3 className="text-lg sm:text-xl lg:text-2xl font-semibold text-gray-900 mb-4">
-            Мы — Илья и Артём
+            Мы — Илья и&nbsp;Артём
           </h3>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Два эксперта, которые объединили свой опыт, чтобы создать подробный гайд по ChatGPT на русском языке
+            Два эксперта, которые объединили свой опыт, чтобы создать подробный гайд по&nbsp;ChatGPT на&nbsp;русском языке
           </p>
         </div>
         
@@ -145,11 +145,11 @@ const UnifiedAuthors: React.FC = () => {
         <div className="bg-gradient-to-r from-orange-50 via-white to-blue-50 rounded-3xl p-6 mt-12 border border-gray-100">
           <div className="text-center">
             <h3 className="text-xl font-bold text-gray-900 mb-3">
-              Почему мы объединились
+              Почему мы&nbsp;объединились
             </h3>
             <p className="text-base text-gray-700 max-w-3xl mx-auto leading-relaxed">
-              Илья отвечает за систематизацию, дизайн и понятные объяснения. А Артём — за практическое применение и масштабирование. 
-              <span className="font-semibold text-gray-900"> Вместе у нас получилось создать отличный продукт, который проведет тебя от теории до реальных результатов.</span>
+              Илья отвечает за&nbsp;систематизацию, дизайн и&nbsp;понятные объяснения. А&nbsp;Артём — за&nbsp;практическое применение и&nbsp;масштабирование. 
+              <span className="font-semibold text-gray-900"> Вместе у&nbsp;нас получилось создать отличный продукт, который проведет тебя от&nbsp;теории до&nbsp;реальных результатов.</span>
             </p>
           </div>
         </div>
