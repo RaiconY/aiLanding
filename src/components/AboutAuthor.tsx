@@ -1,5 +1,5 @@
 import React from 'react';
-import { MessageCircle, CheckCircle } from 'lucide-react';
+import { CheckCircle } from 'lucide-react';
 import SectionTitle from './SectionTitle';
 
 const AboutAuthor: React.FC = () => {
@@ -19,11 +19,7 @@ const AboutAuthor: React.FC = () => {
     'Специализация: масштабирование контента и автоматизация'
   ];
 
-  const benefits = [
-    'Поймёшь, как правильно работать с ChatGPT',
-    'Научишься применять его в реальных задачах — от написания кода до создания контента',
-    'Сэкономишь время на экспериментах — мы уже проверили, что работает, а что нет'
-  ];
+
 
   return (
     <section className="py-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
@@ -124,41 +120,7 @@ const AboutAuthor: React.FC = () => {
             </p>
           </div>
 
-          {/* What you'll get */}
-          <div className="max-w-4xl mx-auto">
-            <h3 className="text-2xl font-semibold text-gray-900 mb-8 text-center">
-              Что ты получишь
-            </h3>
-            
-            <div className="space-y-4">
-              {benefits.map((benefit, index) => (
-                <div 
-                  key={index}
-                  className="group flex items-start gap-4 p-5 bg-white rounded-xl border border-gray-200 hover:border-[#E76832]/50 hover:shadow-md transition-all duration-300"
-                >
-                  <div className="w-6 h-6 rounded-full bg-gradient-to-r from-[#E76832] to-[#FFC24B] flex items-center justify-center flex-shrink-0 mt-0.5 transform group-hover:scale-110 transition-transform duration-300">
-                    <CheckCircle className="h-4 w-4 text-white" />
-                  </div>
-                  <p className="text-gray-700 text-lg">
-                    {benefit}
-                  </p>
-                </div>
-              ))}
-            </div>
-          </div>
-          
-          {/* Contact */}
-          <div className="text-center">
-            <a 
-              href="https://t.me/Ilya_Plv" 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              className="inline-flex items-center gap-2 text-[#E76832] hover:text-[#FFC24B] transition-colors duration-300 font-medium text-lg group"
-            >
-              <MessageCircle className="h-5 w-5 group-hover:rotate-12 transition-transform duration-300" />
-              <span>@Ilya_Plv</span>
-            </a>
-          </div>
+
         </div>
       </div>
     </section>
