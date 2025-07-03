@@ -1,5 +1,5 @@
 import React from 'react';
-import { MessageCircle, ExternalLink, CheckCircle, Sparkles, Star } from 'lucide-react';
+import { MessageCircle, ExternalLink, CheckCircle } from 'lucide-react';
 
 const UnifiedAuthors: React.FC = () => {
   const authors = [
@@ -17,8 +17,7 @@ const UnifiedAuthors: React.FC = () => {
         { text: '@Ilya_Plv', url: 'https://t.me/Ilya_Plv' },
         { text: 'Телеграм-канал @iliaprovse', url: 'https://t.me/iliaprovse' }
       ],
-      gradient: 'from-[#E76832] to-[#FFC24B]',
-      icon: <Sparkles className="h-4 w-4 text-white" />
+      gradient: 'from-[#E76832] to-[#FFC24B]'
     },
     {
       name: 'Артём',
@@ -33,8 +32,7 @@ const UnifiedAuthors: React.FC = () => {
       links: [
         { text: '@artem_channel', url: 'https://t.me/artem_channel' }
       ],
-      gradient: 'from-[#042989] to-[#4A90E2]',
-      icon: <Star className="h-4 w-4 text-white" />
+      gradient: 'from-[#042989] to-[#4A90E2]'
     }
   ];
 
@@ -75,20 +73,11 @@ const UnifiedAuthors: React.FC = () => {
               <div className="relative">
                 {/* Header with name and position */}
                 <div className="p-8 pb-6">
-                  <div className="flex items-center gap-4 mb-6">
-                    <div className="relative">
-                      <div className={`w-16 h-16 rounded-2xl bg-gradient-to-r ${author.gradient} p-[2px]`}>
-                        <div className="w-full h-full rounded-2xl bg-white flex items-center justify-center">
-                          {author.icon}
-                        </div>
-                      </div>
-                    </div>
-                    <div>
-                      <h3 className="text-2xl font-bold text-gray-900 mb-1">{author.name}</h3>
-                      <p className={`text-lg font-medium bg-gradient-to-r ${author.gradient} bg-clip-text text-transparent`}>
-                        {author.position}
-                      </p>
-                    </div>
+                  <div className="mb-6">
+                    <h3 className="text-2xl font-bold text-gray-900 mb-1">{author.name}</h3>
+                    <p className={`text-lg font-medium bg-gradient-to-r ${author.gradient} bg-clip-text text-transparent`}>
+                      {author.position}
+                    </p>
                   </div>
                 </div>
 
