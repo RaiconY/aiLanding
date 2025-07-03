@@ -87,7 +87,7 @@ const UnifiedAuthors: React.FC = () => {
                     <img 
                       src={author.image}
                       alt={author.name}
-                      className="w-full h-full object-cover filter grayscale group-hover:grayscale-0 transition-all duration-500"
+                      className="w-full h-full object-cover transition-all duration-500"
                     />
                   </div>
                 </div>
