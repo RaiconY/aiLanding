@@ -1,5 +1,5 @@
 import React from 'react';
-import { MessageCircle, MapPin, ExternalLink, CheckCircle, Sparkles, Star } from 'lucide-react';
+import { MessageCircle, ExternalLink, CheckCircle, Sparkles, Star } from 'lucide-react';
 
 const UnifiedAuthors: React.FC = () => {
   const authors = [
@@ -7,7 +7,6 @@ const UnifiedAuthors: React.FC = () => {
       name: 'Илья Плужников',
       position: 'Системность и структура',
       image: 'https://raw.githubusercontent.com/RaiconY/aiLanding/main/src/images/My Real Image.jpg',
-      location: 'Берлин',
       description: 'Продуктовый дизайнер с 6-летним опытом. Специалист по превращению сложного в простое и автор воркшопов для компаний.',
       achievements: [
         'Провёл 30+ консультаций по ИИ',
@@ -25,7 +24,6 @@ const UnifiedAuthors: React.FC = () => {
       name: 'Артём',
       position: 'Масштаб и автоматизация',
       image: 'https://raw.githubusercontent.com/RaiconY/aiLanding/main/src/images/Artem Real Image.jpg',
-      location: 'Лиссабон',
       description: '5 лет в маркетинге P&G. Эксперт по автоматизации контента и масштабированию в социальных сетях.',
       achievements: [
         '800K подписчиков за год с ChatGPT',
@@ -91,14 +89,6 @@ const UnifiedAuthors: React.FC = () => {
                         {author.position}
                       </p>
                     </div>
-                  </div>
-
-                  {/* Location */}
-                  <div className="flex items-center gap-2 mb-4">
-                    <div className="w-4 h-4 rounded-full bg-red-500 flex items-center justify-center">
-                      <MapPin className="h-2.5 w-2.5 text-white" />
-                    </div>
-                    <span className="text-gray-600 text-sm font-medium">{author.location}</span>
                   </div>
                 </div>
 
