@@ -45,10 +45,10 @@ const UnifiedAuthors: React.FC = () => {
       <div className="absolute bottom-1/4 right-0 w-80 h-80 bg-[#042989]/20 rounded-full filter blur-[100px] translate-x-1/2 animate-pulse" style={{ animationDelay: '1s' }} />
 
       <div className="container mx-auto max-w-6xl relative z-10">
-        {/* Title */}
+        {/* Title - теперь полностью центрированный */}
         <div className="text-center mb-16">
           <div className="mb-6">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4 text-center">
               # кто мы?
             </h2>
             <div 
