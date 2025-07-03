@@ -7,7 +7,7 @@ const AboutAuthor: React.FC = () => {
     {
       name: 'Илья Плужников',
       position: 'Системность и структура',
-      image: 'https://raw.githubusercontent.com/RaiconY/aiLanding/main/src/images/MyImage.png',
+      image: 'https://raw.githubusercontent.com/RaiconY/aiLanding/main/src/images/My Real Image.jpg',
       achievements: [
         'Продуктовый дизайнер с 6-летним опытом',
         'Провёл 30+ консультаций по ИИ',
@@ -18,7 +18,7 @@ const AboutAuthor: React.FC = () => {
     {
       name: 'Артём',
       position: 'Масштаб и автоматизация',
-      image: 'https://raw.githubusercontent.com/RaiconY/aiLanding/main/src/images/ArtemImage.png',
+      image: 'https://raw.githubusercontent.com/RaiconY/aiLanding/main/src/images/Artem Real Image.jpg',
       achievements: [
         '5 лет в маркетинге P&G',
         '800K подписчиков за год с ChatGPT',
