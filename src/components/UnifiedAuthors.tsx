@@ -49,7 +49,7 @@ const UnifiedAuthors: React.FC = () => {
         <div className="text-center mb-16">
           <div className="mb-6">
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Авторы гайда
+              Про авторов гайда
             </h2>
             <div 
               className="h-1 w-24 rounded mx-auto"
