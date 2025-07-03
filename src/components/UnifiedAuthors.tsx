@@ -1,5 +1,5 @@
 import React from 'react';
-import { MessageCircle, ExternalLink } from 'lucide-react';
+import { MessageCircle, ExternalLink, CheckCircle } from 'lucide-react';
 
 const UnifiedAuthors: React.FC = () => {
   const authors = [
@@ -7,7 +7,11 @@ const UnifiedAuthors: React.FC = () => {
       name: 'Илья Плужников',
       position: 'Отвечаю за системность и структуру',
       image: 'https://raw.githubusercontent.com/RaiconY/aiLanding/main/src/images/My Real Image.jpg',
-      description: 'Продуктовый дизайнер с 6-летним опытом. За 1.5 года глубокого изучения ChatGPT провёл 30+ персональных консультаций по ИИ и написал 50+ статей по ИИ и бизнесу.',
+      bullets: [
+        'Продуктовый дизайнер с 6-летним опытом',
+        'За 1.5 года глубокого изучения ChatGPT провёл 30+ персональных консультаций по ИИ',
+        'Написал 50+ статей по ИИ и бизнесу'
+      ],
       experience: 'Специализируюсь на превращении сложных технологий в понятные решения. Автор воркшопов по внедрению ИИ в компаниях. Мой подход — системность, структурированная подача материала и фокус на практическом применении.',
       links: [
         { text: '@Ilya_Plv', url: 'https://t.me/Ilya_Plv' }
@@ -92,10 +96,23 @@ const UnifiedAuthors: React.FC = () => {
                 
                 {/* Content */}
                 <div className="px-6 pb-6">
-                  {/* Description */}
-                  <p className="text-gray-700 leading-relaxed text-base mb-4">
-                    {author.description}
-                  </p>
+                  {/* Description - bullets for Ilya, regular text for Artem */}
+                  {author.bullets ? (
+                    <div className="space-y-3 mb-4">
+                      {author.bullets.map((bullet, i) => (
+                        <div key={i} className="flex items-start gap-3">
+                          <div className={`w-5 h-5 rounded-full bg-gradient-to-r ${author.gradient} flex items-center justify-center flex-shrink-0 mt-0.5`}>
+                            <CheckCircle className="h-2.5 w-2.5 text-white" />
+                          </div>
+                          <span className="text-gray-700 text-base leading-relaxed">{bullet}</span>
+                        </div>
+                      ))}
+                    </div>
+                  ) : (
+                    <p className="text-gray-700 leading-relaxed text-base mb-4">
+                      {author.description}
+                    </p>
+                  )}
 
                   {/* Experience */}
                   <p className="text-gray-600 leading-relaxed text-sm mb-4">
