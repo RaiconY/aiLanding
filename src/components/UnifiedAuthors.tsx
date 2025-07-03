@@ -22,7 +22,11 @@ const UnifiedAuthors: React.FC = () => {
       name: 'Артём',
       position: 'Отвечаю за масштаб и автоматизацию',
       image: 'https://raw.githubusercontent.com/RaiconY/aiLanding/main/src/images/Artem Real Image.jpg',
-      description: '5 лет в маркетинге P&G. За год с ChatGPT набрал 800K подписчиков, создал 5000+ рилс с 400+ млн просмотров.',
+      bullets: [
+        '5 лет в маркетинге P&G',
+        'За год с ChatGPT набрал 800K подписчиков',
+        'Создал 5000+ рилс с 400+ млн просмотров'
+      ],
       experience: 'Эксперт по автоматизации контента и масштабированию в социальных сетях. Знаю, как превратить ChatGPT в мощный инструмент для создания контента и построения аудитории.',
       links: [
         { text: '@A_Grigorets', url: 'https://t.me/A_Grigorets' }
@@ -96,23 +100,17 @@ const UnifiedAuthors: React.FC = () => {
                 
                 {/* Content */}
                 <div className="px-6 pb-6">
-                  {/* Description - bullets for Ilya, regular text for Artem */}
-                  {author.bullets ? (
-                    <div className="space-y-3 mb-4">
-                      {author.bullets.map((bullet, i) => (
-                        <div key={i} className="flex items-start gap-3">
-                          <div className={`w-5 h-5 rounded-full bg-gradient-to-r ${author.gradient} flex items-center justify-center flex-shrink-0 mt-0.5`}>
-                            <CheckCircle className="h-2.5 w-2.5 text-white" />
-                          </div>
-                          <span className="text-gray-700 text-base leading-relaxed">{bullet}</span>
+                  {/* Description - bullets for both authors */}
+                  <div className="space-y-3 mb-4">
+                    {author.bullets.map((bullet, i) => (
+                      <div key={i} className="flex items-start gap-3">
+                        <div className={`w-5 h-5 rounded-full bg-gradient-to-r ${author.gradient} flex items-center justify-center flex-shrink-0 mt-0.5`}>
+                          <CheckCircle className="h-2.5 w-2.5 text-white" />
                         </div>
-                      ))}
-                    </div>
-                  ) : (
-                    <p className="text-gray-700 leading-relaxed text-base mb-4">
-                      {author.description}
-                    </p>
-                  )}
+                        <span className="text-gray-700 text-base leading-relaxed">{bullet}</span>
+                      </div>
+                    ))}
+                  </div>
 
                   {/* Experience */}
                   <p className="text-gray-600 leading-relaxed text-sm mb-4">
