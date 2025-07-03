@@ -1,5 +1,5 @@
 import React from 'react';
-import { MessageCircle, ExternalLink, CheckCircle, Award, Target, Lightbulb } from 'lucide-react';
+import { MessageCircle, ExternalLink, CheckCircle, Award, Target, Lightbulb, PenTool } from 'lucide-react';
 
 const UnifiedAuthors: React.FC = () => {
   const authors = [
@@ -29,18 +29,28 @@ const UnifiedAuthors: React.FC = () => {
             ]
           },
           {
+            icon: <PenTool className="h-4 w-4" />,
+            title: 'Контент и образование',
+            items: [
+              'Написал 50+ статей по ИИ и бизнесу',
+              'Превращаю сложное в простое и понятное',
+              'Структурированная подача материала'
+            ]
+          },
+          {
             icon: <Lightbulb className="h-4 w-4" />,
             title: 'Подход к обучению',
             items: [
-              'Превращаю сложное в простое и понятное',
-              'Структурированная подача материала',
-              'Фокус на практическом применении'
+              'Фокус на практическом применении',
+              'Системный подход к освоению технологий',
+              'Проверенные методики и стратегии'
             ]
           }
         ]
       },
       achievements: [
         'Провёл 30+ консультаций по ИИ',
+        'Написал 50+ статей по ИИ и бизнесу',
         'Специалист по превращению сложного в простое',
         'Автор воркшопов для компаний'
       ],
