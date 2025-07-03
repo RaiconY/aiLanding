@@ -12,6 +12,7 @@ import AIDisclosure from './components/AIDisclosure';
 import WhyGuide from './components/WhyGuide';
 import WhyAuthorCreated from './components/WhyAuthorCreated';
 import AboutAuthor from './components/AboutAuthor';
+import WhoWeAre from './components/WhoWeAre';
 import Consultations from './components/Consultations';
 import Testimonials from './components/Testimonials';
 import Pricing from './components/Pricing';
@@ -40,6 +41,7 @@ function App() {
       <Pricing />
       <FAQ />
       <AboutAuthor />
+      <WhoWeAre />
       <WhyAuthorCreated />
       <Consultations />
       {/*
