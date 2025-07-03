@@ -157,9 +157,6 @@ const UnifiedAuthors: React.FC = () => {
         {/* Synergy section */}
         <div className="bg-gradient-to-r from-orange-50 via-white to-blue-50 rounded-3xl p-8 mt-12 border border-gray-100">
           <div className="text-center">
-            <div className="w-16 h-16 bg-gradient-to-r from-[#E76832] to-[#042989] rounded-2xl flex items-center justify-center mx-auto mb-6">
-              <MessageCircle className="h-8 w-8 text-white" />
-            </div>
             <h3 className="text-2xl font-bold text-gray-900 mb-4">
               Почему мы объединились
             </h3>
