@@ -5,7 +5,7 @@ const UnifiedAuthors: React.FC = () => {
   const authors = [
     {
       name: 'Илья Плужников',
-      position: 'Системность и структура',
+      position: 'Отвечаю за системность и структуру',
       image: 'https://raw.githubusercontent.com/RaiconY/aiLanding/main/src/images/My Real Image.jpg',
       description: 'Продуктовый дизайнер с 6-летним опытом. Специалист по превращению сложного в простое и автор воркшопов для компаний.',
       achievements: [
@@ -21,7 +21,7 @@ const UnifiedAuthors: React.FC = () => {
     },
     {
       name: 'Артём',
-      position: 'Масштаб и автоматизация',
+      position: 'Отвечаю за масштаб и автоматизацию',
       image: 'https://raw.githubusercontent.com/RaiconY/aiLanding/main/src/images/Artem Real Image.jpg',
       description: '5 лет в маркетинге P&G. Эксперт по автоматизации контента и масштабированию в социальных сетях.',
       achievements: [
