@@ -81,9 +81,9 @@ const UnifiedAuthors: React.FC = () => {
                   </div>
                 </div>
 
-                {/* Large photo */}
+                {/* Smaller photo */}
                 <div className="px-8 mb-6">
-                  <div className="w-full aspect-[4/3] rounded-2xl overflow-hidden bg-gray-100 transform group-hover:scale-[1.02] transition-all duration-500">
+                  <div className="w-32 h-32 mx-auto rounded-2xl overflow-hidden bg-gray-100 transform group-hover:scale-[1.05] transition-all duration-500">
                     <img 
                       src={author.image}
                       alt={author.name}
