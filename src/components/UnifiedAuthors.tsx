@@ -21,7 +21,7 @@ const UnifiedAuthors: React.FC = () => {
       description: '5 лет в маркетинге P&G. За год с ChatGPT набрал 800K подписчиков, создал 5000+ рилс с 400+ млн просмотров.',
       experience: 'Эксперт по автоматизации контента и масштабированию в социальных сетях. Знаю, как превратить ChatGPT в мощный инструмент для создания контента и построения аудитории.',
       links: [
-        { text: '@artem_channel', url: 'https://t.me/artem_channel' }
+        { text: '@A_Grigorets', url: 'https://t.me/A_Grigorets' }
       ],
       gradient: 'from-[#042989] to-[#4A90E2]'
     }
