@@ -204,4 +204,4 @@ const TestimonialsScreenshots: React.FC = () => {
   );
 };
 
-export default TestimonialsScreenshots;
+export default TestimonialsScreenshots; 
