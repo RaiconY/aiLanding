@@ -1,6 +1,7 @@
 import React from 'react';
 import Hero from './components/Hero';
 import NewTestimonials from './components/NewTestimonials';
+import TestimonialsScreenshots from './components/TestimonialsScreenshots';
 import StudyTime from './components/StudyTime';
 import Stats from './components/Stats';
 import ForWho from './components/ForWho';
@@ -36,7 +37,7 @@ function App() {
       <WhyChatGPT />
       {/* <AIDisclosure />*/}
       <FullWidthImage imageUrl="https://raw.githubusercontent.com/RaiconY/aiLanding/main/src/images/Screens with rabbit Robot.png" />
-      <Testimonials /> 
+      <TestimonialsScreenshots />
       <Pricing />
       <FAQ />
       <UnifiedAuthors />
