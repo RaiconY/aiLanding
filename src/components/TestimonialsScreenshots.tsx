@@ -1,8 +1,9 @@
 import React, { useRef, useEffect, useState } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
+import SectionTitle from './SectionTitle';
 
-const TestimonialsScreenshots = () => {
-  const scrollContainerRef = useRef(null);
+const TestimonialsScreenshots: React.FC = () => {
+  const scrollContainerRef = useRef<HTMLDivElement>(null);
   const [canScrollLeft, setCanScrollLeft] = useState(false);
   const [canScrollRight, setCanScrollRight] = useState(true);
 
@@ -36,7 +37,7 @@ const TestimonialsScreenshots = () => {
   // Функции для навигации
   const scrollLeft = () => {
     if (scrollContainerRef.current) {
-      const cardWidth = scrollContainerRef.current.children[0]?.offsetWidth || 0;
+      const cardWidth = scrollContainerRef.current.children[0]?.getBoundingClientRect().width || 0;
       const gap = 32; // gap-8 = 32px
       scrollContainerRef.current.scrollBy({
         left: -(cardWidth + gap),
@@ -47,7 +48,7 @@ const TestimonialsScreenshots = () => {
 
   const scrollRight = () => {
     if (scrollContainerRef.current) {
-      const cardWidth = scrollContainerRef.current.children[0]?.offsetWidth || 0;
+      const cardWidth = scrollContainerRef.current.children[0]?.getBoundingClientRect().width || 0;
       const gap = 32; // gap-8 = 32px
       scrollContainerRef.current.scrollBy({
         left: cardWidth + gap,
@@ -64,16 +65,7 @@ const TestimonialsScreenshots = () => {
       <div className="absolute bottom-1/4 right-0 w-96 h-96 bg-gradient-to-l from-[#E76832] to-[#FFC24B] rounded-full filter blur-[128px] opacity-10 translate-x-1/2 animate-pulse" style={{ animationDelay: '1s' }} />
 
       <div className="container mx-auto max-w-7xl relative z-10">
-        {/* Title */}
-        <div className="text-center mb-12">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4">Отзывы</h2>
-          <div 
-            className="h-1 w-24 rounded mx-auto"
-            style={{
-              background: 'linear-gradient(135deg, #E76832, #FFC24B)'
-            }}
-          />
-        </div>
+        <SectionTitle title="Отзывы" />
         
         {/* Carousel Container */}
         <div className="relative">
@@ -103,12 +95,7 @@ const TestimonialsScreenshots = () => {
           </button>
 
           {/* Horizontal scroll carousel */}
-          <div className="overflow-x-auto pb-4 scroll-smooth" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
-            <style jsx>{`
-              .overflow-x-auto::-webkit-scrollbar {
-                display: none;
-              }
-            `}</style>
+          <div className="overflow-x-auto pb-4 scroll-smooth scrollbar-hide">
             <div 
               ref={scrollContainerRef}
               className="flex gap-6 lg:gap-8 min-w-max px-16 scroll-smooth"
@@ -125,6 +112,7 @@ const TestimonialsScreenshots = () => {
                     w-72 sm:w-80 md:w-96
                     transform transition-all duration-700 ease-out
                     hover:scale-105 hover:z-10
+                    animate-scale-in
                   `}
                   style={{ 
                     scrollSnapAlign: 'center',
