@@ -28,7 +28,8 @@ const TestimonialsScreenshots: React.FC = () => {
   const smoothScroll = (direction: 'left' | 'right') => {
     if (scrollContainerRef.current) {
       const container = scrollContainerRef.current;
-      const cardWidth = 320; // Ширина одной карточки + gap
+      const isMobile = window.innerWidth < 640;
+      const cardWidth = isMobile ? window.innerWidth * 0.85 + 16 : 320; // 85vw + gap для мобилки
       const scrollAmount = direction === 'left' ? -cardWidth : cardWidth;
       
       container.scrollBy({
@@ -47,7 +48,8 @@ const TestimonialsScreenshots: React.FC = () => {
   const scrollToIndex = (index: number) => {
     if (scrollContainerRef.current) {
       const container = scrollContainerRef.current;
-      const cardWidth = 320;
+      const isMobile = window.innerWidth < 640;
+      const cardWidth = isMobile ? window.innerWidth * 0.85 + 16 : 320;
       container.scrollTo({
         left: index * cardWidth,
         behavior: 'smooth'
@@ -91,11 +93,11 @@ const TestimonialsScreenshots: React.FC = () => {
         
         {/* Main carousel container */}
         <div className="relative group">
-          {/* Navigation buttons */}
+          {/* Navigation buttons - скрыты на мобилке */}
           <button
             onClick={() => smoothScroll('left')}
             disabled={!canScrollLeft}
-            className={`absolute left-4 top-1/2 -translate-y-1/2 z-20 w-12 h-12 rounded-full bg-white/90 backdrop-blur-sm shadow-lg border border-white/20 flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-xl ${
+            className={`hidden sm:block absolute left-4 top-1/2 -translate-y-1/2 z-20 w-12 h-12 rounded-full bg-white/90 backdrop-blur-sm shadow-lg border border-white/20 flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-xl ${
               !canScrollLeft ? 'opacity-50 cursor-not-allowed' : 'hover:bg-white group-hover:opacity-100'
             } opacity-0 group-hover:opacity-100`}
           >
@@ -105,7 +107,7 @@ const TestimonialsScreenshots: React.FC = () => {
           <button
             onClick={() => smoothScroll('right')}
             disabled={!canScrollRight}
-            className={`absolute right-4 top-1/2 -translate-y-1/2 z-20 w-12 h-12 rounded-full bg-white/90 backdrop-blur-sm shadow-lg border border-white/20 flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-xl ${
+            className={`hidden sm:block absolute right-4 top-1/2 -translate-y-1/2 z-20 w-12 h-12 rounded-full bg-white/90 backdrop-blur-sm shadow-lg border border-white/20 flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-xl ${
               !canScrollRight ? 'opacity-50 cursor-not-allowed' : 'hover:bg-white group-hover:opacity-100'
             } opacity-0 group-hover:opacity-100`}
           >
@@ -181,7 +183,8 @@ const TestimonialsScreenshots: React.FC = () => {
               <div className="w-1 h-1 bg-[#E76832] rounded-full animate-pulse" style={{ animationDelay: '0.4s' }} />
             </div>
             <p className="text-gray-600 text-sm font-medium">
-              Прокрутите для просмотра всех отзывов
+              <span className="hidden sm:inline">Прокрутите для просмотра всех отзывов</span>
+              <span className="sm:hidden">Свайп для просмотра отзывов</span>
             </p>
           </div>
         </div>
