@@ -18,7 +18,8 @@ const TestimonialsScreenshots: React.FC = () => {
   const scrollToIndex = (index: number) => {
     if (scrollContainerRef.current) {
       const container = scrollContainerRef.current;
-      const cardWidth = container.clientWidth * 0.85; // 85% ширины контейнера
+      const isMobile = window.innerWidth < 640;
+      const cardWidth = isMobile ? container.clientWidth * 0.85 : 384; // 85% на мобилке, 384px (w-96) на десктопе
       const gap = 24; // 1.5rem = 24px
       const scrollPosition = index * (cardWidth + gap);
       
@@ -38,7 +39,8 @@ const TestimonialsScreenshots: React.FC = () => {
   const updateCurrentIndex = () => {
     if (scrollContainerRef.current) {
       const container = scrollContainerRef.current;
-      const cardWidth = container.clientWidth * 0.85;
+      const isMobile = window.innerWidth < 640;
+      const cardWidth = isMobile ? container.clientWidth * 0.85 : 384;
       const gap = 24;
       const scrollLeft = container.scrollLeft;
       const newIndex = Math.round(scrollLeft / (cardWidth + gap));
@@ -101,18 +103,20 @@ const TestimonialsScreenshots: React.FC = () => {
           <div className="overflow-hidden">
             <div
               ref={scrollContainerRef}
-              className="flex gap-6 overflow-x-auto overflow-y-hidden px-[7.5%] py-4"
+              className="flex gap-6 overflow-x-auto overflow-y-hidden py-4"
               style={{
                 scrollbarWidth: 'none',
                 msOverflowStyle: 'none',
                 WebkitOverflowScrolling: 'touch',
-                scrollSnapType: 'x mandatory'
+                scrollSnapType: 'x mandatory',
+                paddingLeft: 'calc((100% - 85%) / 2)', // Центрирование на мобилке
+                paddingRight: 'calc((100% - 85%) / 2)'
               }}
             >
               {testimonialImages.map((imageUrl, index) => (
                 <div
                   key={index}
-                  className="flex-shrink-0 w-[85%]"
+                  className="flex-shrink-0 w-[85vw] sm:w-96"
                   style={{ scrollSnapAlign: 'center' }}
                 >
                   <img 
