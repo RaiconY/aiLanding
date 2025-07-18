@@ -21,22 +21,29 @@ const TestimonialsScreenshots: React.FC = () => {
       <div className="container mx-auto max-w-7xl relative z-10">
         <SectionTitle title="Отзывы" />
         
-        {/* Simple image grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+        {/* Horizontal scroll carousel */}
+        <div className="overflow-x-auto pb-4">
+          <div className="flex gap-6 lg:gap-8 min-w-max">
           {testimonialImages.map((imageUrl, index) => (
-            <div 
+              <div
               key={index} 
-              className="animate-scale-in"
+                className="flex-shrink-0 w-80 sm:w-96 animate-scale-in"
               style={{ animationDelay: `${index * 100}ms` }}
             >
               <img 
                 src={imageUrl}
                 alt={`Отзыв ${index + 1}`}
-                className="w-full h-auto object-contain hover:scale-105 transition-transform duration-300"
+                  className="w-full h-auto object-contain hover:scale-105 transition-transform duration-300 rounded-lg shadow-md"
                 loading="lazy"
               />
             </div>
           ))}
+          </div>
+        </div>
+        
+        {/* Scroll hint */}
+        <div className="text-center mt-4">
+          <p className="text-gray-500 text-sm">← Прокрутите горизонтально для просмотра всех отзывов →</p>
         </div>
       </div>
     </section>
