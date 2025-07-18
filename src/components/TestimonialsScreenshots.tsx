@@ -97,8 +97,8 @@ const TestimonialsScreenshots: React.FC = () => {
           <button
             onClick={() => smoothScroll('left')}
             disabled={!canScrollLeft}
-            className={`hidden sm:block absolute left-4 top-1/2 -translate-y-1/2 z-20 w-12 h-12 rounded-full bg-white/90 backdrop-blur-sm shadow-lg border border-white/20 flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-xl ${
-              !canScrollLeft ? 'opacity-50 cursor-not-allowed' : 'hover:bg-white group-hover:opacity-100'
+            className={`hidden sm:block absolute left-4 top-1/2 -translate-y-1/2 z-20 w-12 h-12 rounded-full bg-white/90 backdrop-blur-sm border-0 flex items-center justify-center transition-all duration-300 hover:scale-110 hover:bg-white hover:shadow-xl ${
+              !canScrollLeft ? 'opacity-50 cursor-not-allowed' : 'group-hover:opacity-100'
             } opacity-0 group-hover:opacity-100`}
           >
             <ChevronLeft className="h-6 w-6 text-gray-700" />
@@ -107,8 +107,8 @@ const TestimonialsScreenshots: React.FC = () => {
           <button
             onClick={() => smoothScroll('right')}
             disabled={!canScrollRight}
-            className={`hidden sm:block absolute right-4 top-1/2 -translate-y-1/2 z-20 w-12 h-12 rounded-full bg-white/90 backdrop-blur-sm shadow-lg border border-white/20 flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-xl ${
-              !canScrollRight ? 'opacity-50 cursor-not-allowed' : 'hover:bg-white group-hover:opacity-100'
+            className={`hidden sm:block absolute right-4 top-1/2 -translate-y-1/2 z-20 w-12 h-12 rounded-full bg-white/90 backdrop-blur-sm border-0 flex items-center justify-center transition-all duration-300 hover:scale-110 hover:bg-white hover:shadow-xl ${
+              !canScrollRight ? 'opacity-50 cursor-not-allowed' : 'group-hover:opacity-100'
             } opacity-0 group-hover:opacity-100`}
           >
             <ChevronRight className="h-6 w-6 text-gray-700" />
@@ -176,7 +176,7 @@ const TestimonialsScreenshots: React.FC = () => {
 
         {/* Enhanced scroll hint */}
         <div className="text-center mt-6">
-          <div className="inline-flex items-center gap-2 bg-white/80 backdrop-blur-sm rounded-full px-4 py-2 shadow-md border border-white/20">
+          <div className="inline-flex items-center gap-2 bg-white/90 backdrop-blur-sm rounded-full px-4 py-2 border-0">
             <div className="flex gap-1">
               <div className="w-1 h-1 bg-[#E76832] rounded-full animate-pulse" />
               <div className="w-1 h-1 bg-[#FFC24B] rounded-full animate-pulse" style={{ animationDelay: '0.2s' }} />
