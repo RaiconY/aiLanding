@@ -35,7 +35,7 @@ function App() {
       <WhyChatGPT />
       {/* <AIDisclosure />*/}
       <FullWidthImage imageUrl="https://raw.githubusercontent.com/RaiconY/aiLanding/main/src/images/Screens with rabbit Robot.png" />
-      <TestimonialsScreenshots />
+      {/*<TestimonialsScreenshots />*/}
       <Pricing />
       <FAQ />
       {/*<UnifiedAuthors />
