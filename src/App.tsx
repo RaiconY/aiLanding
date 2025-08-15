@@ -38,7 +38,7 @@ function App() {
       <TestimonialsScreenshots />
       <Pricing />
       <FAQ />
-      <UnifiedAuthors />
+      {/*<UnifiedAuthors />*/}
       <WhyAuthorCreated />
       <Consultations />
       {/*
