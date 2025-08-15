@@ -1,5 +1,5 @@
 import React from 'react';
-import { Sparkles } from 'lucide-react';
+import { Sparkles, RefreshCw } from 'lucide-react';
 import CTAButton from './CTAButton';
 
 const Hero: React.FC = () => {
@@ -12,15 +12,45 @@ const Hero: React.FC = () => {
               <Sparkles size={20} style={{ color: '#E76832' }} />
               <span className="font-semibold text-sm sm:text-base" style={{ color: '#E76832' }}>Гайд по ChatGPT</span>
             </div>
+
+            {/* Улучшенный блок с датой обновления */}
             <div className="flex justify-center md:justify-start">
-              <p
-                className="inline-flex items-center px-3 py-1 mb-2 text-xs sm:text-sm rounded-full bg-gray-200 text-gray-800 dark:bg-gray-800 dark:text-gray-100"
-              >
-                Обновлено <time dateTime="2025-08-14">14 августа 2025</time> — GPT-5, Agent, Learn Mode
-              </p>
+              <div className="group relative">
+                {/* Градиентный фон */}
+                <div className="absolute inset-0 bg-gradient-to-r from-[#E76832] to-[#FFC24B] rounded-full p-[1px] transform group-hover:scale-105 transition-all duration-300">
+                  <div className="w-full h-full bg-white rounded-full"></div>
+                </div>
+                
+                {/* Контент */}
+                <div className="relative inline-flex items-center px-4 py-2 mb-2 text-xs sm:text-sm rounded-full bg-white shadow-sm group-hover:shadow-md transition-all duration-300">
+                  {/* Иконка обновления с анимацией */}
+                  <div className="mr-2 p-1 rounded-full bg-gradient-to-r from-[#E76832] to-[#FFC24B]">
+                    <RefreshCw 
+                      size={12} 
+                      className="text-white group-hover:rotate-180 transition-transform duration-500" 
+                    />
+                  </div>
+                  
+                  {/* Текст */}
+                  <span className="font-medium text-gray-800">
+                    Обновлено{" "}
+                    <time 
+                      dateTime="2025-08-14" 
+                      className="font-semibold bg-gradient-to-r from-[#E76832] to-[#FFC24B] bg-clip-text text-transparent"
+                    >
+                      14 августа 2025
+                    </time>
+                    {" "}— GPT-5, Agent, Learn Mode
+                  </span>
+                  
+                  {/* Индикатор "новое" */}
+                  <div className="ml-2 w-2 h-2 bg-gradient-to-r from-[#E76832] to-[#FFC24B] rounded-full animate-pulse"></div>
+                </div>
+              </div>
             </div>
+            
             <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-gray-900">
-Научись работать с&nbsp;ChatGPT и&nbsp;экономь до&nbsp;100&nbsp;000&nbsp;₽ в&nbsp;месяц
+              Научись работать с&nbsp;ChatGPT и&nbsp;экономь до&nbsp;100&nbsp;000&nbsp;₽ в&nbsp;месяц
             </h1>
             
             <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-700 leading-relaxed">
@@ -30,17 +60,17 @@ const Hero: React.FC = () => {
             <div className="grid grid-cols-3 gap-2 sm:gap-4 pt-2">
               {[
                 {
-      number: "3 часа в день",
-      text: "Освободи"
-    },
-    {
-      number: "до 100 000 ₽",
-      text: "Экономь в месяц"
-    },
-    {
-      text: "Автоматизируй",
-      number: "80% рутины",
-    },
+                  number: "3 часа в день",
+                  text: "Освободи"
+                },
+                {
+                  number: "до 100 000 ₽",
+                  text: "Экономь в месяц"
+                },
+                {
+                  text: "Автоматизируй",
+                  number: "80% рутины",
+                },
               ].map((stat, index) => (
                 <div 
                   key={index} 
@@ -57,7 +87,6 @@ const Hero: React.FC = () => {
                   >
                     {stat.number}
                   </span>
-                  
                 </div>
               ))}
             </div>
