@@ -12,7 +12,13 @@ const Hero: React.FC = () => {
               <Sparkles size={20} style={{ color: '#E76832' }} />
               <span className="font-semibold text-sm sm:text-base" style={{ color: '#E76832' }}>Гайд по ChatGPT</span>
             </div>
-            
+            <div className="flex justify-center md:justify-start">
+              <p
+                className="inline-flex items-center px-3 py-1 mb-2 text-xs sm:text-sm rounded-full bg-gray-200 text-gray-800 dark:bg-gray-800 dark:text-gray-100"
+              >
+                Обновлено <time dateTime="2025-08-14">14 августа 2025</time> — GPT-5, Agent, Learn Mode
+              </p>
+            </div>
             <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-gray-900">
 Научись работать с&nbsp;ChatGPT и&nbsp;экономь до&nbsp;100&nbsp;000&nbsp;₽ в&nbsp;месяц
             </h1>
