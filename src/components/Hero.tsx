@@ -15,14 +15,9 @@ const Hero: React.FC = () => {
 
             {/* Улучшенный блок с датой обновления */}
             <div className="flex justify-center md:justify-start">
-              <div className="group relative">
-                {/* Градиентный фон */}
-                <div className="absolute inset-0 bg-gradient-to-r from-[#E76832] to-[#FFC24B] rounded-full p-[1px] transform group-hover:scale-105 transition-all duration-300">
-                  <div className="w-full h-full bg-white rounded-full"></div>
-                </div>
-                
-                {/* Контент */}
-                <div className="relative inline-flex items-center px-4 py-2 mb-2 text-xs sm:text-sm rounded-full bg-white shadow-sm group-hover:shadow-md transition-all duration-300">
+              <div className="group">
+                {/* Контент с градиентной границей */}
+                <div className="inline-flex items-center px-4 py-2 mb-2 text-xs sm:text-sm rounded-full bg-gradient-to-r from-[#E76832]/10 to-[#FFC24B]/10 border border-[#E76832]/20 backdrop-blur-sm transform group-hover:scale-105 transition-all duration-300 shadow-sm group-hover:shadow-md">
                   {/* Иконка обновления с анимацией */}
                   <div className="mr-2 p-1 rounded-full bg-gradient-to-r from-[#E76832] to-[#FFC24B]">
                     <RefreshCw 
@@ -33,18 +28,20 @@ const Hero: React.FC = () => {
                   
                   {/* Текст */}
                   <span className="font-medium text-gray-800">
-                    Обновлено{" "}
+                    <span className="text-[#E76832] font-semibold">Обновлено</span>{" "}
                     <time 
                       dateTime="2025-08-14" 
-                      className="font-semibold bg-gradient-to-r from-[#E76832] to-[#FFC24B] bg-clip-text text-transparent"
+                      className="font-bold bg-gradient-to-r from-[#E76832] to-[#FFC24B] bg-clip-text text-transparent"
                     >
                       14 августа 2025
                     </time>
                     {" "}— GPT-5, Agent, Learn Mode
                   </span>
                   
-                  {/* Индикатор "новое" */}
-                  <div className="ml-2 w-2 h-2 bg-gradient-to-r from-[#E76832] to-[#FFC24B] rounded-full animate-pulse"></div>
+                  {/* Badge "NEW" */}
+                  <div className="ml-2 px-2 py-0.5 bg-gradient-to-r from-[#E76832] to-[#FFC24B] rounded-full">
+                    <span className="text-white text-xs font-bold">NEW</span>
+                  </div>
                 </div>
               </div>
             </div>
