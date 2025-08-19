@@ -2,8 +2,9 @@ import React from 'react';
 import { MessageCircle, Star, User } from 'lucide-react';
 import SectionTitle from './SectionTitle';
 
-const EnhancedTestimonials: React.FC = () => {
+const NewTestimonials: React.FC = () => {
   const testimonials = [
+    // Первые 3 отзыва остаются как были
     {
       name: 'Евгений П.',
       position: 'Дизайнер',
@@ -18,6 +19,57 @@ const EnhancedTestimonials: React.FC = () => {
       name: 'Наташа Я.',
       position: 'Основатель СММ агентства',
       text: 'Очень понравилось, как детально всё расписано. Особенно впечатлил бот по SEO статьям 🤣 Офигенно, что он может прямо писать статьи за нас и даже темы выбирает интересные. \n\nПолезно было про функционал и про то, как чат думает. Про генерацию картинок тоже круто — расскажу команде!'
+    },
+    // Новые отзывы
+    {
+      name: 'Отзыв 1',
+      position: 'Пользователь',
+      text: 'Прошел курс полностью. Очень понравился!\n\nОткрыл для меня глубокое исследование - пробовал несколько раз, в восторге. Кастомные GPTs тоже зашли.\n\nТо, что O модели думающие, я не знал. Это эссенция маст-хэв знаний по нейросетям!'
+    },
+    {
+      name: 'Отзыв 2', 
+      position: 'Пользователь',
+      text: 'Дочитала гайд. Самой пиздатой была третья глава - там 90% информации было новой.\n\nПолезно было узнать про работу моделей, правильные запросы и дополнительные функции GPT. Спасибо, что структурировал знания ✨'
+    },
+    {
+      name: 'Отзыв 3',
+      position: 'Пользователь', 
+      text: 'Гайд реально полезный! Особенно промпты нравятся.\n\nСпокойненько заходишь, у тебя всегда есть промпт под любой запрос. Взял промптик, подредачил под себя и пошел. Прекрасно!'
+    },
+    {
+      name: 'Отзыв 4',
+      position: 'Рекрутер',
+      text: 'Прочитал до конца, все понятно. Когда что-то нужно решить - обращаюсь к гайду.\n\nУзнал довольно много новых фишек. Для старта более чем достаточно. Ожидания оправдались!'
+    },
+    {
+      name: 'Отзыв 5',
+      position: 'Пользователь',
+      text: 'Большая часть гайда была полезной. Помог найти подход к внедрению ChatGPT в ежедневные процессы.\n\nОчень запала идея использования его как сотрудника. Гайд сломал все преграды перед полноценным погружением!'
+    },
+    {
+      name: 'Отзыв 6', 
+      position: 'Пользователь',
+      text: 'Прочитал весь гайд и дополнения 🔥\n\nПолезно по настройкам GPT, проекты, токены, контекстное окно. Подборка промптов, автоматизация. Лог изменений в главах с датами - очень удобно!'
+    },
+    {
+      name: 'Отзыв 7',
+      position: 'Дизайнер',
+      text: 'Во второй главе наконец-то уложилась система как лучше писать промпты - поняла что интуитивно старалась писать именно так.\n\n3я глава очень понравилась - про принципы работы, токены, что это не "магия". Зная тебя лично, доверия больше!'
+    },
+    {
+      name: 'Отзыв 8',
+      position: 'Пользователь', 
+      text: 'Узнал новое с первой же главы - не знал что можно так дополнять контекст. Сразу пошёл и настроил.\n\nПримеры промптов огонь! Особенно помог "КБТ-психолог" - разложил ситуацию и я разрулил конфликт.'
+    },
+    {
+      name: 'Отзыв 9',
+      position: 'Продуктовый менеджер',
+      text: 'Очень крутой и вовлекающий продукт! Успел поймать несколько сильных инсайтов.\n\nОсобенно ценно, что объясняешь не просто "что нажать", а создаёшь систему мышления с примерами. Структурность и фокус на реальную пользу!'
+    },
+    {
+      name: 'Отзыв 10',
+      position: 'Пользователь',
+      text: 'Прочитал 50% и продолжаю читать.\n\nНе знал что в настройках можно настроить ответы под себя. Не знал чем отличаются модели. Стал задавать вопросы по промту - стало меньше воды!'
     }
   ];
 
@@ -28,52 +80,60 @@ const EnhancedTestimonials: React.FC = () => {
       <div className="absolute top-1/4 left-0 w-96 h-96 bg-gradient-to-r from-[#E76832] to-[#FFC24B] rounded-full filter blur-[128px] opacity-10 -translate-x-1/2" />
       <div className="absolute bottom-1/4 right-0 w-96 h-96 bg-gradient-to-l from-[#E76832] to-[#FFC24B] rounded-full filter blur-[128px] opacity-10 translate-x-1/2" />
 
-      <div className="container mx-auto max-w-6xl relative z-10">
+      <div className="container mx-auto max-w-7xl relative z-10">
         <SectionTitle title="Первые отзывы" />
         
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-5">
-          {testimonials.map((testimonial, index) => (
-            <div 
-              key={index} 
-              className="group bg-white/80 backdrop-blur-sm rounded-xl sm:rounded-2xl p-4 md:p-5 transition-all duration-500 transform hover:scale-[1.02] hover:shadow-2xl shadow-lg animate-scale-in relative"
-              style={{ animationDelay: `${index * 150}ms` }}
-            >
-              {/* Gradient border on hover */}
-              <div className="absolute inset-0 rounded-xl sm:rounded-2xl bg-gradient-to-r from-[#E76832] to-[#FFC24B] opacity-0 group-hover:opacity-100 transition-opacity duration-500" style={{ padding: '2px' }}>
-                <div className="h-full w-full bg-white/80 backdrop-blur-sm rounded-xl sm:rounded-2xl" />
-              </div>
+        {/* Horizontal scroll carousel */}
+        <div className="overflow-x-auto pb-4">
+          <div className="flex gap-6 lg:gap-8 min-w-max">
+            {testimonials.map((testimonial, index) => (
+              <div 
+                key={index} 
+                className="flex-shrink-0 w-80 sm:w-96 group bg-white/80 backdrop-blur-sm rounded-xl sm:rounded-2xl p-4 md:p-5 transition-all duration-500 transform hover:scale-[1.02] hover:shadow-2xl shadow-lg animate-scale-in relative"
+                style={{ animationDelay: `${index * 100}ms` }}
+              >
+                {/* Gradient border on hover */}
+                <div className="absolute inset-0 rounded-xl sm:rounded-2xl bg-gradient-to-r from-[#E76832] to-[#FFC24B] opacity-0 group-hover:opacity-100 transition-opacity duration-500" style={{ padding: '2px' }}>
+                  <div className="h-full w-full bg-white/80 backdrop-blur-sm rounded-xl sm:rounded-2xl" />
+                </div>
 
-              <div className="relative flex flex-col h-full">
-                {/* Author info at the top */}
-                <div className="flex items-center gap-3 mb-4 pb-3 border-b border-gray-100">
-                  <div className="w-10 h-10 rounded-full flex items-center justify-center bg-gradient-to-r from-[#E76832] to-[#FFC24B] p-[2px] transform group-hover:rotate-12 transition-all duration-500">
-                    <div className="w-full h-full rounded-full bg-white flex items-center justify-center">
-                      <User className="h-5 w-5 text-[#E76832]" />
+                <div className="relative flex flex-col h-full">
+                  {/* Author info at the top */}
+                  <div className="flex items-center gap-3 mb-4 pb-3 border-b border-gray-100">
+                    <div className="w-10 h-10 rounded-full flex items-center justify-center bg-gradient-to-r from-[#E76832] to-[#FFC24B] p-[2px] transform group-hover:rotate-12 transition-all duration-500">
+                      <div className="w-full h-full rounded-full bg-white flex items-center justify-center">
+                        <User className="h-5 w-5 text-[#E76832]" />
+                      </div>
+                    </div>
+                    
+                    <div>
+                      <h3 className="font-bold text-gray-900 text-base">{testimonial.name}</h3>
+                      <p className="text-gray-600 text-sm">{testimonial.position}</p>
                     </div>
                   </div>
                   
-                  <div>
-                    <h3 className="font-bold text-gray-900 text-base">{testimonial.name}</h3>
-                    <p className="text-gray-600 text-sm">{testimonial.position}</p>
-                  </div>
-                </div>
-                
-                {/* Content */}
-                <div className="flex flex-col h-full">
-                  {/* Testimonial text */}
-                  <div className="flex-1">
-                    <p className="text-gray-700 leading-relaxed text-base whitespace-pre-line">
-                      {testimonial.text}
-                    </p>
+                  {/* Content */}
+                  <div className="flex flex-col h-full">
+                    {/* Testimonial text */}
+                    <div className="flex-1">
+                      <p className="text-gray-700 leading-relaxed text-base whitespace-pre-line">
+                        {testimonial.text}
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
+        </div>
+        
+        {/* Scroll hint */}
+        <div className="text-center mt-4">
+          <p className="text-gray-500 text-sm">← Прокрутите горизонтально для просмотра всех отзывов →</p>
         </div>
       </div>
     </section>
   );
 };
 
-export default EnhancedTestimonials;
+export default NewTestimonials;
