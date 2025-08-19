@@ -1,5 +1,5 @@
 import React from 'react';
-import { MessageCircle, User } from 'lucide-react';
+import { User } from 'lucide-react';
 import SectionTitle from './SectionTitle';
 
 const UpdatedTestimonials: React.FC = () => {
