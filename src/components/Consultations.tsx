@@ -1,6 +1,5 @@
 import React from 'react';
 import { MessageCircle, Zap, Target, Settings, Lightbulb } from 'lucide-react';
-import SectionTitle from './SectionTitle';
 
 const Consultations: React.FC = () => {
   const benefits = [

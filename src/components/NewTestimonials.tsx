@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { MessageCircle, Star, User } from 'lucide-react';
+import { User } from 'lucide-react';
 import SectionTitle from './SectionTitle';
 
 const NewTestimonials: React.FC = () => {
@@ -180,6 +180,7 @@ const NewTestimonials: React.FC = () => {
         <div className="text-center mt-4">
           <p className="text-gray-500 text-sm">← Прокрутите горизонтально для просмотра всех отзывов →</p>
         </div>
+      </div>
       </div>
     </section>
   );
