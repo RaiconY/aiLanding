@@ -33,7 +33,7 @@ const Hero: React.FC = () => {
                       dateTime="2025-08-14" 
                       className="font-bold bg-gradient-to-r from-[#E76832] to-[#FFC24B] bg-clip-text text-transparent"
                     >
-                      14 августа 2025
+                      22 августа 2025
                     </time>
                     {" "}— GPT-5, Agent, Learn Mode
                   </span>
