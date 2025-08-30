@@ -31,12 +31,12 @@ const ValueProposition: React.FC = () => {
       <div className="absolute bottom-1/4 right-0 w-96 h-96 bg-gradient-to-l from-[#E76832] to-[#FFC24B] rounded-full filter blur-[128px] opacity-10 translate-x-1/2" />
       
       <div className="container mx-auto max-w-6xl relative z-10">
-        <SectionTitle title="В чем выгода для вас" />
+        <SectionTitle title="Зачем гайд" />
         
         {/* Подзаголовок */}
         <div className="text-center mb-8 sm:mb-12">
           <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto">
-            Что вы получите, применив этот гайд
+            Что ты получишь, применив этот гайд
           </p>
         </div>
         
