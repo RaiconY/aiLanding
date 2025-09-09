@@ -30,7 +30,13 @@ const Footer: React.FC = () => {
             </div>
           </div>
           
-          
+          {/* Информация о поставщике услуг */}
+          <div className="border-t border-gray-100 pt-6">
+            <div className="text-center text-gray-400 text-xs">
+              <p>Поставщик услуг: Плужников Илья Валентинович</p>
+              <p>ИНН: 231002238598</p>
+            </div>
+          </div>
         </div>
       </div>
       
