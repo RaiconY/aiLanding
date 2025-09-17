@@ -28,8 +28,8 @@ const Pricing: React.FC = () => {
                 </span>
               </div>
 
-              <a 
-                href="https://payform.ru/s37Ay19/" 
+              <a
+                href="https://payform.ru/4399Fon/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-gradient-to-r from-[#E76832] to-[#FFC24B] text-white font-medium px-8 py-4 rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 text-lg"
