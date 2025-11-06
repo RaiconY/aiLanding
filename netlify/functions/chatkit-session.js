@@ -43,6 +43,7 @@ export async function handler(event, context) {
     }
 
     const requestBody = event.body ? JSON.parse(event.body) : {};
+    const userId = requestBody?.user?.id || "visitor-" + Date.now();
 
     // Call ChatKit Sessions API directly
     const response = await fetch("https://api.openai.com/v1/chatkit/sessions", {
@@ -53,8 +54,8 @@ export async function handler(event, context) {
         "OpenAI-Beta": "chatkit_beta=v1",
       },
       body: JSON.stringify({
-        workflow_id: workflowId,
-        user: requestBody?.user ?? null,
+        workflow: { id: workflowId },
+        user: userId,
       }),
     });
 
