@@ -50,6 +50,7 @@ export async function handler(event, context) {
       headers: {
         "Authorization": `Bearer ${apiKey}`,
         "Content-Type": "application/json",
+        "OpenAI-Beta": "chatkit_beta=v1",
       },
       body: JSON.stringify({
         workflow_id: workflowId,
