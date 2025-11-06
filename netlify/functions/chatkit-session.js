@@ -1,4 +1,20 @@
 import OpenAI from "openai";
+import { config } from "dotenv";
+import { fileURLToPath } from "url";
+import { dirname, resolve } from "path";
+
+// Load environment variables from .env.production if it exists
+// This allows portability across different hosting platforms
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+const envPath = resolve(__dirname, "../../.env.production");
+
+try {
+  config({ path: envPath });
+  console.log("Loaded environment variables from .env.production");
+} catch (error) {
+  console.log("No .env.production file found, using process.env");
+}
 
 const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,
