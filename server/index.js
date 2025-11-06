@@ -13,15 +13,14 @@ const server = http.createServer(async (req, res) => {
     req.on("end", async () => {
       try {
         const apiKey = process.env.OPENAI_API_KEY;
-        const clientSecret = process.env.OPENAI_CHATKIT_CLIENT_SECRET;
         const workflowId = process.env.OPENAI_WORKFLOW_ID;
 
-        if (!apiKey || !clientSecret || !workflowId) {
+        if (!apiKey || !workflowId) {
           res.writeHead(500, { "Content-Type": "application/json" });
           res.end(
             JSON.stringify({
               error:
-                "ChatKit server is not configured. Please set OPENAI_API_KEY, OPENAI_CHATKIT_CLIENT_SECRET and OPENAI_WORKFLOW_ID environment variables.",
+                "ChatKit server is not configured. Please set OPENAI_API_KEY and OPENAI_WORKFLOW_ID environment variables.",
             })
           );
           return;
@@ -36,7 +35,6 @@ const server = http.createServer(async (req, res) => {
             "Content-Type": "application/json",
           },
           body: JSON.stringify({
-            client_secret: clientSecret,
             workflow_id: workflowId,
             user: requestBody?.user ?? null,
           }),
