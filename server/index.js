@@ -1,6 +1,12 @@
+import "dotenv/config";
 import http from "node:http";
+import OpenAI from "openai";
 
 const port = Number(process.env.PORT) || 3000;
+
+const openai = new OpenAI({
+  apiKey: process.env.OPENAI_API_KEY,
+});
 
 const server = http.createServer(async (req, res) => {
   if (req.method === "POST" && req.url === "/api/chatkit/session") {
@@ -12,15 +18,14 @@ const server = http.createServer(async (req, res) => {
 
     req.on("end", async () => {
       try {
-        const apiKey = process.env.OPENAI_API_KEY;
         const workflowId = process.env.OPENAI_WORKFLOW_ID;
 
-        if (!apiKey || !workflowId) {
+        if (!workflowId) {
           res.writeHead(500, { "Content-Type": "application/json" });
           res.end(
             JSON.stringify({
               error:
-                "ChatKit server is not configured. Please set OPENAI_API_KEY and OPENAI_WORKFLOW_ID environment variables.",
+                "ChatKit server is not configured. Please set OPENAI_WORKFLOW_ID environment variable.",
             })
           );
           return;
@@ -28,24 +33,17 @@ const server = http.createServer(async (req, res) => {
 
         const requestBody = rawBody ? JSON.parse(rawBody) : {};
 
-        const response = await fetch("https://api.openai.com/v1/chatkit/sessions", {
-          method: "POST",
-          headers: {
-            Authorization: `Bearer ${apiKey}`,
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            workflow_id: workflowId,
-            user: requestBody?.user ?? null,
-          }),
+        // Create ChatKit session using OpenAI SDK
+        const session = await openai.chatkit.sessions.create({
+          workflow_id: workflowId,
+          user: requestBody?.user ?? null,
         });
 
-        const data = await response.json();
-        const status = response.status;
-
-        res.writeHead(status, { "Content-Type": "application/json" });
-        res.end(JSON.stringify(data));
+        // Return the client_secret as per documentation
+        res.writeHead(200, { "Content-Type": "application/json" });
+        res.end(JSON.stringify({ client_secret: session.client_secret }));
       } catch (error) {
+        console.error("ChatKit session error:", error);
         res.writeHead(500, { "Content-Type": "application/json" });
         res.end(
           JSON.stringify({ error: error instanceof Error ? error.message : "Unknown error" })

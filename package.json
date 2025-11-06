@@ -5,12 +5,16 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "server": "node server/index.js",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
   "dependencies": {
+    "@openai/chatkit-react": "^1.2.0",
+    "dotenv": "^17.2.3",
     "lucide-react": "^0.344.0",
+    "openai": "^6.8.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
