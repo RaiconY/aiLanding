@@ -47,6 +47,7 @@ const server = http.createServer(async (req, res) => {
         res.writeHead(status, { "Content-Type": "application/json" });
         res.end(JSON.stringify(data));
       } catch (error) {
+        console.error("ChatKit session error:", error);
         res.writeHead(500, { "Content-Type": "application/json" });
         res.end(
           JSON.stringify({ error: error instanceof Error ? error.message : "Unknown error" })
