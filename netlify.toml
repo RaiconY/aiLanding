@@ -1,16 +1,9 @@
 [build]
   command = "npm run build"
   publish = "dist"
-  functions = "netlify/functions"
-
-[[redirects]]
-  from = "/api/chatkit/session"
-  to = "/.netlify/functions/chatkit-session"
-  status = 200
 
 [[headers]]
   for = "/*"
   [headers.values]
     X-Frame-Options = "SAMEORIGIN"
     X-Content-Type-Options = "nosniff"
-    Content-Security-Policy = "frame-src 'self' https://cdn.platform.openai.com https://api.openai.com;"

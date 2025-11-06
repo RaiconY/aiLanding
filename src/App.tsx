@@ -10,7 +10,6 @@ import Pricing from './components/Pricing';
 import FAQ from './components/FAQ';
 import Footer from './components/Footer';
 import FullWidthImage from './components/FullWidthImage';
-import ChatKitWidget from './components/ChatKitWidget';
 
 function App() {
   return (
@@ -29,7 +28,6 @@ function App() {
       <NewTestimonials />
       <Pricing />
       <FAQ />
-      <ChatKitWidget />
       {/*<UnifiedAuthors />
       <WhyAuthorCreated />
       <Consultations />
