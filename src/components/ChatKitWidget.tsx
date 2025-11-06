@@ -77,14 +77,11 @@ export default function ChatKitWidget() {
   console.log("ChatKitWidget: Rendering", { isLoading, error, attempt });
 
   return (
-    <div className="mx-auto mt-16 flex max-w-5xl flex-col items-center gap-4 px-4 text-center" style={{ border: "2px solid red", padding: "20px" }}>
+    <div className="mx-auto mt-16 flex max-w-5xl flex-col items-center gap-4 px-4 text-center">
       <h2 className="text-3xl font-semibold text-gray-900">Поболтайте с ассистентом</h2>
       <p className="max-w-2xl text-gray-600">
         Задайте вопросы о продукте и получите мгновенные ответы от нашего AI-ассистента.
       </p>
-      <div style={{ background: "yellow", padding: "10px", width: "100%" }}>
-        DEBUG: Component is rendering. isLoading={String(isLoading)}, error={String(!!error)}
-      </div>
       {isLoading && !error && (
         <div className="w-full rounded-lg border border-blue-200 bg-blue-50 p-4 text-sm text-blue-700">
           <div className="flex items-center justify-center gap-2">
@@ -138,14 +135,10 @@ export default function ChatKitWidget() {
           </div>
         </div>
       )}
-      <div key={attempt} className="w-full max-w-2xl min-h-[600px]" style={{ background: "lightblue", padding: "10px" }}>
-        <div style={{ background: "orange", padding: "5px", marginBottom: "10px" }}>
-          DEBUG: ChatKit widget container (attempt #{attempt})
-        </div>
+      <div key={attempt} className="w-full max-w-2xl min-h-[600px]">
         <ChatKit
           control={control}
           className="block h-[600px] w-full rounded-lg shadow-lg"
-          style={{ background: "white", border: "3px solid green" }}
         />
       </div>
     </div>
