@@ -1,3 +1,4 @@
+import "dotenv/config";
 import http from "node:http";
 
 const port = Number(process.env.PORT) || 3000;
