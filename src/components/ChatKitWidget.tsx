@@ -121,7 +121,7 @@ export default function ChatKitWidget() {
         </div>
       )}
       <div key={attempt} className="w-full max-w-2xl min-h-[600px]">
-        <ChatKit control={control} className="h-[600px] w-full rounded-lg shadow-lg" />
+        <ChatKit control={control} className="block h-[600px] w-full rounded-lg shadow-lg" />
       </div>
     </div>
   );
