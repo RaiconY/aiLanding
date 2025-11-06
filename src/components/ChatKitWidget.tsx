@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { ChatKit, useChatKit } from "@openai/chatkit-react";
-import "@openai/chatkit-react/styles.css";
 
 export default function ChatKitWidget() {
   const [error, setError] = useState<string | null>(null);
