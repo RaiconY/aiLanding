@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { ChatKit, useChatKit } from "@openai/chatkit-react";
 
 export default function ChatKitWidget() {
@@ -6,10 +6,22 @@ export default function ChatKitWidget() {
   const [attempt, setAttempt] = useState(0);
   const [isLoading, setIsLoading] = useState(true);
 
+  useEffect(() => {
+    console.log("ChatKitWidget: Component mounted");
+    console.log("ChatKitWidget: Current location:", window.location.href);
+    return () => {
+      console.log("ChatKitWidget: Component unmounted");
+    };
+  }, []);
+
   const { control } = useChatKit({
     api: {
       async getClientSecret(existing) {
-        console.log("ChatKit: Requesting session...", { existing });
+        console.log("ChatKit: getClientSecret called", {
+          existing,
+          attempt,
+          timestamp: new Date().toISOString()
+        });
 
         // If we have an existing session and need to refresh
         if (existing) {
@@ -18,6 +30,7 @@ export default function ChatKitWidget() {
 
         try {
           setIsLoading(true);
+          console.log("ChatKit: Fetching session from:", "/api/chatkit/session");
           const response = await fetch("/api/chatkit/session", {
             method: "POST",
             headers: {
@@ -61,12 +74,17 @@ export default function ChatKitWidget() {
     setIsLoading(true);
   };
 
+  console.log("ChatKitWidget: Rendering", { isLoading, error, attempt });
+
   return (
-    <div className="mx-auto mt-16 flex max-w-5xl flex-col items-center gap-4 px-4 text-center">
+    <div className="mx-auto mt-16 flex max-w-5xl flex-col items-center gap-4 px-4 text-center" style={{ border: "2px solid red", padding: "20px" }}>
       <h2 className="text-3xl font-semibold text-gray-900">Поболтайте с ассистентом</h2>
       <p className="max-w-2xl text-gray-600">
         Задайте вопросы о продукте и получите мгновенные ответы от нашего AI-ассистента.
       </p>
+      <div style={{ background: "yellow", padding: "10px", width: "100%" }}>
+        DEBUG: Component is rendering. isLoading={String(isLoading)}, error={String(!!error)}
+      </div>
       {isLoading && !error && (
         <div className="w-full rounded-lg border border-blue-200 bg-blue-50 p-4 text-sm text-blue-700">
           <div className="flex items-center justify-center gap-2">
@@ -120,8 +138,15 @@ export default function ChatKitWidget() {
           </div>
         </div>
       )}
-      <div key={attempt} className="w-full max-w-2xl min-h-[600px]">
-        <ChatKit control={control} className="block h-[600px] w-full rounded-lg shadow-lg" />
+      <div key={attempt} className="w-full max-w-2xl min-h-[600px]" style={{ background: "lightblue", padding: "10px" }}>
+        <div style={{ background: "orange", padding: "5px", marginBottom: "10px" }}>
+          DEBUG: ChatKit widget container (attempt #{attempt})
+        </div>
+        <ChatKit
+          control={control}
+          className="block h-[600px] w-full rounded-lg shadow-lg"
+          style={{ background: "white", border: "3px solid green" }}
+        />
       </div>
     </div>
   );
