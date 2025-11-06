@@ -62,13 +62,17 @@ export default function ChatKitWidget() {
   };
 
   return (
-    <div className="mx-auto mt-16 flex max-w-5xl flex-col items-center gap-4 px-4 text-center">
+    <div className="mx-auto mt-16 flex w-full max-w-5xl flex-col items-center gap-6 px-4 text-center">
       <h2 className="text-3xl font-semibold text-gray-900">Поболтайте с ассистентом</h2>
       <p className="max-w-2xl text-gray-600">
         Задайте вопросы о продукте и получите мгновенные ответы от нашего AI-ассистента.
       </p>
       {isLoading && !error && (
-        <div className="w-full rounded-lg border border-blue-200 bg-blue-50 p-4 text-sm text-blue-700">
+        <div
+          className="w-full max-w-2xl rounded-lg border border-blue-200 bg-blue-50 p-4 text-sm text-blue-700"
+          role="status"
+          aria-live="polite"
+        >
           <div className="flex items-center justify-center gap-2">
             <svg
               className="animate-spin h-5 w-5 text-blue-600"
@@ -95,7 +99,7 @@ export default function ChatKitWidget() {
         </div>
       )}
       {error && (
-        <div className="flex w-full flex-col gap-3 rounded-lg border border-red-200 bg-red-50 p-4 text-left text-sm text-red-700">
+        <div className="flex w-full max-w-2xl flex-col gap-3 rounded-lg border border-red-200 bg-red-50 p-4 text-left text-sm text-red-700">
           <span>{error}</span>
           <div className="flex flex-wrap items-center gap-2 text-xs text-red-600">
             <button
@@ -120,8 +124,8 @@ export default function ChatKitWidget() {
           </div>
         </div>
       )}
-      <div key={attempt} className="w-full max-w-2xl min-h-[600px]">
-        <ChatKit control={control} className="h-[600px] w-full rounded-lg shadow-lg" />
+      <div key={attempt} className="w-full max-w-2xl h-[600px] min-h-[600px]">
+        <ChatKit control={control} className="block h-full w-full rounded-lg shadow-lg" />
       </div>
     </div>
   );
