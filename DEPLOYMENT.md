@@ -48,6 +48,27 @@ Visit `http://localhost:5173`
 > аутентификация в реестре настроена и повторите команду `npm install
 > @openai/chatkit-react`.
 
+### Netlify npm authentication
+
+Чтобы сборка на Netlify могла скачивать приватные пакеты, добавьте в корень
+репозитория файл `.npmrc` со строками:
+
+```
+@openai:registry=https://registry.npmjs.org/
+//registry.npmjs.org/:_authToken=${NPM_TOKEN}
+always-auth=true
+```
+
+Далее передайте Netlify токен доступа к npm:
+
+1. Создайте или получите npm-токен с доступом к скоупу `@openai`.
+2. В Netlify откройте **Site settings → Build & deploy → Environment → Edit Variables**.
+3. Добавьте переменную `NPM_TOKEN` (или `NODE_AUTH_TOKEN`) и вставьте значение
+   токена.
+4. Сохраните изменения и заново запустите деплой (кнопка **Trigger deploy → Deploy
+   site** или повторный push), чтобы убедиться, что шаг `npm install` проходит без
+   ошибки `403 Forbidden`.
+
 ### ChatKit session service
 
 The ChatKit widget expects an authenticated endpoint that exchanges your
