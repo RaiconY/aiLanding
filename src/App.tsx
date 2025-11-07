@@ -10,7 +10,6 @@ import Pricing from './components/Pricing';
 import FAQ from './components/FAQ';
 import Footer from './components/Footer';
 import FullWidthImage from './components/FullWidthImage';
-import ChatWidget from './components/ChatWidget';
 
 function App() {
   return (
@@ -29,18 +28,6 @@ function App() {
       <NewTestimonials />
       <Pricing />
       <FAQ />
-      <section className="bg-slate-950 py-16">
-        <div className="mx-auto flex max-w-6xl flex-col items-center gap-6 px-4 text-center text-white">
-          <h2 className="text-3xl font-semibold sm:text-4xl">Попробуйте ChatKit в действии</h2>
-          <p className="max-w-2xl text-base text-white/70 sm:text-lg">
-            Откройте виджет и пообщайтесь с нашим рабочим процессом, чтобы увидеть, как ChatKit помогает
-            пользователям получать ответы в реальном времени.
-          </p>
-          <div className="rounded-3xl border border-white/10 bg-white/5 p-4 shadow-2xl backdrop-blur">
-            <ChatWidget />
-          </div>
-        </div>
-      </section>
       {/*<UnifiedAuthors />
       <WhyAuthorCreated />
       <Consultations />
