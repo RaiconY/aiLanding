@@ -23,7 +23,6 @@ Push to main branch to trigger automatic deployment.
 ## Architecture
 
 - **Frontend**: Vite + React + TypeScript (deployed as static files)
-- **Backend**: Lightweight FastAPI service under `server/` that issues ChatKit client secrets
 
 ## File Structure
 
@@ -35,37 +34,10 @@ netlify.toml                           - Netlify deployment configuration
 ## Local Development
 
 ```bash
-npm install
-npm install @openai/chatkit-react
 npm run dev
 ```
 
 Visit `http://localhost:5173`
-
-> [!NOTE]
-> Пакет `@openai/chatkit-react` доступен только из приватного реестра OpenAI. Если
-> локальная установка завершается ошибкой `403 Forbidden`, убедитесь, что
-> аутентификация в реестре настроена и повторите команду `npm install
-> @openai/chatkit-react`.
-
-### ChatKit session service
-
-The ChatKit widget expects an authenticated endpoint that exchanges your
-OpenAI API key for a short-lived client secret. A reference
-implementation lives in `server/server.py`.
-
-```bash
-cd server
-python -m venv .venv
-. .venv/bin/activate
-pip install -r requirements.txt
-export OPENAI_API_KEY="sk-..."
-export CHATKIT_WORKFLOW_ID="wf_..."
-uvicorn server:app --reload --host 0.0.0.0 --port 8000
-```
-
-Point the frontend to `http://localhost:8000/api/chatkit/session` (the
-default in `index.html`).
 
 ## Production URL
 
